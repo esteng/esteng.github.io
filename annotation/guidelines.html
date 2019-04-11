@@ -503,7 +503,15 @@ pre[class*="language-"] {
 
 <h3 id="toc_6">Pronominal reference</h3>
 
-<p>When a pronoun is introduced in place of a name or a title, mark it is an alignment.</p>
+<p>When a pronoun is introduced in place of a name or a title, mark it is an alignment. If there are multiple occurrences of a pronoun, they should all be aligned to each other. For example, in the following example, both occurrences of <em>we</em> in the source should be aligned to both occurrences of <em>we</em> in the target since they refer to the same entity. </p>
+
+<p><img src="pronoun.png" alt="Pronoun example"></p>
+
+<p>However, given the following example <em>he</em> should only be aligned to the first target occurrence of <em>he</em> and not the second (annotated with [1] and [2] to indicate the referrent):</p>
+
+<p><em>He[1] spoke of Kerry[2]&#39;s service in Vietnam .</em></p>
+
+<p><em>He[1] mentioned that he[2] had served as a Navy officer in Vietnam .</em></p>
 
 <h3 id="toc_7">Determiners and prepositions</h3>
 
@@ -534,9 +542,17 @@ vs. <em>the frost</em>).</p>
 
 <p>Use a one-to-many alignment, in cases where a phrasal verb paraphrases a non-phrasal verb (e.g., <em>take up your father</em> vs. <em>bring your father</em>). In general phrasal verbs often take their meaning from the accompanying particle and should be considered as belonging to the verb. This can be a discontinuous alignment (e.g. <em>give ... name ↔ call</em> in the first example of this document).</p>
 
+<p>Another example of a one-to-many alignment is <em>continued</em> and <em>went on</em>. <em>continued</em> should be aligned to both <em>went</em> and <em>on</em>.</p>
+
 <h3 id="toc_13">Possessives</h3>
 
-<p>You should align the <em>’s</em> maker with the word of and any article (e.g. <em>a</em>, <em>the</em>, <em>this</em>, etc.) that is also introduced. </p>
+<p>You should align the <em>’s</em> maker with the word <em>of</em> and any article (e.g. <em>a</em>, <em>the</em>, <em>this</em>, etc.) that is also introduced. </p>
+
+<p>In some cases, <em>&#39;s</em> can also align to other prepositions. For example, in the following sentence pair, <em>from</em> aligns to <em>&#39;s</em>:</p>
+
+<p><em>at a sign from the Captain we regained the bank</em></p>
+
+<p><em>at the captain &#39;s signal we returned to the bank of shellfish</em></p>
 
 <h3 id="toc_14">Repetition</h3>
 
@@ -551,6 +567,18 @@ vs. <em>the frost</em>).</p>
 <li>Use block alignments when you are uncertain about which alignment to use. </li>
 <li>Block align only named entities differing in surface form.</li>
 </ol>
+
+<h2 id="toc_16">Other notes</h2>
+
+<h3 id="toc_17">String identicality</h3>
+
+<p>One of the reasons we need to solicit annotations from trained human annotators such as yourselves is because many simple heuristics can lead to incorrect results when it comes to alignment. For example, one might think that identical strings across sentences should be aligned. While this is often true, there are also cases where it does not apply. For example, in the following sentence pair: </p>
+
+<p><em>the three chains have replaced most of the 70,000 striking workers with temporary employees to keep their stores open .</em></p>
+
+<p><em>the supermarket chains have used managers and replacement workers to keep their stores open , often at reduced hours .</em></p>
+
+<p><em>workers</em> in the first sentence does <strong>not</strong> align to <em>workers</em> in the second sentence, as <em>workers</em> in the second sentence refers to the <em>temporary employees</em> hired to replace the striking workers. Please be careful in these situations.</p>
 
 
 
