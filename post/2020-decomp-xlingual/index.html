@@ -720,8 +720,8 @@
 </table>
 <p>Both times, the statement &quot;Derek broke the plate&quot; remains unchanged. But based on the different scenarios, we as readers draw very different conclusions. Evidence suggests that even toddlers are able to draw inferences about intentionality and volition <span class="citation">(Vaish, Carpenter, and Tomasello 2010)</span>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> Inferences like that in (2), Derek meant to break the plate, while in (1) it was an accident. Furthermore, different scenarios might evoke different levels of volition; we could easily imagine a range of set-ups where Derek is more or less volitional, between the two extremes laid out above. We can also draw a much broader range of inferences from these sentences; for example, we know that Derek is sentient while the plate is not, and that the plate physically changed during the process, but Derek probably wasn't. We know that the plate probably doesn't exist anymore, but Derek does. The list goes on...</p>
 <p>This raises a few key questions: how is it that identical sentences can evoke a range of different inferences? What kinds of inferences do we draw from language? What other hidden knowledge is lying just under the surface of the language we speak?</p>
-<p>A rich array of work has looked at these questions, including <span class="citation">Dowty (1991)</span>, who introduced a number of inferences, including &quot;volition&quot;, &quot;awareness&quot;, &quot;sentience&quot;, &quot;change of state&quot;, and &quot;existed before/during/after&quot;. From there, <span class="citation">D. Reisinger et al. (2015)</span>, <span class="citation">White et al. (2016)</span>, <span class="citation">Govindarajan, Van Durme, and White (2019)</span>, and <span class="citation">Vashishtha, Van Durme, and White (2019)</span> annotated a corpus of English sentences these properties (among others) and began modeling them. I myself joined this effort fairly late, contributing to <span class="citation">White et al. (2019)</span>, which consolidated annotations from across these works into one dataset, the Universal Decompositional Semantics Dataset <a href="http://decomp.io">UDSv1.0</a>. My main contribution to this line of work has been working on a parsing model, which learns to automatically extract these inferences from text <span class="citation">(Stengel-Eskin et al. 2020)</span>.</p>
-<p>By way of starting, I'll try to summarize the different types of annotations in the dataset. The dataset gives each property a score from -3 to 3, with 3 being &quot;very likely&quot; and -3 being &quot;very unlikely.&quot;</p>
+<p>A rich array of work has looked at these questions, including <span class="citation">Dowty (1991)</span>, who introduced a number of inferences, including &quot;volition&quot;, &quot;awareness&quot;, &quot;sentience&quot;, &quot;change of state&quot;, and &quot;existed before/during/after&quot;. From there, <span class="citation">D. Reisinger et al. (2015)</span>, <span class="citation">White et al. (2016)</span>, <span class="citation">Govindarajan, Van Durme, and White (2019)</span>, and <span class="citation">Vashishtha, Van Durme, and White (2019)</span> annotated a corpus of English sentences these properties (among others) and began modeling them. I myself joined this effort fairly late, contributing to <span class="citation">White et al. (2019)</span>, which consolidated annotations from across these works into one dataset, the Universal Decompositional Semantics Dataset, or <a href="http://decomp.io">UDSv1.0</a>. My main contribution to this line of work has been working on a parsing model, which learns to automatically extract these inferences from text <span class="citation">(Stengel-Eskin et al. 2020)</span>.</p>
+<p>By way of starting, I'll try to summarize the different types of annotations in the dataset. The dataset gives each property a score from -3 to 3, with 3 being &quot;very likely&quot; and -3 being &quot;very unlikely.&quot; The words the annotation applies to are given in bold.</p>
 <table>
 <colgroup>
 <col width="13%" />
@@ -739,7 +739,7 @@
 <tr class="odd">
 <td><strong>Factuality</strong></td>
 <td>Factuality inferences represent how likely (or unlikely) a listener thinks a scenario that is to have occurred.</td>
-<td>Jo left (3), Jo didn’t leave (-3), Jo thought that Cole had left (-1)</td>
+<td>Jo <strong>left</strong> (3), Jo didn’t <strong>leave</strong> (-3), Jo thought that Cole had <strong>left</strong> (-1)</td>
 </tr>
 <tr class="even">
 <td><strong>Genericity</strong></td>
@@ -770,7 +770,7 @@
 </div>
 <div id="back-to-derek-and-the-plate" class="section level2">
 <h2>Back to Derek and the plate</h2>
-<p>Let's revisit Derek, but this time in a different linguistic setting -- say, Mexico City. Where in English, we'd use the same construction in both scenarios (volitional and non-volitional), in Spanish, we'd probably use a different construction. In scenarios 1 and 2, we'd say something like</p>
+<p>Let's revisit Derek, but this time in a different linguistic setting -- say, Mexico City. Where in English, we'd use the same construction in both scenarios (volitional and non-volitional), in Spanish, we'd probably use a different construction. In scenarios (1) and (2), we'd say something like</p>
 <ol style="list-style-type: decimal">
 <li><table>
 <thead>
@@ -839,7 +839,7 @@
 </tbody>
 </table></li>
 </ol>
-<p>Both can translate to &quot;Derek broke the plate&quot; in English, but the first utterance indicates that it was an accident. A direct gloss of each sentence is directly below the example. Funnily enough, the direct gloss here looks a lot like what we'd find in German!</p>
+<p>Both can translate to &quot;Derek broke the plate&quot; in English, but the first utterance indicates that it was an accident. A direct gloss of each sentence is immediately below the example. Funnily enough, the direct gloss here looks a lot like what we might find in German!</p>
 <ol style="list-style-type: decimal">
 <li><table>
 <thead>
@@ -947,14 +947,18 @@
 </tr>
 </tbody>
 </table>
-<p>Similarly, Dowty's &quot;was for the benefit of&quot; property demands nothing less than the dative, in this case often known as the <em>dative of advantage/disadvantage</em>. <em>Cui bono</em> is a famous example of this<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
+<p>Similarly, Dowty's &quot;was for the benefit of&quot; property demands nothing less than the dative, in this case often known as the <em>dative of advantage/disadvantage</em>. <em>Cui bono</em> is a famous example of this.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
 <p>These mnemonic devices not only help students learn Latin, but also help to expose some of the underlying semantic features of the language.</p>
 </div>
 <div id="genericity" class="section level2">
 <h2>Genericity</h2>
-<p>Genericity inferences pertain to how particular or abstract a predicate or argument is. For example, it's clear that &quot;dogs&quot; in &quot;My uncle Roger's dogs Fifi and Fido&quot; is different from &quot;dogs&quot; in &quot;my brother is afraid of dogs&quot;, in that the first &quot;dogs&quot; is very particular, while the second one applies to more of a natural kind. Similarly, predicates can be more or less particular or general. Consider: 1. Marie ate oatmeal for breakfast every day. 2. Marie ate oatmeal for breakfast yesterday.</p>
-<p>The &quot;ate&quot; in (1) is different from the &quot;ate&quot; in (2), which encompases a broader range of instances of an &quot;eating&quot; event. French makes this distinction quite clear on the surface level:</p>
-<ol style="list-style-type: decimal">
+<p>Genericity inferences pertain to how particular or abstract a predicate or argument is. For example, it's clear that &quot;dogs&quot; in &quot;My uncle Roger's dogs Fifi and Fido&quot; is different from &quot;dogs&quot; in &quot;my brother is afraid of dogs&quot;, in that the first &quot;dogs&quot; is very particular, while the second one applies to more of a natural kind. Similarly, predicates can be more or less particular or general. Consider:</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Marie ate oatmeal for breakfast every day.</li>
+<li>Marie ate oatmeal for breakfast yesterday.</li>
+</ol>
+<p>The &quot;ate&quot; in (3) is different from the &quot;ate&quot; in (4), which encompases a broader range of instances of an &quot;eating&quot; event. French makes this distinction quite clear on the surface level:</p>
+<ol start="3" style="list-style-type: decimal">
 <li><table>
 <thead>
 <tr class="header">
@@ -1044,15 +1048,15 @@
 <div id="awarenesssentience" class="section level2">
 <h2>Awareness/sentience</h2>
 <p>Awareness and sentience are probably my favorite proto-roles; what could better describe the impressive human capacity for language than the entirely unconscious ability to rapidly draw inferences about philosophically layered concepts like awareness and sentience? German (another morphologically rich language) makes certain inferences about awareness and sentience quite clear in its use of case with certain verbs. In English, a speaker surprised by something might say:</p>
-<ol style="list-style-type: decimal">
+<ol start="5" style="list-style-type: decimal">
 <li>I don't believe <em>it</em>!</li>
 </ol>
 <p>While an incredulous person might say:</p>
-<ol start="2" style="list-style-type: decimal">
+<ol start="6" style="list-style-type: decimal">
 <li>I don't believe <em>him</em>!</li>
 </ol>
-<p>where the &quot;it&quot; in (1) is clearly non-sentient (i.e. a news story, a state of affairs, a juicy piece of gossip, etc.) while &quot;him&quot; in (2) is sentient. In German, these two objects, while arguments of the same verb, take different cases (accusative and dative, respectively):</p>
-<ol style="list-style-type: decimal">
+<p>where the &quot;it&quot; in (5) is clearly non-sentient (i.e. a news story, a state of affairs, a juicy piece of gossip, etc.) while &quot;him&quot; in (6) is sentient. In German, these two objects, while arguments of the same verb, take different cases (accusative and dative, respectively):</p>
+<ol start="5" style="list-style-type: decimal">
 <li><table>
 <thead>
 <tr class="header">
@@ -1108,7 +1112,7 @@
 <h1>Conclusions</h1>
 <p>By no means am I suggesting, with the examples above, that these inferences are impossible to draw in different languages, or even necessarily more difficult. All languages are infinitely expressive, and given enough clarification, any inferences about proto-roles, genericity, time duration, or word sense can be made as plain as in any other language. I instead hope to draw attention to the ways that languages encode some of these inferences explicitly in the grammar, lending support to their status as real linguistic concepts rather than figments of the imagination.</p>
 <p>Nor do I want to give the impression that speakers of these different languages differ in their judgements of these inferences, or that having the inferences explicitly represented in the grammar or morphology somehow increases our awareness of them. I don't know of any research to this effect, and have not experienced this myself. In fact, the miracle is that all of this happens largely unconsciously, and that there seems to be wide agreement between speakers on these inferences. That all speakers of a language can even agree on a meaning for what <em>is</em> said is miraculous, but that they can also to a large extent on what is <em>not</em> said is even more astounding.</p>
-<p>Finally, these are just <em>some</em> examples from <em>some</em> languages that I happen to be familiar with. I'd love to find more examples like these, so if you can think of ones in other languages (especially non-<a href="https://en.wikipedia.org/wiki/Psychology#WEIRD_bias">WEIRD</a> languages!) please don't hesitate to reach out!</p>
+<p>Finally, these are just <em>some</em> examples from <em>some</em> languages that I happen to be familiar with. I'd love to find more examples like these, so if you can think of ones in other languages (especially non-<a href="https://en.wikipedia.org/wiki/Psychology#WEIRD_bias">WEIRD</a> languages!) please don't hesitate to reach out! Similarly, if you can think of counter-examples in these languages or others, shoot me a message.</p>
 </div>
 <div id="references" class="section level1 unnumbered">
 <h1>References</h1>
