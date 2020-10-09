@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>classwork | Elias Stengel-Eskin</title>
+    <link>/tag/classwork/</link>
+      <atom:link href="/tag/classwork/index.xml" rel="self" type="application/rss+xml" />
+    <description>classwork</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>classwork</title>
+      <link>/tag/classwork/</link>
+    </image>
+    
+    <item>
+      <title>HCI project</title>
+      <link>/hci/assignment1/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/hci/assignment1/</guid>
+      <description>
+
+
+&lt;div id=&#34;hci-assignment-1-improving-basic-functionality-of-myjhu&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;HCI Assignment 1: Improving basic functionality of myJHU&lt;/h1&gt;
+&lt;p&gt;Graduate students at JHU are faced with a unique challenge of being both students and employees. This means navigating both the standard student-facing sites for registering for classes and checking grades, like SIS and Blackboard, but also employee interfaces such as ESS. Many of these interfaces are available throught the myJHU portal, but learning how to efficiently use the portal takes time. If there&#39;s one thing graduate students don&#39;t have, it&#39;s time to waste figuring out where to find different features in myJHU. While we agree that myJHU provides a valuable service as an aggregator and portal for the variety of services available to graduate students, the interface itself can be clunky and difficult to use. In this assignment, we will endeavour to redesign the interface, optimizing for customizability and speed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;contextual-inquiry&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Contextual inquiry&lt;/h1&gt;
+&lt;p&gt;To this end, we performed a contextual inquiry to determine which interfaces were most in need of a redesign, and how actual users interact with myJHU.&lt;/p&gt;
+&lt;div id=&#34;subject&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Subject&lt;/h2&gt;
+&lt;p&gt;For the purposes of this assignment, rather than recruiting a JHU graduate student, whose experience is colored by having used the interface many times before, we opted to recruit a non-JHU student who would act as a proxy for a brand new JHU graduate student using the interface for the first time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;intents&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Intents&lt;/h2&gt;
+&lt;p&gt;Since myJHU is a fairly well-designed page to begin with, we opted to test more intents and narrow down what we would change later on, based on what we saw in our contextual inquiry. These intents were:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Change profile name&lt;/li&gt;
+&lt;li&gt;Find a book in the library&lt;/li&gt;
+&lt;li&gt;Find Concur system for travel reimbursements&lt;/li&gt;
+&lt;li&gt;Change what you see upon login&lt;/li&gt;
+&lt;li&gt;Check email&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Based on our inquiry, we opted to further analyze and re-design the page for intents 1, 3, and 4.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;contextual-inquiry-recording&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Contextual inquiry recording&lt;/h2&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/t-T2UdpU3hI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;intent-1-change-profile-name&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Intent 1: Change profile name&lt;/h2&gt;
+&lt;p&gt;Often, new students are assigned a profile with their full legal name, but have a different name that they go by. The following shows the sequential model of our subject attempting to change her name in myJHU:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;intent1.png&#34; alt=&#34;&#34; width=&#34;700&#34;/&gt;&lt;/p&gt;
+&lt;div id=&#34;results&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;p&gt;While the subject was able to find the functions to change the profile easily enough, the save button was all the way at the bottom and took time to find. Another time-waster was two-factor authetication, but for security reasons, this understandably cannot be removed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;intent-2-find-concur&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Intent 2: Find Concur&lt;/h2&gt;
+&lt;p&gt;Concur is only one of the services available to grad students through myJHU, which we use as a proxy for finding services in general.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;intent2.png&#34; alt=&#34;&#34; width=&#34;700&#34;/&gt;&lt;/p&gt;
+&lt;div id=&#34;results-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;p&gt;Concur is buried under the &amp;quot;Travel&amp;quot; option in the sidebar, which the subject had to spend some time visually searching for on the screen. Given just the name (not knowing it is used for travel) it would be very difficult to find.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;intent-3-customize-layout&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Intent 3: Customize Layout&lt;/h2&gt;
+&lt;p&gt;The front page of myJHU has news and alerts about various topics at JHU and is spread out over a large area. Students should be able to customize what they see based on what they value.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;intent3.png&#34; alt=&#34;&#34; width=&#34;700&#34;/&gt;&lt;/p&gt;
+&lt;div id=&#34;results-2&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;p&gt;This turned out to be an impossible task. The subject first went down an incorrect path, assuming that the customization would be part of myProfile. After that, the subject tried to use the &amp;quot;configure&amp;quot; option, which only changes the sidebar. Finally, the subject gave up.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;redesign&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Redesign&lt;/h1&gt;
+&lt;p&gt;To address the breakdowns in the previous section, we propose a new, more compact site designed in &lt;a href=&#34;https://gomockingbird.com/&#34;&gt;Mockingbird&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;main.png&#34; alt=&#34;&#34; width=&#34;500&#34;/&gt;&lt;/p&gt;
+&lt;div id=&#34;intent-1-profile-changes&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Intent 1: Profile changes&lt;/h3&gt;
+&lt;p&gt;We add a quick-link to change the profile directly under the profile picture. This opens a pop-out menu with the options of fields to change in the profile. &lt;img src=&#34;customize1.png&#34; alt=&#34;&#34; width=&#34;500&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;Opening one of these menus changes the content of the pop-out to a list of editable fields. Contents can be discarded with the close button or saved with the large &amp;quot;confirm&amp;quot; button. &lt;img src=&#34;customize2.png&#34; alt=&#34;&#34; width=&#34;500&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;These popups allow the user to stay on the same page while updating their information, and update only small parts of their info at a time. The small size of the interface places the &amp;quot;confirm&amp;quot; directly in the subject&#39;s view, where before it required a large amount of scrolling to get to.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;intent-2-open-concur&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Intent 2: Open Concur&lt;/h3&gt;
+&lt;p&gt;Rather than forcing the user to use the sidebar, we include a large searchar which can be quickly accessed. As the user types, results begin to be filtered in a quick-search style, until only the top result remains.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;searchbar1.png&#34; alt=&#34;&#34; width=&#34;500&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;This interface cuts down on time wasted scrolling over the sidebar and attempting to deduce under which heading different services are located.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;intent-3-customize&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Intent 3: Customize&lt;/h3&gt;
+&lt;p&gt;Rather than being spread out and taking up more than the screen, the news and info on the homepage is consolidated into multiple tabs, grouped by topic. This allows for faster access to important information, such as COVID19 updates. The tabs also provide an intuitive interface for customization that everyone is familiar with. Each tab has a close button.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;customize1.png&#34; alt=&#34;&#34; width=&#34;500&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;Pressing the close button opens a small prompt which asks the user whether they want to close the window just for the duration of their session, or make their change permanent.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;customize2.png&#34; alt=&#34;&#34; width=&#34;500&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;This change allows the user to customize the homepage and re-order what they see based on what they care about. It also makes it obvious how to customize the page, which was unclear before.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;evaluation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Evaluation&lt;/h2&gt;
+&lt;p&gt;In the final evaluation, we see that each task took much less time and was more intuitive than before.&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/TFyRLlrI6do&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
