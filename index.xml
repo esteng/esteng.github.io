@@ -5,12 +5,105 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Elias Stengel-Eskin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 16 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Elias Stengel-Eskin</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>HCI project 1</title>
+      <link>/hci/project1/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/hci/project1/</guid>
+      <description>
+
+
+&lt;div id=&#34;project-1-slack-re-design&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Project 1: Slack re-design&lt;/h1&gt;
+&lt;div id=&#34;ariel-bao-cameron-franz-elias-stengel-eskin&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Ariel Bao, Cameron Franz, Elias Stengel-Eskin&lt;/h3&gt;
+&lt;p&gt;Due to the COVID-19 pandemic, many aspects of life including education have moved to a largely online setting. This has created new challenges but also new opportunities for streamlining and improving educational experiences. The Slack platform is incredibly popular in modern office spaces and offers rapid and efficient communication, we believe that with some minor changes, it could provide and integrated educational environment that enriches student-instructor interactions. In particular, the rapid feedback available through Slack might provide a suitable proxy for face-to-face communication while accommodating individuals facing the myriad additional challenges of teaching and studying from home (e.g. different timezones, unreliable internet, personal responsiblities, etc.).&lt;/p&gt;
+&lt;p&gt;In this project, we focus on the perspective of the instructor, as in a course the instructor typically plays a more active role with the students largely acting as consumers. Our product is designed for a modified course structure, which has been adjusted for remote learning. Students are expected to watch pre-recorded lectures on their own time, and there are mandatory 1-hour office-hour-style discussion periods once a week. Each week has two lectures. The course has 3 assignments and 2 group projects.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;persona-1-instructor&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Persona 1: Instructor&lt;/h2&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;contextual-inquiry&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Contextual inquiry&lt;/h2&gt;
+&lt;div id=&#34;subject&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Subject&lt;/h3&gt;
+&lt;p&gt;The contextual inquiry was conducted with a student with TA-ing experience who has used Slack in the past, but not extensively.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;intents&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Intents&lt;/h3&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Create an assignment and share it with all students 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IOaJJO_02zo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+ 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/vChONkF07zM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The subject created a new channel for all assignments; this behaviour was unexpected as we expected him to create separate channels for each assignment. The subject added all students which is the default, and posted a stub assignment.&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Send each student their graded assignment with feedback 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/hLidERXSoDY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+ 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/lhRLNIUDgfo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The subject sent an individual message to each student with their grade and feedback. The subject made one message and the copy-pasted it to each student. This wouldn&#39;t scale well to a larger class, and makes it easy to make mistakes (e.g. sending the wrong grade to a student, sending the wrong feedback).&lt;/p&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Assign students to groups for the group project 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Z4GxzMarT2o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+ 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/dgxGqNcylZY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Subject created a thread per group and added students manually. It would probably be helpful to have a shortcut to easily group students into random or non-random groups and assign them to threads.&lt;/p&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Assign each group a topic 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bEljMZ2F018&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+ 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6_hfccsCzlc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Subject first used message in thread to assign topic, then saw that threads can have topics, and used the thread topic feature to assign a topic to each group.&lt;/p&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Create a discussion thread for the weekly office hour and send students a required reading for that week’s office hour 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/i5NKk7XoHIw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+ 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SqOs1DMhrb4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Subject successfully created a thread and added a required reading. There is no way to enforce that everyone actually has to open or read the meeting.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>HCI Assignment 1</title>
@@ -111,91 +204,6 @@
   &lt;iframe src=&#34;https://www.youtube.com/embed/TFyRLlrI6do&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>HCI project 1</title>
-      <link>/hci/project1/</link>
-      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/hci/project1/</guid>
-      <description>
-
-
-&lt;div id=&#34;project-1-slack-re-design&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Project 1: Slack re-design&lt;/h1&gt;
-&lt;div id=&#34;ariel-bao-cameron-franz-elias-stengel-eskin&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Ariel Bao, Cameron Franz, Elias Stengel-Eskin&lt;/h3&gt;
-&lt;p&gt;Due to the COVID-19 pandemic, many aspects of life including education have moved to a largely online setting. This has created new challenges but also new opportunities for streamlining and improving educational experiences. The Slack platform is incredibly popular in modern office spaces and offers rapid and efficient communication, we believe that with some minor changes, it could provide and integrated educational environment that enriches student-instructor interactions. In particular, the rapid feedback available through Slack might provide a suitable proxy for face-to-face communication while accommodating individuals facing the myriad additional challenges of teaching and studying from home (e.g. different timezones, unreliable internet, personal responsiblities, etc.).&lt;/p&gt;
-&lt;p&gt;In this project, we focus on the perspective of the instructor, as in a course the instructor typically plays a more active role with the students largely acting as consumers. Our product is designed for a modified course structure, which has been adjusted for remote learning. Students are expected to watch pre-recorded lectures on their own time, and there are mandatory 1-hour office-hour-style discussion periods once a week. Each week has two lectures. The course has 3 assignments and 2 group projects.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;persona-1-instructor&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Persona 1: Instructor&lt;/h2&gt;
-&lt;p&gt;TODO&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;contextual-inquiry&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Contextual inquiry&lt;/h2&gt;
-&lt;div id=&#34;subject&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Subject&lt;/h3&gt;
-&lt;p&gt;The contextual inquiry was conducted with a student with TA-ing experience who has used Slack in the past, but not extensively.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;intents&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Intents&lt;/h3&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Create an assignment and share it with all students 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/IOaJJO_02zo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
- 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/vChONkF07zM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The subject created a new channel for all assignments; this behaviour was unexpected as we expected him to create separate channels for each assignment. The subject added all students which is the default, and posted a stub assignment.&lt;/p&gt;
-&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Send each student their graded assignment with feedback 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/vChONkF07zM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
- 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/lhRLNIUDgfo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The subject sent an individual message to each student with their grade and feedback. The subject made one message and the copy-pasted it to each student. This wouldn&#39;t scale well to a larger class, and makes it easy to make mistakes (e.g. sending the wrong grade to a student, sending the wrong feedback).&lt;/p&gt;
-&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Assign students to groups for the group project 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
- 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/dgxGqNcylZY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Subject created a thread per group and added students manually. It would probably be helpful to have a shortcut to easily group students into random or non-random groups and assign them to threads.&lt;/p&gt;
-&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Assign each group a topic&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Subject first used message in thread to assign topic, then saw that threads can have topics, and used the thread topic feature to assign a topic to each group.&lt;/p&gt;
-&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Create a discussion thread for the weekly office hour and send students a required reading for that week’s office hour 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
- 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6_hfccsCzlc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Subject successfully created a thread and added a required reading. There is no way to enforce that everyone actually has to open or read the meeting.&lt;/p&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
