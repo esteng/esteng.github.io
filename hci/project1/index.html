@@ -754,6 +754,23 @@
 <p>Subject successfully created a thread and added a required reading. There is no way to enforce that everyone actually has to open or read the meeting.</p>
 </div>
 </div>
+<div id="ideation-and-analysis" class="section level2">
+<h2>Ideation and Analysis</h2>
+</div>
+<div id="channels-were-used-for-groups-and-assignments" class="section level2">
+<h2>Channels were used for Groups and Assignments</h2>
+<p><img src="SlackExampleImage.png" alt="Slack Image" /> <em>A classroom slack environment with relevant areas circled</em></p>
+<p>We found that channels (circled in blue) were used for making groups and creating discussion around assignments. To create a channel, the instructor clicks the Add Channel button (green circle). A channel dedicated to sending assignments to students was relatively fast: the instructor simply creates a channel and has it automatically add everyone. Using channels for groups was more tedious. For each group, the instructor needed to click “Add Channel” and type the name of everyone in the group. This means that the instructor would need to create their groups somewhere else (like Excel) and then do a bunch of copy and pasting or typing, even though all of the names are already in Slack. We believe that it should be easier to automatically populate channels with randomly assigned groups in a way that minimizes instructor effort while maximizing flexibility. Furthermore, given the increased number of students who are learning remotely from all over the world, we believe that any changes should natively support grouping students by timezone.</p>
+<div id="direct-messages-were-used-to-give-feedback-to-students" class="section level3">
+<h3>Direct messages were used to give feedback to students</h3>
+<p>Direct messages were used for giving grades and feedback. For each student the instructor would: click on that student, paste a message like “You got a 95%, my feedback is X”, edit that message, and then send the DM. Doing this for each student is obviously tedious, and it does beg a further question: does the instructor have their grades and feedback in some other document (like Excel) and is pasting them over? Or are they going to each student, grading their assignment, and sending messages as they go? In the Excel case it is a lot of copying and pasting to send a DM to every student, and being able to automatically send templated messages from a spreadsheet would be useful. In the grading-as-they-go case, keeping track of who has been graded would be tedious. In our first CI we did not get far enough into the details of how an instructor grades work to answer this question. Yet we can guess from platforms like Gradescope that instructors like to type out their grade and feedback once without having to later copy and paste into some other platform. We believe that if Slack is to be used for classroom interactions, there should be an easy-to-use interface for managing and updating coursework.</p>
+</div>
+<div id="finding-information-involved-a-lot-of-browsing-for-students" class="section level3">
+<h3>Finding information involved a lot of browsing for students</h3>
+<p>We also looked at the Slack classroom from the perspective of a student. In finding out what they need to do, we found that our volunteer student traveled broadly around the Slack classroom. They clicked on multiple channels (the bold ones that indicated unread messages) to look for any relevant new information. They clicked on the channel relevant to their assignment and looked for the original information from the instructor. In general we found that the student, who was using Slack for iOS, was swiping back and forth between the channel menu and the messages area often. They also had to scroll far up in the assignment info to find the pinned information from the instructor. [Slack Diagram][SlackDiagram1.png] <em>Diagram of how the user performed the various actions during the contextual inquiries</em></p>
+<p>In order to minimize the amount of time spent by students traveling between features, we propose adding shortcuts to the interface which allow students to rapidly jump past pinned information.</p>
+</div>
+</div>
 </div>
 
     </div>
