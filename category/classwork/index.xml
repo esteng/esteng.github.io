@@ -111,7 +111,19 @@
 &lt;/div&gt;
 &lt;div id=&#34;prototypes-and-testing&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Prototypes and Testing&lt;/h2&gt;
-&lt;p&gt;We developed our prototypes using the &lt;a href=&#34;https://www.figma.com/&#34;&gt;figma&lt;/a&gt; software, building off of Slack templates by &lt;a href=&#34;https://www.figmacrush.com/slack-ui-template-figma/&#34;&gt;figmacrush&lt;/a&gt;. For each feature, we conducted &lt;strong&gt;formative&lt;/strong&gt; usability tests with a different subject than was used in the CI. The subject for usability testing is an experienced teacher who currently teaches at the middle and high-school level, and is familiar with teaching in a remote-learning environment. The goals of the first evaluation are to assess the usability of the prototypes with respect to the CI, and to identify any shortcomings to address in further rounds of prototyping. The participant was told that she would be asked to perform a number of tasks on a new software, and that she should do her best and to think out loud. After testing, the subject was debriefed.&lt;/p&gt;
+&lt;p&gt;We developed our prototypes using the &lt;a href=&#34;https://www.figma.com/&#34;&gt;figma&lt;/a&gt; software, building off of Slack templates by &lt;a href=&#34;https://www.figmacrush.com/slack-ui-template-figma/&#34;&gt;figmacrush&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;initial-prototype-description&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Initial Prototype Description&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;featureShowcase.png&#34; alt=&#34;Feature showcase&#34; /&gt; &lt;em&gt;Introducing users to new features is crucial. Here we have a popup that describes the feature, shows where it is, and provides an obvious button to click. Visibility is guaranteed by slightly graying out the rest of the screen.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;studentList.png&#34; alt=&#34;student list&#34; /&gt; _After clicking the button to create a team, the instructor is presented with this screen. Here the instructor can set their preferences for &lt;em&gt;automatic&lt;/em&gt; group creation — no tedious typing required. Crucially the automatic grouping takes into account time zone, which is a factor that instructors have to consider. If the automatic grouping does not take into account a factor important to the instructor then the instructor will have to adjust the groups later. This can be done later &lt;em&gt;without&lt;/em&gt; more typing. &lt;img src=&#34;timeZones.png&#34; alt=&#34;time zones&#34; /&gt; &lt;em&gt;Here the instructor can see the automatically created groups, and adjust them by dragging names around. Overflow is dealt with by “expand” buttons, though scrolling would also work&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;congrats.png&#34; alt=&#34;congrats&#34; /&gt; &lt;em&gt;The nice animation played here is intended to make the user feel good about using the new feature, although we acknowledge that the actual experience of using the feature will be the main determiner of whether they use it again.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;todoList.png&#34; alt=&#34;todo list&#34; /&gt; &lt;em&gt;This is a different feature, also accessible from the main slack sidebar. Here the instructor can find their schedule for things they need to do related to the groups and the assignments. Submission statistics are shown for assignments. Ideally grading would also be possible within the interface somewhere, as having to download files or copy and paste is troublesome. The assignment statistics, which drop down after clicking the little plus, also lead to the ability to schedule reminders for students.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;scheduledMeeting.png&#34; alt=&#34;scheduled meeting&#34; /&gt; &lt;em&gt;Here the instructor can schedule a reminder about the assignment to be sent to students at a specific time. We separate date and time so that there’s not a single date picker switching between calendar and clock.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;scroll.png&#34; alt=&#34;scrolling&#34; /&gt; &lt;em&gt;Here we provide an interface for the student to quickly find information from their instructor. Clicking on the (i) in the top right will immediately scroll the student to the informational post from the instructor, and clicking the calendar icon will scroll the user back to the most recent messages.&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;usability-evaluation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Usability Evaluation&lt;/h2&gt;
+&lt;p&gt;For each feature, we conducted &lt;strong&gt;formative&lt;/strong&gt; usability tests with a different subject than was used in the CI. The subject for usability testing is an experienced teacher who currently teaches at the middle and high-school level, and is familiar with teaching in a remote-learning environment. The goals of the first evaluation are to assess the usability of the prototypes with respect to the CI, and to identify any shortcomings to address in further rounds of prototyping. The participant was told that she would be asked to perform a number of tasks on a new software, and that she should do her best and to think out loud. After testing, the subject was debriefed.&lt;/p&gt;
 &lt;div id=&#34;managing-assignments&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Managing assignments&lt;/h3&gt;
 &lt;p&gt;
@@ -132,7 +144,7 @@
 &lt;h3&gt;Scrolling to pinned messages&lt;/h3&gt;
 &lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/SqOs1DMhrb4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IUXRO_3EehQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;/div&gt;
@@ -144,11 +156,7 @@
 &lt;h3&gt;Summative evaluation&lt;/h3&gt;
 &lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/i5NKk7XoHIw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
- 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/SqOs1DMhrb4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jF6vhUzolAk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;/div&gt;
@@ -163,6 +171,7 @@
 &lt;div id=&#34;conclusions&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Conclusions&lt;/h3&gt;
 &lt;p&gt;TODO&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
