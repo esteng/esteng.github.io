@@ -164,13 +164,14 @@
 &lt;div id=&#34;ux-evaluation&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;UX evaluation&lt;/h2&gt;
 &lt;p&gt;To go beyond our evaluations, we conducted a &lt;strong&gt;user experience evaluation&lt;/strong&gt; using a &lt;strong&gt;Likert scale&lt;/strong&gt; questionnaire. This format of post-hoc evaluation allows us to gain deeper insights into the usability of the product and its general impression on the subject after giving them some time to reflect. The questionnaire is available &lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSfmkVK9W8FfRwnmG3zhlREp0g39B3Zl27Wjh4ecI2MDOiK7xQ/viewform?usp=sf_link&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;div id=&#34;questionnaire-results&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Questionnaire results&lt;/h3&gt;
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;div id=&#34;ux-results&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;UX results&lt;/h3&gt;
+&lt;p&gt;The average score for questions was 4.6/5, with 5 being &amp;quot;strongly agree&amp;quot; and 1 being &amp;quot;strongly disagree.&amp;quot; All questions were positive, so we take this as a good sign that our product was easy to use. The following statements received ratings below 5/5: - &amp;quot;The assignment management interface was easy to find&amp;quot; - &amp;quot;It was clear how to send a reminder to students who hadn&#39;t completed the assignment&amp;quot; - &amp;quot;The function to create an assignment was easy to find&amp;quot; - &amp;quot;It was easy to scroll to a pinned message&amp;quot;&lt;/p&gt;
+&lt;p&gt;These represent directions for further improvements.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;conclusions&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Conclusions&lt;/h3&gt;
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;We have presented a number of features for developing Slack into a standalone platform for teaching courses remotely. We believe that our features touch on many of the issues that were observed in the CI portion. Specifically, we have opted to focus on creating and managing assignments and groups, which is integral to the teaching process, especially as remote classes tend to prefer assignments over exams. Some of the strengths of our approach include our high-fidelity prototypes, the attention to detail in our assignment creation interface especially with respect to creating an equitable learning environment for those learning from other timezones, and our multiple iterations of prototyping and evaluation. Limitations include increased reliance on a single platform, which may make classes more uniform and less flexible.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
