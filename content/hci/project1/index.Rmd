@@ -1,5 +1,24 @@
-# Project 1: Slack re-design
+---
+title: Slack For Instructors
+author: Ariel Bao, Cameron Franz, Elias Stengel-Eskin
+summary: Project 1 -- Slack For Instructors
+date: 2020-10-16
+math: true
+diagram: true
+categories:
+  - classwork 
+tags:
+  - classwork
+projects:
+  - none
+image:
+  placement: 3
+  caption: 
+featured: no
+---
 ### Ariel Bao, Cameron Franz, Elias Stengel-Eskin
+
+# Background 
 
 Due to the COVID-19 pandemic, many aspects of life including education have moved to a largely online setting. 
 This has created new challenges but also new opportunities for streamlining and improving educational experiences. 
@@ -11,47 +30,168 @@ Our product is designed for a modified course structure, which has been adjusted
 Students are expected to watch pre-recorded lectures on their own time, and there are mandatory 1-hour office-hour-style discussion periods once a week.
 Each week has two lectures. The course has 3 assignments and 2 group projects.
 
-## Persona 1: Instructor 
-TODO 
 
-## Contextual inquiry 
+# Contextual inquiry 
 
 ### Subject 
-The contextual inquiry was conducted with a student with TA-ing experience who has used Slack in the past, but not extensively. 
+The *contextual inquiry* was conducted with a student with TA-ing experience who has used Slack in the past, but not extensively. 
+We opted to use a contextual inquiry for our user research, as this best puts us in the shoes of someone using Slack for teaching while concomitantly allowing us to build a better persona of the instructor. 
 
 ### Intents 
 1. Create an assignment and share it with all students 
 {{% youtube IOaJJO_02zo %}}
 {{% youtube vChONkF07zM %}}
 
-The subject created a new channel for all assignments; this behaviour was unexpected as we expected him to create separate channels for each assignment. 
-The subject added all students which is the default, and posted a stub assignment. 
-
 2. Send each student their graded assignment with feedback 
-{{% youtube vChONkF07zM %}}
+{{% youtube hLidERXSoDY %}}
 {{% youtube lhRLNIUDgfo %}}
 
-The subject sent an individual message to each student with their grade and feedback. 
-The subject made one message and the copy-pasted it to each student.
-This wouldn't scale well to a larger class, and makes it easy to make mistakes (e.g. sending the wrong grade to a student, sending the wrong feedback). 
-
 3. Assign students to groups for the group project 
-{{% youtube %}}
+{{% youtube Z4GxzMarT2o %}}
 {{% youtube dgxGqNcylZY %}}
 
-Subject created a thread per group and added students manually. 
-It would probably be helpful to have a shortcut to easily group students into random or non-random groups and assign them to threads. 
-  
 4. Assign each group a topic
-
-   Subject first used message in thread to assign topic, then saw that threads can have topics, and used the thread topic feature to assign a topic to each group. 
-
-
-5. Create a discussion thread for the weekly office hour and send students a required reading for that week’s office hour 
-{{% youtube %}}
+{{% youtube bEljMZ2F018 %}}
 {{% youtube 6_hfccsCzlc %}}
 
-Subject successfully created a thread and added a required reading. 
-There is no way to enforce that everyone actually has to open or read the meeting. 
+5. Create a discussion thread for the weekly office hour and send students a required reading for that week’s office hour 
+{{% youtube i5NKk7XoHIw %}}
+{{% youtube SqOs1DMhrb4 %}}
 
+## Personas 
 
+Two main personas are Slack users in the use case of remote class instructions: instructors (professors and teaching assistants), and students.
+
+Though more and more schools and courses start to adopt Slack as a communication channel, many students are not well adapted to using it. Students generally express a preference for email over Slack for long-grown habits. From the students we interviewed, they have also complained about having to jump between different platforms (Blackboard, Slack, email, Gradescope, Messenger, etc.) to check grades, look for announcements, and communicate with teammates.
+
+Instructors sometimes also distribute information separately from different channels. Since there is no special Slack version designed for course purposes, some instructors also only use Slack for communication, and post documents on other platforms, which further worsens the instructor and student’s inefficiency on unintegrated information.
+
+After discussion, we decided that instructors’ decisions on the scope and frequency of using Slack for teaching will be the most important factor in deciding how much and how well-versed students use Slack. By targeting the instructor persona, we will enhance the convenience and efficiency of typical tasks instructors perform on Slack, incentive them to use Slack for more course activities, and thus also incentivizing students to use it more.
+
+### Persona: Instructor 
+Based on our CI and background knowledge, we propose the following persona for an instructor:
+The instructor has multiple responsibilities, of which teaching is only one. 
+Despite the changes associated with remote learning, the instructor endeavours to provide the best possible experience for their students. 
+Thus, efficiency is of paramount importance to the instructor; they are ready to devote time to their course, but want to minimize the amount of time spent on tedious non-teaching activities. 
+Furthermore, the instructor is cognizant of the different cirumstances under which students are learning this semester. 
+The instructor is familiar with Slack's interfaces and is computer-literate. 
+
+# Ideation and Analysis 
+
+## Channels were used for Groups and Assignments
+
+![Slack Image](SlackExample2.png)
+_A classroom slack environment with relevant areas circled_	
+
+We found that channels (circled in blue) were used for making groups and creating discussion around assignments. To create a channel, the instructor clicks the Add Channel button (green circle). A channel dedicated to sending assignments to students was relatively fast: the instructor simply creates a channel and has it automatically add everyone.
+Using channels for groups was more tedious. For each group, the instructor needed to click “Add Channel” and type the name of everyone in the group. This means that the instructor would need to **create their groups somewhere else** (like Excel) and then repeatedly perform copy and pasting or typing, even though all of the names are already in Slack.
+
+We believe that it should be easier to **automatically populate channels** with randomly assigned groups in a way that minimizes instructor effort while maximizing flexibility. 
+Furthermore, given the increased number of students who are learning remotely from all over the world, we believe that any changes should natively support grouping students by **timezone**.
+
+### Inefficient communication and personal progress management
+Direct messages were used for direct teacher-student communication, such as giving grades and feedback. 
+For each student the instructor would: click on that student, paste a message like “You got a 95%, my feedback is X”, edit that message, and then send the DM. Doing this for each student is obviously tedious, and it does beg a further question: does the instructor have their grades and feedback in some other document (like Excel) and is pasting them over? Or are they going to each student, grading their assignment, and sending messages as they go?
+In the Excel case it is a lot of copying and pasting to send a DM to every student, and being able to automatically send templated messages from a spreadsheet would be useful. In the grading-as-they-go case, keeping track of who has been graded would be tedious. In our first CI we did not get far enough into the details of how an instructor grades work to answer this question. Yet we can guess from platforms like Gradescope that instructors like to type out their grade and feedback once without having to later copy and paste into some other platform.
+
+We believe that if Slack is to be used for classroom interactions, there should be an easy-to-use interface for managing and updating coursework. 
+
+### Finding information involved a lot of browsing for students
+We also looked at the Slack classroom from the perspective of a student. In finding out what they need to do, we found that our volunteer student traveled broadly around the Slack classroom. They clicked on multiple channels (the bold ones that indicated unread messages) to look for any relevant new information. They clicked on the channel relevant to their assignment and looked for the original information from the instructor. In general we found that the student, who was using Slack for iOS, was swiping back and forth between the channel menu and the messages area often. They also had to scroll far up in the assignment info to find the pinned information from the instructor.
+
+In order to minimize the amount of time spent by students traveling between features, we propose adding shortcuts to the interface which allow students to rapidly jump past pinned information. 
+
+![Slack Diagram](SlackDiagram1.png)
+_Diagram of how the user performed the various actions during the contextual inquiries_
+
+# Prototypes and Testing 
+
+We developed our prototypes using the [figma](https://www.figma.com/) software, building off of Slack templates by  [figmacrush](https://www.figmacrush.com/slack-ui-template-figma/). They can be viewed in full [here](https://www.figma.com/proto/RmCAbe7ef4TNNY6CcvrjQA/Slack-for-instructors?node-id=71%3A5328&scaling=min-zoom). 
+
+## Initial Prototype Description
+
+### Assignment creation shortcut 
+![Feature showcase](featureShowcase.png)
+_Introducing users to new features is crucial. Here we have a popup that describes the feature, shows where it is, and provides an obvious button to click. Visibility is guaranteed by slightly graying out the rest of the screen.
+As analyzed previously, participants brought our the problem of tedious manual group creation and the need to rely on other products (eg Excel) for generating lists before transporting to Slack and manually sort students based on their locations, etc. This feature aggregates most group assignment considerations, visualizes final groups, and allows group creation with fewer clicks._ 
+
+![student list](studentList.png)
+_After clicking the button to create a team, the instructor is presented with this screen. Here the instructor can set their preferences for *automatic* group creation — no tedious typing required. Crucially the automatic grouping takes into account time zone, which is a factor that instructors have to consider. If the automatic grouping does not take into account a factor important to the instructor then the instructor will have to adjust the groups later. This can be done later *without* more typing._
+
+![time zones](timeZones.png)
+_Here the instructor can see the automatically created groups, and adjust them by dragging names around. Overflow is dealt with by “expand” buttons, though scrolling would also work_
+
+![congrats](congrats.png)
+_The nice animation played here is intended to make the user feel good about using the new feature, although we acknowledge that the actual experience of using the feature will be the main determiner of whether they use it again._
+
+### Team management dashboard
+![todo list](todoList.png)
+_This is a different feature, also accessible from the main slack sidebar. Here the instructor can find their schedule for things they need to do related to the groups and the assignments, along with the scheduled time and estimated duration based on manual input or estimation from past activities. Submission statistics are also shown for assignments. Ideally grading would also be possible within the interface somewhere, as having to download files or copy and paste is troublesome. But we decide not to do this for now because there is a significant preference and strong habit for existing platforms like Gradescope or Blackboard. Therefore we decided to improve Slack only based on its core functionality, communication. The assignment statistics, which drop down after clicking the little plus, also lead to the ability to schedule reminders for students._ 
+
+![scheduled meeting](scheduledMeeting.png)
+_Here the instructor can schedule a reminder about the assignment to be sent to students at a specific time. We separate date and time so that there’s not a single date picker switching between calendar and clock._
+
+### Scrolling to pinned messages 
+![scrolling0](scroll0.png)
+_Here we provide an interface for the student to quickly find information from their instructor. Clicking on the (i) in the top right will immediately scroll the student to the informational post from the instructor, and clicking the calendar icon will scroll the user back to the most recent messages._
+![scrolling1](scroll1.png)
+_Immediately we see the instructor’s pinned message. This works especially well as more messages are added and scrolling becomes difficult, and where there are multiple pinned messages, in which case there will be more than one (i) marks on the right_
+
+## Usability Evaluation 
+For each feature, we conducted **formative** usability tests with a different subject than was used in the CI.
+The subject for usability testing is an experienced teacher who currently teaches at the middle and high-school level, and is familiar with teaching in a remote-learning environment. 
+The goals of the first evaluation are to assess the usability of the prototypes with respect to the CI, and to identify any shortcomings to address in further rounds of prototyping. 
+The participant was told that she would be asked to perform a number of tasks on a new software, and that she should do her best and to think out loud. 
+After testing, the subject was debriefed. 
+
+### Managing assignments 
+{{% youtube PQ4E8ytYptc %}}
+
+### Creating groups 
+{{% youtube BJBonA0pb0A %}}
+
+### Scrolling to pinned messages 
+{{% youtube IUXRO_3EehQ %}}
+
+## Second-round Ideation and Prototyping
+In the first round of prototype testing, users took the longest time on the second feature (dashboard) and provided feedback that it is the least intuitive to use. They have commented that they preferred customized reminder messages since the content might be different, and easier management of grading events.
+This feature was added and a final round of **summative** testing was performed.
+
+![additional0](additional0.png)
+_On the dashboard, we have added two buttons to allow users to add grading activities to their to-do list with suggested times with one click (see lower red box)._
+![additional1](additional1.png)
+_Once clicked, the new event will be incorporated to their tasks, with suggested time lengths (based on similar past activities) and documents (can be downloaded by clicking the materials)._
+![additional2](additional2.png)
+_From the dashboard, if the instructor clicks the message icon and enter the page to schedule a reminder, they can now customize the message, time, and adjusts the suggested recipient list. After sending the reminder, the system provides feedback to tell them it is sent successfully._ 
+
+# Summative UX evaluation 
+We conducted a final summative evaluation using the same subject as the prototyping evaluation. 
+While this is not ideal, the pool of potential subjects is limited due to social distance regulations. 
+The user was encouraged to talk through tasks out loud, and told that they were not being evaluated but that the evaluation was of the software. 
+They were also expressly encouraged to point out problems. 
+The user was briefed on the purpose of the new product; we recorded their video footage and analyzed their reactions, and then debriefed them. 
+
+{{% youtube jF6vhUzolAk %}}
+_The user displayed a far greater facility with the tasks than the user recorded during the CI, who had more instruction._ 
+
+We additionally asked them to evaluate their trial and satisfaction with self-reported scores in Likert scales and post-trial interviews.
+In analysis, we used a range of metrics to measure the success of the product. In terms of efficiency, the user speed improved noticeably. In the video recording, we observed that user did not make any error or have difficulty in task completion for our prototypes. In the interview, the user expressed a positive impression of the features, and said they would prefer the new version over the existing ones as TAs.
+
+In addition to these observations, we conducted a **user experience evaluation** using a **Likert scale** questionnaire. 
+This format of post-hoc evaluation allows us to gain deeper insights into the usability of the product and its general impression on the subject after giving them some time to reflect. 
+The questionnaire is available [here](https://docs.google.com/forms/d/e/1FAIpQLSfmkVK9W8FfRwnmG3zhlREp0g39B3Zl27Wjh4ecI2MDOiK7xQ/viewform?usp=sf_link). 
+
+### Survey results
+The average score for questions was 4.6/5, with 5 being "strongly agree" and 1 being "strongly disagree." All questions were positive, so we take this as a good sign that our product was easy to use. The following statements received ratings below 5/5: 
+- "The assignment management interface was easy to find" 
+- "It was clear how to send a reminder to students who hadn't completed the assignment" 
+- "The function to create an assignment was easy to find" 
+- "It was easy to scroll to a pinned message" 
+
+These represent directions for further improvements. 
+
+# Conclusions 
+We have presented a number of features for developing Slack into a standalone platform for teaching courses remotely. 
+We believe that our features touch on many of the issues that were observed in the CI portion. Specifically, we have opted to focus on creating and managing assignments and groups, which is integral to the teaching process, especially as remote classes tend to prefer assignments over exams. 
+Some of the strengths of our approach include our high-fidelity prototypes, the attention to detail in our assignment creation interface especially with respect to creating an equitable learning environment for those learning from other timezones, and our multiple iterations of prototyping and evaluation. 
+Limitations include increased reliance on a single platform, which may make classes more uniform and less flexible. 

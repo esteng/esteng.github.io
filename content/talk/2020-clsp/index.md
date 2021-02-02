@@ -11,7 +11,7 @@ event_url: ""
 location: 
 math: true
 selected: true
-title: CLSP Seminar Talk: Universal Decompositional Semantic Parsing
+title: "CLSP Seminar Talk: Universal Decompositional Semantic Parsing"
 
   
 tags: [decomp,clsp,seminar]
