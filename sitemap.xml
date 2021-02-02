@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tag/clsp/</loc>
+    <lastmod>2020-11-20T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/2020-clsp/</loc>
+    <lastmod>2020-11-20T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/decomp/</loc>
+    <lastmod>2020-11-20T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-11-20T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/seminar/</loc>
+    <lastmod>2020-11-20T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-11-20T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2020-11-20T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url>
@@ -18,22 +53,12 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/hci/assignment2/</loc>
     <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/hci/</loc>
-    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,11 +73,6 @@
   </url>
   
   <url>
-    <loc>/talk/</loc>
-    <lastmod>2020-07-08T13:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/teaching/</loc>
     <lastmod>2020-07-08T13:00:00+00:00</lastmod>
   </url>
@@ -64,11 +84,6 @@
   
   <url>
     <loc>/tag/comp-ling/</loc>
-    <lastmod>2020-06-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/decomp/</loc>
     <lastmod>2020-06-24T00:00:00+00:00</lastmod>
   </url>
   
