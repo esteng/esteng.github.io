@@ -23,9 +23,10 @@ bio: I am a Ph.D. student working on NLP and Computational Linguistics at Johns 
 interests:
 - Computational Linguistics
 - Natural Language Processing
+- Cognitive Science
+- Artificial Intelligence
 - Philosophy of Language
 - Information Retrieval
-- Artificial Intelligence
 
 education:
   courses:
@@ -69,4 +70,10 @@ email: ""
 #- Visitors
 ---
 
-I am a third-year Ph.D. student at the Center for Language and Speech Processing supervised by Benjamin Van Durme, where I am working on broad questions in semantic parsing and modeling. My most recent line of work is on semantic parsing for the Universal Decompositional Semantics formalism. I'm also interested in applying ideas from the philosophy of language to NLP and in embodied and grounded language. Before starting my Ph.D., I received my B.A.&Sc. with First Class Honours in Cognitive Science from McGill University, focusing in computer science and linguistics. While at McGill, I worked as a research assistant at the Montreal Language Modeling Lab (MLML), now MCQLL. I wrote my honours thesis (supervised by Timothy O'Donnell) on a variational inference algorithm for a model of language acquisition.
+I am a third-year Ph.D. student at the Center for Language and Speech Processing supervised by Benjamin Van Durme, where I am generously supported by an NSF Graduate Research Fellowship. 
+My work focuses mostly on transforming text into representations of its meaning, whether via a semantic parse or through action in embodied agents. 
+Most recently, I've worked on semantic parsing for the Universal Decompositional Semantics formalism. 
+I'm also interested in applying ideas from cognitive science to NLP. 
+Before starting my Ph.D., I received my B.A.&Sc. with First Class Honours in Cognitive Science from McGill University, focusing in computer science and linguistics. 
+While at McGill, I worked as a research assistant at the Montreal Language Modeling Lab (MLML), now MCQLL. 
+I wrote my honours thesis (supervised by Timothy O'Donnell) on a variational inference algorithm for a model of language acquisition.
