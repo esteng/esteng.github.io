@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="While aggregate performance metrics can generate valuable insights at a large scale, their dominance means more complex and nuanced language phenomena, such as vagueness, may be overlooked. Focusing on vague terms (e.g. **sunny**, **cloudy**, **young**, etc.) we inspect the behavior of visually grounded and text-only models, finding systematic divergences from human judgments even when a model&#39;s overall performance is high. To help explain this disparity, we identify two assumptions made by the datasets and models examined and, guided by the philosophy of vagueness, isolate cases where they do not hold.">
+  <meta name="description" content="While numerous attempts have been made to jointly parse syntax and semantics, high performance in one domain typically comes at the price of performance in the other. This trade-off contradicts the large body of research focusing on the rich interactions at the syntax-semantics interface. We explore multiple model architectures which allow us to exploit the rich syntactic and semantic annotations contained in the Universal Decompositional Semantics (UDS) dataset, jointly parsing Universal Dependencies and UDS to obtain state-of-the-art results in both formalisms. We analyze the behaviour of a joint model of syntax and semantics, finding patterns supported by linguistic theory at the syntax-semantics interface. We then investigate to what degree joint modeling generalizes to a multilingual setting, where we find similar trends across 8 languages.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/2021-vagueness-scil/">
+  <link rel="alternate" hreflang="en-us" href="/publication/2021-decomp-joint/">
 
   
 
@@ -220,7 +220,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/publication/2021-vagueness-scil/">
+  <link rel="canonical" href="/publication/2021-decomp-joint/">
 
   
   
@@ -239,15 +239,15 @@
   <meta property="twitter:creator" content="@EliasEskin">
   
   <meta property="og:site_name" content="Elias Stengel-Eskin">
-  <meta property="og:url" content="/publication/2021-vagueness-scil/">
-  <meta property="og:title" content="Human-Model Divergence in the Handling of Vagueness | Elias Stengel-Eskin">
-  <meta property="og:description" content="While aggregate performance metrics can generate valuable insights at a large scale, their dominance means more complex and nuanced language phenomena, such as vagueness, may be overlooked. Focusing on vague terms (e.g. **sunny**, **cloudy**, **young**, etc.) we inspect the behavior of visually grounded and text-only models, finding systematic divergences from human judgments even when a model&#39;s overall performance is high. To help explain this disparity, we identify two assumptions made by the datasets and models examined and, guided by the philosophy of vagueness, isolate cases where they do not hold."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="/publication/2021-decomp-joint/">
+  <meta property="og:title" content="Joint Universal Syntactic and Semantic Parsing | Elias Stengel-Eskin">
+  <meta property="og:description" content="While numerous attempts have been made to jointly parse syntax and semantics, high performance in one domain typically comes at the price of performance in the other. This trade-off contradicts the large body of research focusing on the rich interactions at the syntax-semantics interface. We explore multiple model architectures which allow us to exploit the rich syntactic and semantic annotations contained in the Universal Decompositional Semantics (UDS) dataset, jointly parsing Universal Dependencies and UDS to obtain state-of-the-art results in both formalisms. We analyze the behaviour of a joint model of syntax and semantics, finding patterns supported by linguistic theory at the syntax-semantics interface. We then investigate to what degree joint modeling generalizes to a multilingual setting, where we find similar trends across 8 languages."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2021-02-17T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2021-04-12T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2021-02-17T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-04-12T00:00:00&#43;00:00">
   
 
   
@@ -269,12 +269,12 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/publication/2021-vagueness-scil/"
+    "@id": "/publication/2021-decomp-joint/"
   },
-  "headline": "Human-Model Divergence in the Handling of Vagueness",
+  "headline": "Joint Universal Syntactic and Semantic Parsing",
   
-  "datePublished": "2021-02-17T00:00:00Z",
-  "dateModified": "2021-02-17T00:00:00Z",
+  "datePublished": "2021-04-12T00:00:00Z",
+  "dateModified": "2021-04-12T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -289,7 +289,7 @@
       "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "While aggregate performance metrics can generate valuable insights at a large scale, their dominance means more complex and nuanced language phenomena, such as vagueness, may be overlooked. Focusing on vague terms (e.g. **sunny**, **cloudy**, **young**, etc.) we inspect the behavior of visually grounded and text-only models, finding systematic divergences from human judgments even when a model's overall performance is high. To help explain this disparity, we identify two assumptions made by the datasets and models examined and, guided by the philosophy of vagueness, isolate cases where they do not hold."
+  "description": "While numerous attempts have been made to jointly parse syntax and semantics, high performance in one domain typically comes at the price of performance in the other. This trade-off contradicts the large body of research focusing on the rich interactions at the syntax-semantics interface. We explore multiple model architectures which allow us to exploit the rich syntactic and semantic annotations contained in the Universal Decompositional Semantics (UDS) dataset, jointly parsing Universal Dependencies and UDS to obtain state-of-the-art results in both formalisms. We analyze the behaviour of a joint model of syntax and semantics, finding patterns supported by linguistic theory at the syntax-semantics interface. We then investigate to what degree joint modeling generalizes to a multilingual setting, where we find similar trends across 8 languages."
 }
 </script>
 
@@ -307,7 +307,7 @@
 
 
 
-  <title>Human-Model Divergence in the Handling of Vagueness | Elias Stengel-Eskin</title>
+  <title>Joint Universal Syntactic and Semantic Parsing | Elias Stengel-Eskin</title>
 
 </head>
 
@@ -611,7 +611,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Human-Model Divergence in the Handling of Vagueness</h1>
+  <h1>Joint Universal Syntactic and Semantic Parsing</h1>
 
   
 
@@ -629,7 +629,7 @@
     
 
   
-  <span >Elias Stengel-Eskin</span>, <span >Jimena Guallar-Blasco</span>, <span >Benjamin Van Durme</span>
+  <span >Elias Stengel-Eskin</span>, <span >Kenton Murray</span>, <span >Sheng Zhang</span>, <span >Aaron Steven White</span>, <span >Benjamin Van Durme</span>
   </div>
   
   
@@ -640,7 +640,7 @@
     
       
     
-    February 2021
+    April 2021
   </span>
   
 
@@ -688,7 +688,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://scholarworks.umass.edu/scil/vol4/iss1/43/" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/2104.05696" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -698,17 +698,13 @@
 
 
 
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="/talk/2021-scil/vagueness-scil-long.pdf" target="_blank" rel="noopener">
-  Slides
+<a class="btn btn-outline-primary my-1 mr-1" href="http://decomp.io" target="_blank" rel="noopener">
+  Project
 </a>
+
+
+
+
 
 
 
@@ -728,9 +724,28 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">While aggregate performance metrics can generate valuable insights at a large scale, their dominance means more complex and nuanced language phenomena, such as vagueness, may be overlooked. Focusing on vague terms (e.g. <strong>sunny</strong>, <strong>cloudy</strong>, <strong>young</strong>, etc.) we inspect the behavior of visually grounded and text-only models, finding systematic divergences from human judgments even when a model&rsquo;s overall performance is high. To help explain this disparity, we identify two assumptions made by the datasets and models examined and, guided by the philosophy of vagueness, isolate cases where they do not hold.</p>
+    <p class="pub-abstract">While numerous attempts have been made to jointly parse syntax and semantics, high performance in one domain typically comes at the price of performance in the other. This trade-off contradicts the large body of research focusing on the rich interactions at the syntax-semantics interface. We explore multiple model architectures which allow us to exploit the rich syntactic and semantic annotations contained in the Universal Decompositional Semantics (UDS) dataset, jointly parsing Universal Dependencies and UDS to obtain state-of-the-art results in both formalisms. We analyze the behaviour of a joint model of syntax and semantics, finding patterns supported by linguistic theory at the syntax-semantics interface. We then investigate to what degree joint modeling generalizes to a multilingual setting, where we find similar trends across 8 languages.</p>
     
 
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
     
 
     
@@ -739,7 +754,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics</div>
+          <div class="col-12 col-md-9">Transactions of the Association for Computational Linguistics</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -771,7 +786,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/publication/2021-vagueness-scil/&amp;text=Human-Model%20Divergence%20in%20the%20Handling%20of%20Vagueness" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/publication/2021-decomp-joint/&amp;text=Joint%20Universal%20Syntactic%20and%20Semantic%20Parsing" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -784,7 +799,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/publication/2021-vagueness-scil/&amp;t=Human-Model%20Divergence%20in%20the%20Handling%20of%20Vagueness" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/publication/2021-decomp-joint/&amp;t=Joint%20Universal%20Syntactic%20and%20Semantic%20Parsing" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -797,7 +812,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Human-Model%20Divergence%20in%20the%20Handling%20of%20Vagueness&amp;body=/publication/2021-vagueness-scil/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Joint%20Universal%20Syntactic%20and%20Semantic%20Parsing&amp;body=/publication/2021-decomp-joint/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -810,7 +825,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/publication/2021-vagueness-scil/&amp;title=Human-Model%20Divergence%20in%20the%20Handling%20of%20Vagueness" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/publication/2021-decomp-joint/&amp;title=Joint%20Universal%20Syntactic%20and%20Semantic%20Parsing" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -823,7 +838,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Human-Model%20Divergence%20in%20the%20Handling%20of%20Vagueness%20/publication/2021-vagueness-scil/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Joint%20Universal%20Syntactic%20and%20Semantic%20Parsing%20/publication/2021-decomp-joint/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -836,7 +851,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/publication/2021-vagueness-scil/&amp;title=Human-Model%20Divergence%20in%20the%20Handling%20of%20Vagueness" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/publication/2021-decomp-joint/&amp;title=Joint%20Universal%20Syntactic%20and%20Semantic%20Parsing" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -889,6 +904,28 @@
 
 
   
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
 
 
 
@@ -902,6 +939,17 @@
 
 
   
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/2020-decomp-model/">Universal Decompositional Semantic Parsing</a></li>
+      
+      <li><a href="/publication/2020-decomp-dataset/">The Universal Decompositional Semantics Dataset and Decomp Toolkit</a></li>
+      
+    </ul>
+  </div>
   
 
 
