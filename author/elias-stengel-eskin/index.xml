@@ -5,12 +5,24 @@
     <link>/author/elias-stengel-eskin/</link>
       <atom:link href="/author/elias-stengel-eskin/index.xml" rel="self" type="application/rss+xml" />
     <description>Elias Stengel-Eskin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>/author/elias-stengel-eskin/avatar_hu8d8902a169ae2bf6bde6d5cb054f5125_275019_270x270_fill_lanczos_center_2.png</url>
       <title>Elias Stengel-Eskin</title>
       <link>/author/elias-stengel-eskin/</link>
     </image>
+    
+  </channel>
+</rss>
+    </image>
+    
+    <item>
+      <title>Guiding Multi-Step Rearrangement Tasks with Natural Language Instructions</title>
+      <link>/publication/2021-robots-corl/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021-robots-corl/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Iterative Paraphrastic Augmentation with Discriminative Span Alignment</title>
