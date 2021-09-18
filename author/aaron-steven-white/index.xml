@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aaron Steven White | Elias Stengel-Eskin</title>
+    <link>/author/aaron-steven-white/</link>
+      <atom:link href="/author/aaron-steven-white/index.xml" rel="self" type="application/rss+xml" />
+    <description>Aaron Steven White</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Aaron Steven White</title>
+      <link>/author/aaron-steven-white/</link>
+    </image>
+    
+    <item>
+      <title>Joint Universal Syntactic and Semantic Parsing</title>
+      <link>/publication/2021-decomp-joint/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021-decomp-joint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Universal Decompositional Semantic Parsing</title>
+      <link>/publication/2020-decomp-model/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-decomp-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Universal Decompositional Semantics Dataset and Decomp Toolkit</title>
+      <link>/publication/2020-decomp-dataset/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-decomp-dataset/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

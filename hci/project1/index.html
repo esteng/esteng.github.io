@@ -1,0 +1,1259 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Elias Stengel-Eskin">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Project 1 -- Slack For Instructors">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/hci/project1/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/hci/project1/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@EliasEskin">
+  <meta property="twitter:creator" content="@EliasEskin">
+  
+  <meta property="og:site_name" content="Elias Stengel-Eskin">
+  <meta property="og:url" content="/hci/project1/">
+  <meta property="og:title" content="Slack For Instructors | Elias Stengel-Eskin">
+  <meta property="og:description" content="Project 1 -- Slack For Instructors"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-10-16T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-10-16T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Slack For Instructors | Elias Stengel-Eskin</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Elias Stengel-Eskin</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Elias Stengel-Eskin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Slack For Instructors</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 16, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/classwork/">classwork</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<div id="ariel-bao-cameron-franz-elias-stengel-eskin" class="section level3">
+<h3>Ariel Bao, Cameron Franz, Elias Stengel-Eskin</h3>
+</div>
+<div id="background" class="section level1">
+<h1>Background</h1>
+<p>Due to the COVID-19 pandemic, many aspects of life including education have moved to a largely online setting. This has created new challenges but also new opportunities for streamlining and improving educational experiences. The Slack platform is incredibly popular in modern office spaces and offers rapid and efficient communication, we believe that with some minor changes, it could provide and integrated educational environment that enriches student-instructor interactions. In particular, the rapid feedback available through Slack might provide a suitable proxy for face-to-face communication while accommodating individuals facing the myriad additional challenges of teaching and studying from home (e.g. different timezones, unreliable internet, personal responsiblities, etc.).</p>
+<p>In this project, we focus on the perspective of the instructor, as in a course the instructor typically plays a more active role with the students largely acting as consumers. Our product is designed for a modified course structure, which has been adjusted for remote learning. Students are expected to watch pre-recorded lectures on their own time, and there are mandatory 1-hour office-hour-style discussion periods once a week. Each week has two lectures. The course has 3 assignments and 2 group projects.</p>
+</div>
+<div id="contextual-inquiry" class="section level1">
+<h1>Contextual inquiry</h1>
+<div id="subject" class="section level3">
+<h3>Subject</h3>
+<p>The <em>contextual inquiry</em> was conducted with a student with TA-ing experience who has used Slack in the past, but not extensively. We opted to use a contextual inquiry for our user research, as this best puts us in the shoes of someone using Slack for teaching while concomitantly allowing us to build a better persona of the instructor.</p>
+</div>
+<div id="intents" class="section level3">
+<h3>Intents</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create an assignment and share it with all students 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/IOaJJO_02zo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+ 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/vChONkF07zM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p></li>
+<li><p>Send each student their graded assignment with feedback 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/hLidERXSoDY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+ 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/lhRLNIUDgfo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p></li>
+<li><p>Assign students to groups for the group project 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Z4GxzMarT2o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+ 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/dgxGqNcylZY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p></li>
+<li><p>Assign each group a topic 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/bEljMZ2F018" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+ 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/6_hfccsCzlc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p></li>
+<li><p>Create a discussion thread for the weekly office hour and send students a required reading for that week’s office hour 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/i5NKk7XoHIw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+ 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/SqOs1DMhrb4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p></li>
+</ol>
+</div>
+<div id="personas" class="section level2">
+<h2>Personas</h2>
+<p>Two main personas are Slack users in the use case of remote class instructions: instructors (professors and teaching assistants), and students.</p>
+<p>Though more and more schools and courses start to adopt Slack as a communication channel, many students are not well adapted to using it. Students generally express a preference for email over Slack for long-grown habits. From the students we interviewed, they have also complained about having to jump between different platforms (Blackboard, Slack, email, Gradescope, Messenger, etc.) to check grades, look for announcements, and communicate with teammates.</p>
+<p>Instructors sometimes also distribute information separately from different channels. Since there is no special Slack version designed for course purposes, some instructors also only use Slack for communication, and post documents on other platforms, which further worsens the instructor and student’s inefficiency on unintegrated information.</p>
+<p>After discussion, we decided that instructors’ decisions on the scope and frequency of using Slack for teaching will be the most important factor in deciding how much and how well-versed students use Slack. By targeting the instructor persona, we will enhance the convenience and efficiency of typical tasks instructors perform on Slack, incentive them to use Slack for more course activities, and thus also incentivizing students to use it more.</p>
+<div id="persona-instructor" class="section level3">
+<h3>Persona: Instructor</h3>
+<p>Based on our CI and background knowledge, we propose the following persona for an instructor: The instructor has multiple responsibilities, of which teaching is only one. Despite the changes associated with remote learning, the instructor endeavours to provide the best possible experience for their students. Thus, efficiency is of paramount importance to the instructor; they are ready to devote time to their course, but want to minimize the amount of time spent on tedious non-teaching activities. Furthermore, the instructor is cognizant of the different cirumstances under which students are learning this semester. The instructor is familiar with Slack's interfaces and is computer-literate.</p>
+</div>
+</div>
+</div>
+<div id="ideation-and-analysis" class="section level1">
+<h1>Ideation and Analysis</h1>
+<div id="channels-were-used-for-groups-and-assignments" class="section level2">
+<h2>Channels were used for Groups and Assignments</h2>
+<p><img src="SlackExample2.png" alt="Slack Image" /> <em>A classroom slack environment with relevant areas circled</em></p>
+<p>We found that channels (circled in blue) were used for making groups and creating discussion around assignments. To create a channel, the instructor clicks the Add Channel button (green circle). A channel dedicated to sending assignments to students was relatively fast: the instructor simply creates a channel and has it automatically add everyone. Using channels for groups was more tedious. For each group, the instructor needed to click “Add Channel” and type the name of everyone in the group. This means that the instructor would need to <strong>create their groups somewhere else</strong> (like Excel) and then repeatedly perform copy and pasting or typing, even though all of the names are already in Slack.</p>
+<p>We believe that it should be easier to <strong>automatically populate channels</strong> with randomly assigned groups in a way that minimizes instructor effort while maximizing flexibility. Furthermore, given the increased number of students who are learning remotely from all over the world, we believe that any changes should natively support grouping students by <strong>timezone</strong>.</p>
+<div id="inefficient-communication-and-personal-progress-management" class="section level3">
+<h3>Inefficient communication and personal progress management</h3>
+<p>Direct messages were used for direct teacher-student communication, such as giving grades and feedback. For each student the instructor would: click on that student, paste a message like “You got a 95%, my feedback is X”, edit that message, and then send the DM. Doing this for each student is obviously tedious, and it does beg a further question: does the instructor have their grades and feedback in some other document (like Excel) and is pasting them over? Or are they going to each student, grading their assignment, and sending messages as they go? In the Excel case it is a lot of copying and pasting to send a DM to every student, and being able to automatically send templated messages from a spreadsheet would be useful. In the grading-as-they-go case, keeping track of who has been graded would be tedious. In our first CI we did not get far enough into the details of how an instructor grades work to answer this question. Yet we can guess from platforms like Gradescope that instructors like to type out their grade and feedback once without having to later copy and paste into some other platform.</p>
+<p>We believe that if Slack is to be used for classroom interactions, there should be an easy-to-use interface for managing and updating coursework.</p>
+</div>
+<div id="finding-information-involved-a-lot-of-browsing-for-students" class="section level3">
+<h3>Finding information involved a lot of browsing for students</h3>
+<p>We also looked at the Slack classroom from the perspective of a student. In finding out what they need to do, we found that our volunteer student traveled broadly around the Slack classroom. They clicked on multiple channels (the bold ones that indicated unread messages) to look for any relevant new information. They clicked on the channel relevant to their assignment and looked for the original information from the instructor. In general we found that the student, who was using Slack for iOS, was swiping back and forth between the channel menu and the messages area often. They also had to scroll far up in the assignment info to find the pinned information from the instructor.</p>
+<p>In order to minimize the amount of time spent by students traveling between features, we propose adding shortcuts to the interface which allow students to rapidly jump past pinned information.</p>
+<p><img src="SlackDiagram1.png" alt="Slack Diagram" /> <em>Diagram of how the user performed the various actions during the contextual inquiries</em></p>
+</div>
+</div>
+</div>
+<div id="prototypes-and-testing" class="section level1">
+<h1>Prototypes and Testing</h1>
+<p>We developed our prototypes using the <a href="https://www.figma.com/">figma</a> software, building off of Slack templates by <a href="https://www.figmacrush.com/slack-ui-template-figma/">figmacrush</a>. They can be viewed in full <a href="https://www.figma.com/proto/RmCAbe7ef4TNNY6CcvrjQA/Slack-for-instructors?node-id=71%3A5328&amp;scaling=min-zoom">here</a>.</p>
+<div id="initial-prototype-description" class="section level2">
+<h2>Initial Prototype Description</h2>
+<div id="assignment-creation-shortcut" class="section level3">
+<h3>Assignment creation shortcut</h3>
+<p><img src="featureShowcase.png" alt="Feature showcase" /> <em>Introducing users to new features is crucial. Here we have a popup that describes the feature, shows where it is, and provides an obvious button to click. Visibility is guaranteed by slightly graying out the rest of the screen. As analyzed previously, participants brought our the problem of tedious manual group creation and the need to rely on other products (eg Excel) for generating lists before transporting to Slack and manually sort students based on their locations, etc. This feature aggregates most group assignment considerations, visualizes final groups, and allows group creation with fewer clicks.</em></p>
+<p><img src="studentList.png" alt="student list" /> <em>After clicking the button to create a team, the instructor is presented with this screen. Here the instructor can set their preferences for <em>automatic</em> group creation — no tedious typing required. Crucially the automatic grouping takes into account time zone, which is a factor that instructors have to consider. If the automatic grouping does not take into account a factor important to the instructor then the instructor will have to adjust the groups later. This can be done later <em>without</em> more typing.</em></p>
+<p><img src="timeZones.png" alt="time zones" /> <em>Here the instructor can see the automatically created groups, and adjust them by dragging names around. Overflow is dealt with by “expand” buttons, though scrolling would also work</em></p>
+<p><img src="congrats.png" alt="congrats" /> <em>The nice animation played here is intended to make the user feel good about using the new feature, although we acknowledge that the actual experience of using the feature will be the main determiner of whether they use it again.</em></p>
+</div>
+<div id="team-management-dashboard" class="section level3">
+<h3>Team management dashboard</h3>
+<p><img src="todoList.png" alt="todo list" /> <em>This is a different feature, also accessible from the main slack sidebar. Here the instructor can find their schedule for things they need to do related to the groups and the assignments, along with the scheduled time and estimated duration based on manual input or estimation from past activities. Submission statistics are also shown for assignments. Ideally grading would also be possible within the interface somewhere, as having to download files or copy and paste is troublesome. But we decide not to do this for now because there is a significant preference and strong habit for existing platforms like Gradescope or Blackboard. Therefore we decided to improve Slack only based on its core functionality, communication. The assignment statistics, which drop down after clicking the little plus, also lead to the ability to schedule reminders for students.</em></p>
+<p><img src="scheduledMeeting.png" alt="scheduled meeting" /> <em>Here the instructor can schedule a reminder about the assignment to be sent to students at a specific time. We separate date and time so that there’s not a single date picker switching between calendar and clock.</em></p>
+</div>
+<div id="scrolling-to-pinned-messages" class="section level3">
+<h3>Scrolling to pinned messages</h3>
+<p><img src="scroll0.png" alt="scrolling0" /> <em>Here we provide an interface for the student to quickly find information from their instructor. Clicking on the (i) in the top right will immediately scroll the student to the informational post from the instructor, and clicking the calendar icon will scroll the user back to the most recent messages.</em> <img src="scroll1.png" alt="scrolling1" /> <em>Immediately we see the instructor’s pinned message. This works especially well as more messages are added and scrolling becomes difficult, and where there are multiple pinned messages, in which case there will be more than one (i) marks on the right</em></p>
+</div>
+</div>
+<div id="usability-evaluation" class="section level2">
+<h2>Usability Evaluation</h2>
+<p>For each feature, we conducted <strong>formative</strong> usability tests with a different subject than was used in the CI. The subject for usability testing is an experienced teacher who currently teaches at the middle and high-school level, and is familiar with teaching in a remote-learning environment. The goals of the first evaluation are to assess the usability of the prototypes with respect to the CI, and to identify any shortcomings to address in further rounds of prototyping. The participant was told that she would be asked to perform a number of tasks on a new software, and that she should do her best and to think out loud. After testing, the subject was debriefed.</p>
+<div id="managing-assignments" class="section level3">
+<h3>Managing assignments</h3>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/PQ4E8ytYptc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+</div>
+<div id="creating-groups" class="section level3">
+<h3>Creating groups</h3>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/BJBonA0pb0A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+</div>
+<div id="scrolling-to-pinned-messages-1" class="section level3">
+<h3>Scrolling to pinned messages</h3>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/IUXRO_3EehQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+</div>
+</div>
+<div id="second-round-ideation-and-prototyping" class="section level2">
+<h2>Second-round Ideation and Prototyping</h2>
+<p>In the first round of prototype testing, users took the longest time on the second feature (dashboard) and provided feedback that it is the least intuitive to use. They have commented that they preferred customized reminder messages since the content might be different, and easier management of grading events. This feature was added and a final round of <strong>summative</strong> testing was performed.</p>
+<p><img src="additional0.png" alt="additional0" /> <em>On the dashboard, we have added two buttons to allow users to add grading activities to their to-do list with suggested times with one click (see lower red box).</em> <img src="additional1.png" alt="additional1" /> <em>Once clicked, the new event will be incorporated to their tasks, with suggested time lengths (based on similar past activities) and documents (can be downloaded by clicking the materials).</em> <img src="additional2.png" alt="additional2" /> <em>From the dashboard, if the instructor clicks the message icon and enter the page to schedule a reminder, they can now customize the message, time, and adjusts the suggested recipient list. After sending the reminder, the system provides feedback to tell them it is sent successfully.</em></p>
+</div>
+</div>
+<div id="summative-ux-evaluation" class="section level1">
+<h1>Summative UX evaluation</h1>
+<p>We conducted a final summative evaluation using the same subject as the prototyping evaluation. While this is not ideal, the pool of potential subjects is limited due to social distance regulations. The user was encouraged to talk through tasks out loud, and told that they were not being evaluated but that the evaluation was of the software. They were also expressly encouraged to point out problems. The user was briefed on the purpose of the new product; we recorded their video footage and analyzed their reactions, and then debriefed them.</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/jF6vhUzolAk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+ <em>The user displayed a far greater facility with the tasks than the user recorded during the CI, who had more instruction.</em></p>
+<p>We additionally asked them to evaluate their trial and satisfaction with self-reported scores in Likert scales and post-trial interviews. In analysis, we used a range of metrics to measure the success of the product. In terms of efficiency, the user speed improved noticeably. In the video recording, we observed that user did not make any error or have difficulty in task completion for our prototypes. In the interview, the user expressed a positive impression of the features, and said they would prefer the new version over the existing ones as TAs.</p>
+<p>In addition to these observations, we conducted a <strong>user experience evaluation</strong> using a <strong>Likert scale</strong> questionnaire. This format of post-hoc evaluation allows us to gain deeper insights into the usability of the product and its general impression on the subject after giving them some time to reflect. The questionnaire is available <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmkVK9W8FfRwnmG3zhlREp0g39B3Zl27Wjh4ecI2MDOiK7xQ/viewform?usp=sf_link">here</a>.</p>
+<div id="survey-results" class="section level3">
+<h3>Survey results</h3>
+<p>The average score for questions was 4.6/5, with 5 being &quot;strongly agree&quot; and 1 being &quot;strongly disagree.&quot; All questions were positive, so we take this as a good sign that our product was easy to use. The following statements received ratings below 5/5: - &quot;The assignment management interface was easy to find&quot; - &quot;It was clear how to send a reminder to students who hadn't completed the assignment&quot; - &quot;The function to create an assignment was easy to find&quot; - &quot;It was easy to scroll to a pinned message&quot;</p>
+<p>These represent directions for further improvements.</p>
+</div>
+</div>
+<div id="conclusions" class="section level1">
+<h1>Conclusions</h1>
+<p>We have presented a number of features for developing Slack into a standalone platform for teaching courses remotely. We believe that our features touch on many of the issues that were observed in the CI portion. Specifically, we have opted to focus on creating and managing assignments and groups, which is integral to the teaching process, especially as remote classes tend to prefer assignments over exams. Some of the strengths of our approach include our high-fidelity prototypes, the attention to detail in our assignment creation interface especially with respect to creating an equitable learning environment for those learning from other timezones, and our multiple iterations of prototyping and evaluation. Limitations include increased reliance on a single platform, which may make classes more uniform and less flexible.</p>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/classwork/">classwork</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/hci/project1/&amp;text=Slack%20For%20Instructors" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/hci/project1/&amp;t=Slack%20For%20Instructors" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Slack%20For%20Instructors&amp;body=/hci/project1/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/hci/project1/&amp;title=Slack%20For%20Instructors" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Slack%20For%20Instructors%20/hci/project1/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/hci/project1/&amp;title=Slack%20For%20Instructors" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/elias-stengel-eskin/avatar_hu8d8902a169ae2bf6bde6d5cb054f5125_275019_270x270_fill_lanczos_center_2.png" alt="Elias Stengel-Eskin">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/">Elias Stengel-Eskin</a></h5>
+        <h6 class="card-subtitle">PhD Student</h6>
+        <p class="card-text">I am a Ph.D. student working on NLP and Computational Linguistics at Johns Hopkins University.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/EliasEskin" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=gr_ZVSQAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/esteng" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
