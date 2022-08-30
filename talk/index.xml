@@ -5,12 +5,28 @@
     <link>/talk/</link>
       <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Talks and Presentations</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 20 Nov 2020 12:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Talks and Presentations</title>
       <link>/talk/</link>
     </image>
+    
+    <item>
+      <title>(Invited Talk): Joint Universal Syntactic and Semantic Parsing</title>
+      <link>/talk/2022-cornell/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>/talk/2022-cornell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Human-Model Divergence in the Handling of Vagueness</title>
+      <link>/talk/2021-scil/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/talk/2021-scil/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CLSP Seminar Talk: Universal Decompositional Semantic Parsing</title>

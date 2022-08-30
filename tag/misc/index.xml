@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>misc | Elias Stengel-Eskin</title>
+    <link>/tag/misc/</link>
+      <atom:link href="/tag/misc/index.xml" rel="self" type="application/rss+xml" />
+    <description>misc</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>misc</title>
+      <link>/tag/misc/</link>
+    </image>
+    
+    <item>
+      <title>Annotator Instructions</title>
+      <link>/misc/uncertainty/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>/misc/uncertainty/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;table-of-contents&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#about-the-interface&#34;&gt;About the interface&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#description-of-categories&#34;&gt;Description of Categories&lt;/a&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#low-quality-image&#34;&gt;Low Quality Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#invalid-question-or-spam-answer&#34;&gt;Invalid Question/Spam Answer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#difficult-or-time-consuming&#34;&gt;Difficult/Time Consuming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#synonyms-or-hypernyms&#34;&gt;Synonyms/Hypernyms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#answer-not-present-or-guessing&#34;&gt;Answer Not Present/Guessing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ambiguous&#34;&gt;Ambiguous&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#choice-of-many&#34;&gt;Choice of Many&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#disagreements-of-meaning&#34;&gt;Disagreements of Meaning&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;For the follow question about the image, the answers provided may differ. Think of each answer as coming from a different person. Some people might disagree about the answers to the question.&lt;/p&gt;
+&lt;p&gt;You will see an image and a question about the image, along with a set of responses from different people. All the responses differ (at least superficially). In some cases, the difference is just a matter of different spellings of the same word or concept. However, in other cases, the disagreement is more pronounced (e.g. half of the annotators said “yes”, the other half said “no”).
+Below the image and question, there is a set of labels that identify reasons why annotators may have disagreed. &lt;strong&gt;Please note that you’re not being asked to answer the question itself, or to decide which answer was correct&lt;/strong&gt;. Instead, we would like you to try to infer the reason &lt;strong&gt;why&lt;/strong&gt; people disagreed.&lt;/p&gt;
+&lt;p&gt;In this document, descriptions and examples are given for each of these labels.
+&lt;strong&gt;Please label with image-question-answer set with the labels, or, if none apply, select “Other” and provide a brief explanation in the text box.&lt;/strong&gt;&lt;/p&gt;
+&lt;div id=&#34;about-the-interface&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;About the interface&lt;/h3&gt;
+&lt;p&gt;The interface shows the image on the top left, the question and answers on the top right, and the choices on the bottom.
+There is an interface on the right side of the image which allows you to zoom in on the image if needed (you are unlikely to need this).
+Some choices trigger follow-up questions. These will appear to the right of the existing choices.
+With a long image, the choices may be at the bottom of the screen, initially out of view. Please make sure to scroll down to look at all the options before annotating the example.
+Each choice has a superscript digit or letter next to it; by pressing that key on your keyboard, you can toggle the choice on or off. Pressing the Control + Enter key combo will submit the task. These shortcuts can help speed up the task.
+Note that for a given example, multiple choices can be selected, as in some cases examples will span multiple labels.
+&lt;strong&gt;Please try to label each example with as few labels as possible.&lt;/strong&gt; Ideally, each of the examples should receive only one label. We have included the option to annotate with multiple labels, but please use this feature sparingly.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;description-of-categories&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Description of Categories&lt;/h2&gt;
+&lt;div id=&#34;low-quality-image&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Low Quality Image&lt;/h3&gt;
+&lt;p&gt;Some images are low quality: for example, they may be blurry or dark. This can lead to annotator disagreement, since the annotators might see the image differently.&lt;/p&gt;
+&lt;div id=&#34;example&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: What are the girls holding?&lt;/li&gt;
+&lt;li&gt;Answers: “board”, “donut”, “laptop”, “unknown”, “tablet”, “keyboard”, “computer”, “laptop computer”, “laptop”, “laptop”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000444945.jpg&#34; alt=&#34;first image&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;invalid-question-or-spam-answer&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Invalid Question or Spam answer&lt;/h3&gt;
+&lt;p&gt;This category encompasses two possibilities: invalid questions and spam answers.
+Both the questions and answers were generated by annotators, who sometimes produce nonsense.
+Some questions are unrelated to the image or generally unanswerable.
+Other times, annotators provide nonsense answers to valid questions; this may be deliberate, or maybe they did not understand the question.
+We treat these the same way.&lt;/p&gt;
+&lt;div id=&#34;example-invalid-question&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (Invalid Question):&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: what are&lt;/li&gt;
+&lt;li&gt;Answers: “lights”, “lamp”, “lamps”, “pillows”, “hotel”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000109928.jpg&#34; alt=&#34;second image&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example-spam-answer&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (Spam Answer):&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: Is the man reading?&lt;/li&gt;
+&lt;li&gt;Answers: “yes”, “yes”, “yes”, “&lt;strong&gt;magazine&lt;/strong&gt;”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000441544.jpg&#34; alt=&#34;spam answer&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;difficult-or-time-consuming&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Difficult or Time Consuming&lt;/h3&gt;
+&lt;p&gt;Questions can be impossible, very difficult, or time-consuming to answer. For example, the question may ask the annotator to count many small objects, making it very hard to get an exact answer.&lt;/p&gt;
+&lt;div id=&#34;example-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: How many cars are there?&lt;/li&gt;
+&lt;li&gt;Answers: “2”, “7”, “2”, “1”, “1”, “6”, “6”, “3”, “many”, “4”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000445113.jpg&#34; alt=&#34;difficult&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;synonyms-or-hypernyms&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Synonyms or Hypernyms&lt;/h3&gt;
+&lt;p&gt;Annotators might differ slightly in how they phrase an answer, or identify objects at different levels of granularity. Crucially, for this label, all the annotations should refer to the &lt;strong&gt;same object or concept&lt;/strong&gt;.&lt;/p&gt;
+&lt;div id=&#34;example-synonyms&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (synonyms):&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: What is the person holding?&lt;/li&gt;
+&lt;li&gt;Answers: “tennis racket”, “tennis racket”, “tennis racket”, “racquet”, “racket”, “tennis racket”, “tennis racket”, “racquet”, “racket”, “tennis racket”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000442961.jpg&#34; alt=&#34;synonyms&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example-hypernyms&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (hypernyms):&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: What sits on the left hand side of the bowl?&lt;/li&gt;
+&lt;li&gt;Answers: “container”, “jug”, “container”, “bottle”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000438671.jpg&#34; alt=&#34;hypernyms&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;answer-not-present-or-guessing&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Answer not Present or Guessing&lt;/h3&gt;
+&lt;p&gt;Questions sometimes are asking for information not visible in the image (e.g. questions about objects partially out of the frame, or not depictable in an image). Annotators will often differ in their answers for such images.
+Clicking this option will open another annotation menu to the right, with the following labels:&lt;/p&gt;
+&lt;div id=&#34;example-motion&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (motion):&lt;/h4&gt;
+&lt;p&gt;The question asks about the motion of an object; since we’re dealing with images, this can be hard to infer.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: Is the train moving?&lt;/li&gt;
+&lt;li&gt;Answers: “no”, “no”, “no”, “no”, “yes”, “no”, “yes”, “yes”, “yes”, “yes”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000441034.jpg&#34; alt=&#34;motion&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example-out-of-view&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (out of view):&lt;/h4&gt;
+&lt;p&gt;The question asks about an object or event that is out of view of the image&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: What is inside the yellow plastic object?&lt;/li&gt;
+&lt;li&gt;Answers: “groceries”, “stuff”, “products”, “toiletries”, “stuff”, “food”, “food”, “luggage”,&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000445462.jpg&#34; alt=&#34;out-of-view&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example-predicting-the-future&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (predicting the future):&lt;/h4&gt;
+&lt;p&gt;The question asks about whether something will happen in the future.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: Is the woman going to eat it all?&lt;/li&gt;
+&lt;li&gt;Answers: “no”, “yes”, “no”, “no”, “no”, “no”, “no”, “yes”, “no”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000439576.jpg&#34; alt=&#34;predicting future&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example-hypothetical&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (hypothetical):&lt;/h4&gt;
+&lt;p&gt;The question asks whether something hypothetically would happen.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: Could passenger be boarding?&lt;/li&gt;
+&lt;li&gt;Answers: “yes”, “no”, “no”, “yes”, “yes”, “no”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000444210.jpg&#34; alt=&#34;hypothetical&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example-domain-knowledge&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (domain knowledge):&lt;/h4&gt;
+&lt;p&gt;The question might be any one of the above (motion, out of view, prediciting the future, hypothetical), but the answers indicate that some people give a certain answer based on domain knowledge, while others might give a different, less informed answer. This happens often with sports.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: What trick is he performing?&lt;/li&gt;
+&lt;li&gt;Answers: “rail riding”, “ollie”, “skateboard trick”, “rail grinding”, “railslide”, “rail slide”, “grinding”, “slide”, “loop”, “sliding on rail”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000044327.jpg&#34; alt=&#34;domain&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is also an “other” option which will prompt you to provide your own answer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ambiguous&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Ambiguous&lt;/h3&gt;
+&lt;p&gt;This category is very broad, and may overlap with other categories. At the end of this instruction document are some examples to help distinguish ambiguous from other related categories.
+In some cases, the image is ambiguous; in other cases, it is the question. It is also possible for both to be ambiguous.&lt;/p&gt;
+&lt;div id=&#34;example-image&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (image)&lt;/h4&gt;
+&lt;p&gt;This option should be used when an image is visually ambiguous.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: How many lamps are on the counter ?&lt;/li&gt;
+&lt;li&gt;Answers: “1”, “1”, “2”, “1”, “2”, “2”, “1”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000465213.jpg&#34; alt=&#34;visually-ambiguous&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example-question&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (question)&lt;/h4&gt;
+&lt;p&gt;This option should be used when a question is linguistically ambiguous.
+&lt;strong&gt;This includes questions where annotators could take a different perspective to get different answers (e.g. left vs right)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: In which direction is the wave moving?&lt;/li&gt;
+&lt;li&gt;Answers: “south”, “forward”, “right”, “forward”, “down”, “right”, “toward beach”, “right”, “left to right”, “left”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000440314.jpg&#34; alt=&#34;blah&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;choice-of-many&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Choice of many&lt;/h3&gt;
+&lt;p&gt;When annotators are asked to choose one thing from an image and there are many options, they will often choose different ones. This happens frequently with text or colors.&lt;/p&gt;
+&lt;div id=&#34;example-text&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (text)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: What does the boy’s shirt say?&lt;/li&gt;
+&lt;li&gt;Answers: “eagles”, “miami eagles legends, all state champions usa”, “america beautiful”, “miami eagles usa”, “m”, “miami eagles”, “miami eagles”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000443082.jpg&#34; alt=&#34;choose text&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example-color&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example (color)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: What color are the boats?&lt;/li&gt;
+&lt;li&gt;Answers: “blue”, “blue, white”, “blue, brown”, “blue and beige”, “blue green and yellow”, “blue and white”, “blue, white”, “blue and yellow”, “blue and yellow”, “blue”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000443650.jpg&#34; alt=&#34;choose color&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;subjective&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Subjective&lt;/h3&gt;
+&lt;p&gt;Some questions ask for subjective assessments (e.g. whether people are happy, sad, having fun, whether a painting is beautiful, etc.).&lt;/p&gt;
+&lt;div id=&#34;example-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: Is he depressed?&lt;/li&gt;
+&lt;li&gt;Answers: “no”, “yes”, “no”, “no”, “no”, “yes”, “no”, “yes”, “yes”, “yes”&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000439550.jpg&#34; alt=&#34;subjective&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;disagreements-of-meaning&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Disagreements of meaning&lt;/h3&gt;
+&lt;p&gt;Sometimes you can pinpoint the exact word that annotators seem to disagree on. If you select this option, you’ll be asked to provide a word or a few words from the question that annotators seem to disagree on.
+For example, in the following example, some annotators consider humans to be animals, while others don’t. So for this example, you’d put “animal” into the text box after clicking this option.&lt;/p&gt;
+&lt;div id=&#34;example-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Example&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Question: What animal is on the flatbed?&lt;/li&gt;
+&lt;li&gt;Answers: “none”, “none”, “human”, “none”, “no”, “man”, “people”, “no animal”, “none”,&lt;/li&gt;
+&lt;li&gt;Image: &lt;img src=&#34;images/COCO_train2014_000000443909.jpg&#34; alt=&#34;disagree&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;potential-conflicts&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Potential conflicts&lt;/h2&gt;
+&lt;div id=&#34;invalid-question-vs-low-quality-image&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Invalid question vs Low quality image&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ambiguous-vs-difficult&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Ambiguous vs Difficult&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

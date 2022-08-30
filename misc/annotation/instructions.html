@@ -1,0 +1,131 @@
+<style>
+.modal-dialog,
+.modal-content {
+    height: 95%;
+}
+.modal-body {
+    /* 100% = dialog height, 80px = header + footer */
+    max-height: calc(100% - 80px);
+    overflow-y: scroll;
+}
+</style>
+
+<div class="modal" id="instructions" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" id="instructions-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title">Instructions</h3>
+      </div>
+      <div class="modal-body">
+              Your task is to annotate the following Chinese sentences with Named Entity Tags. The tags abbreviations and explanations are given in the following table: </br> 
+            <table style="width:100%">
+                <tr>
+                    <th>TAG</th>
+                    <th>keys</th>
+                    <th>description</th>
+                </tr>
+                <tr>
+                    <td>PER</td>
+                    <td>p, 1</td>
+                    <td>People, including fictional</td>
+                </tr>
+                <tr>
+                    <td>ORG</td>
+                    <td>o, 2</td>
+                    <td>Companies, agencies, institutions, etc.</td>
+                </tr>
+                <tr>
+                    <td>GPE</td>
+                    <td>g, 3</td>
+                    <td>Countries, cities, states</td>
+                </tr>
+                <tr>
+                    <td>LOC</td>
+                    <td>l, 4</td>
+                    <td>Non-GPE locations; mountain ranges, bodies of water, etc.</td>
+                </tr>
+                <tr>
+                    <td>FAC</td>
+                    <td>F, 5</td>
+                    <td>(facility) Building, airports, highways, bridges, etc.</td>
+                </tr>
+                <tr>
+                    <td>NORP</td>
+                    <td>n, 6</td>
+                    <td>nationalities or religious or political groups</td>
+                </tr>
+                <tr>
+                    <td>WORK_OF_ART</td>
+                    <td>w, 7</td>
+                    <td>titles of books songs, artworks, etc.</td>
+                </tr>
+                <tr>
+                    <td>EVENT</td>
+                    <td>e, 8</td>
+                    <td>named hurricanes, battles, wars, sports events, etc.</td>
+                </tr>
+                <tr>
+                    <td>LANGUAGE</td>
+                    <td>L, 9</td>
+                    <td>any named language</td>
+                </tr>
+                <tr>
+                    <td>LAW</td>
+                    <td>a</td>
+                    <td>named documents made into laws</td>
+                </tr>
+                <tr>
+                    <td>PRODUCT</td>
+                    <td>P</td>
+                    <td>Vehicles, weapons, food, etc. (not services)</td>
+                </tr>
+                <tr>
+                    <td>DATE</td>
+                    <td>D</td>
+                    <td>Absolute or relative dates or periods</td>
+                </tr>
+                <tr>
+                    <td>TIME</td>
+                    <td>T</td>
+                    <td>Times smaller than a day</td>
+                </tr>
+                <tr>
+                    <td>PERCENT</td>
+                    <td>%</td>
+                    <td>Percentage (including “%”)</td>
+                </tr>
+                <tr>
+                    <td>MONEY</td>
+                    <td>m,$</td>
+                    <td>Monetary values, including unit </td>
+                </tr>
+                <tr>
+                    <td>QUANTITY</td>
+                    <td>q</td>
+                    <td>Measurements, as of weight or distance</td>
+                </tr>
+                <tr>
+                    <td>ORDINAL</td>
+                    <td>O</td>
+                    <td>e.g. “first”, “second” </td>
+                </tr>
+                <tr>
+                    <td>CARDINAL</td>
+                    <td>C</td>
+                    <td>Numerals that do not fall under another type</td>
+                </tr>
+                <tr>
+                    <td>DEL</td>
+                    <td>d</td>
+                    <td>toggle delete</td>
+                </tr>
+            </table>
+            <br>
+            If you wish to delete a tag, click the "DEL" tag, or press "d" or "0" on your keyboard, and then click on the words you would like to delete. You can click any of the tags if you prefer clicking over the keyboard shortcuts. 
+            Please try to annotate as many sentences as accurately as possible.
+      </div>
+    </div>
+  </div>
+</div>
+
