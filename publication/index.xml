@@ -5,12 +5,36 @@
     <link>/publication/</link>
       <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
       <link>/publication/</link>
     </image>
+    
+    <item>
+      <title>Calibrating Concepts and Operations: Towards Symbolic Reasoning on Real Images</title>
+      <link>/publication/2021-gqa-iccv2/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021-gqa-iccv2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calibrating Concepts and Operations: Towards Symbolic Reasoning on Real Images</title>
+      <link>/publication/2021-gqa-iccv/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021-gqa-iccv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guiding Multi-Step Rearrangement Tasks with Natural Language Instructions</title>
+      <link>/publication/2021-robots-corl/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021-robots-corl/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Iterative Paraphrastic Augmentation with Discriminative Span Alignment</title>

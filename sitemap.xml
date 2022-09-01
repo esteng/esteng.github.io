@@ -3,28 +3,153 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/publication-type/1/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/benjamin-van-durme/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/elias-stengel-eskin/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
+    <loc>/talk/2022-cornell/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/invited-talks/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/misc/uncertainty/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/misc/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/misc/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/misc/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/1/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/alan-yuille/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/benjamin-van-durme/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2021-gqa-iccv2/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/cihang-xie/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/elias-stengel-eskin/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/quan-tran/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/yixiao-zhang/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/zhuowan-li/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/aditya-murali/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/andrew-hundt/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2021-gqa-iccv/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/gregory-d.-hager/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2021-robots-corl/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/matthew-gombolay/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/nakul-gopalan/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/zhuohong-he/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -39,16 +164,6 @@
   
   <url>
     <loc>/author/j.-edward-hu/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
     <lastmod>2021-05-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -108,16 +223,6 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/vagueness/</loc>
     <lastmod>2021-02-17T00:00:00+00:00</lastmod>
   </url>
@@ -140,11 +245,6 @@
   <url>
     <loc>/tag/seminar/</loc>
     <lastmod>2020-11-20T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
