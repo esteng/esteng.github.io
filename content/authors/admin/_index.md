@@ -18,21 +18,22 @@ organizations:
   url: "https://www.clsp.jhu.edu"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a Ph.D. student working on NLP and Computational Linguistics at Johns Hopkins University. 
+bio: I am a Ph.D. candidate working on NLP and Computational Linguistics at Johns Hopkins University. 
 
 interests:
-- Computational Linguistics
-- Natural Language Processing
-- Cognitive Science
-- Artificial Intelligence
-- Philosophy of Language
-- Information Retrieval
+- Semantic Parsing
+- Multimodal Grounding
+- Compositionality
+- Vagueness  
 
 education:
   courses:
   - course: PhD in Computer Science
     institution: Johns Hopkins University
     year: 2018-present
+  - course: MSE in Computer Science
+    institution: Johns Hopkins University
+    year: 2018-2021
   - course: BA&Sc in Cognitive Science (Honours) 
     institution: McGill University
     year: 2014-2018
@@ -70,10 +71,9 @@ email: ""
 #- Visitors
 ---
 
-I am a third-year Ph.D. student at the Center for Language and Speech Processing supervised by Benjamin Van Durme, where I am generously supported by an NSF Graduate Research Fellowship. 
-My work focuses mostly on transforming text into representations of its meaning, whether via a semantic parse or through action in embodied agents. 
-Most recently, I've worked on semantic parsing for the Universal Decompositional Semantics formalism. 
-I'm also interested in applying ideas from cognitive science to NLP. 
+I am a Ph.D. candidate at the Center for Language and Speech Processing supervised by Benjamin Van Durme, where I am generously supported by an NSF Graduate Research Fellowship. 
+My work focuses mostly on transforming text into representations of its meaning, often with a general aim of communicating with agents (both digital and human). 
+Most recently, I have been working on multimodal grounding and human-robot interaction, as well as semantic parsing for Universal Decompositional Semantics. 
 Before starting my Ph.D., I received my B.A.&Sc. with First Class Honours in Cognitive Science from McGill University, focusing in computer science and linguistics. 
 While at McGill, I worked as a research assistant at the Montreal Language Modeling Lab (MLML), now MCQLL. 
 I wrote my honours thesis (supervised by Timothy O'Donnell) on a variational inference algorithm for a model of language acquisition.
