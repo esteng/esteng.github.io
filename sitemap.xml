@@ -3,12 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/talk/2022-cornell/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+    <loc>/publication-type/1/</loc>
+    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/benjamin-van-durme/</loc>
+    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/chenyu-zhang/</loc>
+    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/elias-stengel-eskin/</loc>
+    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2022-visual-commonsense/</loc>
+    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/zhuowan-li/</loc>
+    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/2022-cornell/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -53,11 +98,6 @@
   </url>
   
   <url>
-    <loc>/publication-type/1/</loc>
-    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/author/aditya-murali/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url>
@@ -73,27 +113,12 @@
   </url>
   
   <url>
-    <loc>/authors/</loc>
-    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/benjamin-van-durme/</loc>
-    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/2021-gqa-iccv/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/author/cihang-xie/</loc>
-    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/elias-stengel-eskin/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -118,16 +143,6 @@
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/author/quan-tran/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url>
@@ -139,11 +154,6 @@
   
   <url>
     <loc>/author/zhuohong-he/</loc>
-    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/zhuowan-li/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url>
   
