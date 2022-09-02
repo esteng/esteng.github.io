@@ -1,6 +1,58 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"arxiv":
+  color: "#B31A1B"
+
+"ACL":
+  url: https://aclanthology.org
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"NAACL":
+  url: https://aclanthology.org
+  color: "#00369f"
+
+"EMNLP":
+  url: https://aclanthology.org
+  color: "#00369f"
+
+"TACL":
+  url: https://direct.mit.edu/tacl/
+  color: "#00369f"
+
+"CoRL":
+  url: https://sites.google.com/robot-learning.org/corl2021
+  color: "#00369f"
+
+"ICCV": 
+  url: https://iccv2021.thecvf.com
+  color: "#00369f"
+
+"SCiL": 
+  url: https://blogs.umass.edu/scil/
+  color: "#52739E"
+
+"LREC": 
+  url: http://www.lrec-conf.org
+  color: "#00369f"
+
+"Interspeech": 
+  url: https://www.isca-speech.org/iscaweb/index.php/conferences/interspeech
+  color: "#00369f"
+
+"UnImplicit":
+  url: https://unimplicit.github.io
+  color: "#52739E"
+
+"MASCSLL":
+  url: http://www.mascsll.org
+  color: "#52739E"
+
+"Invited Talk":
+  color: "f4b404"
+
+"Reading Group":
+  color: "#00441b"
+
+"Seminar": 
+  color: "#023858"
+
+"Lecture": 
+  color: "#016c59"

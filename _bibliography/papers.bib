@@ -1,82 +1,170 @@
----
----
+@article{vaidya.s.2022,
+  title={Automatic Evaluation of Chit-chat via Semantic Parsing},
+  author={Vaidya, Shalaka and Stengel-Eskin, Elias and Sedoc, João},
+  journal={Mid-Atlantic Student Colloquium on Speech, Language and Learning},
+  year={2022},
+  abstract={With the increasing popularity and capabilities of conversational dialog systems, there is a need for metrics that are reliable, robust and automatic that facilitate model comparison without expensive human intervention. We propose an automatic, semantically-grounded, and domain-independent metric requiring no humans in the loop. This metric uses Gricean Maxims to parameterize the quality of dialog  across various utterances. Finally, we evaluate the calculated metric with the breakdown markers in human-chatbot conversations.},
+  abbr = "MASCSLL",
+} 
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
+@article{stengel-eskin.e.2022b,
+  title={The Curious Case of Control},
+  author={Stengel-Eskin, Elias and Van Durme, Benjamin},
+  journal={arXiv preprint arXiv:2205.12113},
+  year={2022},
+  abstract = "Children acquiring English make systematic errors on subject control sentences even after they have reached near-adult competence (C. Chomsky, 1969), possibly due to heuristics based on semantic roles (Maratsos, 1974). Given the advanced fluency of large generative language models, we ask whether model outputs are consistent with these heuristics, and to what degree different models are consistent with each other. We find that models can be categorized by behavior into three separate groups, with broad differences between the groups. The outputs of models in the largest group are consistent with positional heuristics that succeed on subject control but fail on object control. This result is surprising, given that object control is orders of magnitude more frequent in the text data used to train such models. We examine to what degree the models are sensitive to prompting with agent-patient information, finding that raising the salience of agent and patient relations results in significant changes in the outputs of most models. Based on this observation, we leverage an existing dataset of semantic proto-role annotations (White, et al. 2020) to explore the connections between control and labeling event participants with properties typically associated with agents and patients.", 
+  pdf = "https://arxiv.org/abs/2205.12113",
+  abbr = "arxiv", 
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+
+@article{stengel-eskin.e.2022a,
+  title={When More Data Hurts: A Troubling Quirk in Developing Broad-Coverage Natural Language Understanding Systems},
+  author={Stengel-Eskin, Elias and Platanios, Emmanouil Antonios and Pauls, Adam and Thomson, Sam and Fang, Hao and Van Durme, Benjamin and Eisner, Jason and Su, Yu},
+  journal={arXiv preprint arXiv:2205.12228},
+  year={2022},
+  abstract = "In natural language understanding (NLU) production systems, users' evolving needs necessitate the addition of new features over time, indexed by new symbols added to the meaning representation space. This requires additional training data and results in ever-growing datasets. We present the first systematic investigation into this incremental symbol learning scenario. Our analyses reveal a troubling quirk in building (broad-coverage) NLU systems: as the training dataset grows, more data is needed to learn new symbols, forming a vicious cycle. We show that this trend holds for multiple mainstream models on two common NLU tasks: intent recognition and semantic parsing. Rejecting class imbalance as the sole culprit, we reveal that the trend is closely associated with an effect we call source signal dilution, where strong lexical cues for the new symbol become diluted as the training dataset grows. Selectively dropping training examples to prevent dilution often reverses the trend, showing the over-reliance of mainstream neural NLU models on simple lexical cues and their lack of contextual understanding.",
+  pdf = "https://arxiv.org/abs/2205.12228", 
+  abbr = "arxiv", 
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+
+@inproceedings{zhang.c.2022,
+  title="Visual Commonsense in Pretrained Unimodal and Multimodal Models",
+  author="Zhang, Chenyu and Van Durme, Benjamin and Li, Zhuowan and Stengel-Eskin, Elias",
+  booktitle = "Proceedings of the 2022 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+  month = jul,
+  year = "2022",
+  address = "Seattle, Washington",
+  publisher = "Association for Computational Linguistics",
+  abbr = "NAACL",
+  abstract = "Our commonsense knowledge about objects includes their typical visual attributes; we know that bananas are typically yellow or green, and not purple. Text and image corpora, being subject to reporting bias, represent this world-knowledge to varying degrees of faithfulness. In this paper, we investigate to what degree unimodal (language-only) and multimodal (image and language) models capture a broad range of visually salient attributes. To that end, we create the Visual Commonsense Tests (ViComTe) dataset covering 5 property types (color, shape, material, size, and visual co-occurrence) for over 5000 subjects. We validate this dataset by showing that our grounded color data correlates much better than ungrounded text-only data with crowdsourced color judgments provided by Paik et al. (2021). We then use our dataset to evaluate pretrained unimodal models and multimodal models. Our results indicate that multimodal models better reconstruct attribute distributions, but are still subject to reporting bias. Moreover, increasing model size does not enhance performance, suggesting that the key to visual commonsense lies in the data.", 
+  pdf = "https://aclanthology.org/2022.naacl-main.390/", 
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{
+  stengel-eskin2021guiding,
+  title={Guiding Multi-Step Rearrangement Tasks with Natural Language Instructions},
+  author={Elias Stengel-Eskin* and Andrew Hundt* and Zhuohong He and Aditya Murali and Nakul Gopalan and Matthew Gombolay and Gregory D. Hager},
+  booktitle={5th Annual Conference on Robot Learning },
+  year={2021},
+  url={https://openreview.net/forum?id=-QJ__aPUTN2},
+  abbr = "CoRL",
+  pdf = "Enabling human operators to interact with robotic agents using natural language would allow non-experts to intuitively instruct these agents. Towards this goal, we propose a novel Transformer-based model which enables a user to guide a robot arm through a 3D multi-step manipulation task with natural language commands. Our system maps images and commands to masks over grasp or place locations, grounding the language directly in perceptual space. In a suite of block rearrangement tasks, we show that these masks can be combined with an existing manipulation framework without re-training, greatly improving learning efficiency. Our masking model is several orders of magnitude more sample efficient than typical Transformer models, operating with hundreds, not millions, of examples. Our modular design allows us to leverage supervised and reinforcement learning, providing an easy interface for experimentation with different architectures. Our model completes block manipulation tasks with synthetic commands 530% more often than a UNet-based baseline, and learns to localize actions correctly while creating a mapping of symbols to perceptual input that supports compositional reasoning. We provide a valuable resource for 3D manipulation instruction following research by porting an existing 3D block dataset with crowdsourced language to a simulated environment. Our method’s 25.3% absolute improvement in identifying the correct block on the ported dataset demonstrates its ability to handle syntactic and lexical variation.",
+  abstract = "https://proceedings.mlr.press/v164/stengel-eskin22a.html", 
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@InProceedings{li-zhuowan-etal-calibrating,
+  author = {Li, Zhuowan and Stengel-Eskin, Elias and Zhang, Yixiao and Xie, Cihang and Tran, Quan and Van Durme, Benjamin and Yuille, Alan},
+  title = {Calibrating Concepts and Operations: Towards Symbolic Reasoning on Real Images},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  month = {October},
+  year = {2021},
+  abbr = "ICCV",
+  abstract = "While neural symbolic methods demonstrate impressive performance in visual question answering on synthetic images, their performance suffers on real images. In this paper, we identify that the long-tail distribution of visual concepts and unequal importance of reasoning steps in real data are the two key obstacles that limit the models’ real-world potentials. To address these challenges, we propose a new paradigm, Calibrating Concepts and Operations (CCO), which enables neural symbolic models to capture underlying data characteristics and to reason with hierarchical importance. Specifically, we introduce an executor with learnable concept embedding magnitudes for handling distribution imbalance, and an operation calibrator for highlighting important operations and suppressing redundant ones. Our experiments show CCO substantially boosts the performance of neural symbolic methods on real images. By evaluating models on the real world dataset GQA, CCO helps the neural symbolic method NSCL outperforms its vanilla counterpart by a large margin of 9.1% (from 47.0% to 56.1%), which also greatly reduces the performance gap between symbolic and non-symbolic methods. Additionally, we create a perturbed test set for better understanding and analyzing model performance on real images.", 
+  pdf = "https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Calibrating_Concepts_and_Operations_Towards_Symbolic_Reasoning_on_Real_Images_ICCV_2021_paper.pdf",  
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{stengel-eskin-etal-2021-human,
+    title = "Human-Model Divergence in the Handling of Vagueness",
+    author = "Stengel-Eskin, Elias  and
+      Guallar-Blasco, Jimena  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the 1st Workshop on Understanding Implicit and Underspecified Language",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.unimplicit-1.6",
+    doi = "10.18653/v1/2021.unimplicit-1.6",
+    pages = "43--57",
+    abstract = "While aggregate performance metrics can generate valuable insights at a large scale, their dominance means more complex and nuanced language phenomena, such as vagueness, may be overlooked. Focusing on vague terms (e.g. sunny, cloudy, young, etc.) we inspect the behavior of visually grounded and text-only models, finding systematic divergences from human judgments even when a model{'}s overall performance is high. To help explain this disparity, we identify two assumptions made by the datasets and models examined and, guided by the philosophy of vagueness, isolate cases where they do not hold.",
+    abbr = "UnImplicit",
+    pdf = "https://aclanthology.org/2021.unimplicit-1.6.pdf",
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+
+@article{stengel-eskin.e.2021tacl,
+  title={Joint Universal Syntactic and Semantic Parsing},
+  author={Stengel-Eskin, Elias and Murray, Kenton and Zhang, Sheng and White, Aaron Steven and Van Durme, Benjamin},
+  journal={Transactions of the Association for Computational Linguistics},
+  pages={},
+  year={2021},
+  abbr="TACL",
+  pdf = "https://aclanthology.org/2021.tacl-1.46/",
+  abstract = "While numerous attempts have been made to jointly parse syntax and semantics, high performance in one domain typically comes at the price of performance in the other. This trade-off contradicts the large body of research focusing on the rich interactions at the syntax-semantics interface. We explore multiple model architectures which allow us to exploit the rich syntactic and semantic annotations contained in the Universal Decompositional Semantics (UDS) dataset, jointly parsing Universal Dependencies and UDS to obtain state-of-the-art results in both formalisms. We analyze the behaviour of a joint model of syntax and semantics, finding patterns supported by linguistic theory at the syntax-semantics interface. We then investigate to what degree joint modeling generalizes to a multilingual setting, where we find similar trends across 8 languages.", 
 }
+
+@article{stengel-eskin.e.2021vagueness,
+  title={Exploring Human-Model Divergence Through Vagueness},
+  author={Stengel-Eskin, Elias and Guallar-Blasco, Jimena and Van Durme, Benjamin},
+  journal={Proceedings of the Society for Computation in Linguistics},
+  pages={},
+  month = feb,
+  year={2021},
+  pubstate = {\textbf{*Abstract}},
+  abbr = "SCiL",
+  abstract = "While aggregate performance metrics can generate valuable insights at a large scale, their dominance means more complex and nuanced language phenomena, such as vagueness, may be overlooked. Focusing on vague terms (e.g. sunny, cloudy, young, etc.) we inspect the behavior of visually grounded and text-only models, finding systematic divergences from human judgments even when a model’s overall performance is high. To help explain this disparity, we identify two assumptions made by the datasets and models examined and, guided by the philosophy of vagueness, isolate cases where they do not hold.",
+  pdf = "https://aclanthology.org/2021.scil-1.42/", 
+} 
+
+@article{culkin.r.2021tacl,
+    author = {Culkin, Ryan and Hu, J. Edward and Stengel-Eskin, Elias and Qin, Guanghui and Durme, Benjamin Van},
+    title = "{Iterative Paraphrastic Augmentation with Discriminative Span Alignment}",
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {9},
+    pages = {494-509},
+    year = {2021},
+    month = {05},
+    abstract = "{We introduce a novel paraphrastic augmentation strategy based on sentence-level lexically constrained paraphrasing and discriminative span alignment. Our approach allows for the large-scale expansion of existing datasets or the rapid creation of new datasets using a small, manually produced seed corpus. We demonstrate our approach with experiments on the Berkeley FrameNet Project, a large-scale language understanding effort spanning more than two decades of human labor. With four days of training data collection for a span alignment model and one day of parallel compute, we automatically generate and release to the community 495,300 unique (Frame,Trigger) pairs in diverse sentential contexts, a roughly 50-fold expansion atop FrameNet v1.7. The resulting dataset is intrinsically and extrinsically evaluated in detail, showing positive results on a downstream task.}",
+    abbr = "TACL",
+    pdf = "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00380/100783/Iterative-Paraphrastic-Augmentation-with",
+}
+
+
+@inproceedings{stengel-eskin.e.2020universal,
+  title={Universal Decompositional Semantic Parsing},
+  author={Stengel-Eskin, Elias and White, Aaron Steven and Zhang, Sheng and Van Durme, Benjamin},
+  booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  pages={8427--8439},
+  year={2020},
+  abbr="ACL",
+  abstract = "We introduce a transductive model for parsing into Universal Decompositional Semantics (UDS) representations, which jointly learns to map natural language utterances into UDS graph structures and annotate the graph with decompositional semantic attribute scores. We also introduce a strong pipeline model for parsing into the UDS graph structure, and show that our transductive parser performs comparably while additionally performing attribute prediction. By analyzing the attribute prediction errors, we find the model captures natural relationships between attribute groups.",
+  pdf = "https://aclanthology.org/2020.acl-main.746/",
+  slides = "https://esteng.github.io/talk/2020-acl/decomp-ACL2020-upload.pdf",
+}
+
+@inproceedings{white.a.2020,
+  title={The Universal Decompositional Semantics Dataset and Decomp Toolkit},
+  author={White, Aaron Steven and Stengel-Eskin, Elias and Vashishtha, Siddharth and Govindarajan, Venkata Subrahmanyan and Reisinger, Dee Ann and Vieira, Tim and Sakaguchi, Keisuke and Zhang, Sheng and Ferraro, Francis and Rudinger, Rachel and others},
+  booktitle={Proceedings of The 12th Language Resources and Evaluation Conference},
+  pages={5698--5707},
+  year={2020},
+  abbr="LREC",
+  abstract="We present the Universal Decompositional Semantics (UDS) dataset (v1. 0), which is bundled with the Decomp toolkit (v0. 1). UDS1. 0 unifies five high-quality, decompositional semantics-aligned annotation sets within a single semantic graph specification—with graph structures defined by the predicative patterns produced by the PredPatt tool and real-valued node and edge attributes constructed using sophisticated normalization procedures. The Decomp toolkit provides a suite of Python 3 tools for querying UDS graphs using SPARQL. Both UDS1. 0 and Decomp0. 1 are publicly available at this http URL.",
+  pdf="http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.699.pdf"
+}
+
+@inproceedings{stengel2019discriminative,
+  title={A Discriminative Neural Model for Cross-Lingual Word Alignment},
+  author={Stengel-Eskin, Elias and Su, Tzu-Ray and Post, Matt and Van Durme, Benjamin},
+  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  pages={909--919},
+  year={2019},
+  abbr="EMNLP",
+  abstract="We introduce a novel discriminative word alignment model, which we integrate into a Transformer-based machine translation model. In experiments based on a small number of labeled examples (~ 1.7 K-5K sentences) we evaluate its performance intrinsically on both English-Chinese and English-Arabic alignment, where we achieve major improvements over unsupervised baselines (11-27 F1). We evaluate the model extrinsically on data projection for Chinese NER, showing that our alignments lead to higher performance when used to project NER tags from English to Chinese. Finally, we perform an ablation analysis and an annotation experiment that jointly support the utility and feasibility of future manual alignment elicitation.",
+  pdf="https://aclanthology.org/D19-1084/",
+}
+
+@inproceedings{mcauliffe2017polyglot,
+  title={Polyglot and Speech Corpus Tools: A System for Representing, Integrating, and Querying Speech Corpora.},
+  author={McAuliffe, Michael and Stengel-Eskin, Elias and Socolof, Michaela and Sonderegger, Morgan},
+  booktitle={INTERSPEECH},
+  pages={3887--3891},
+  year={2017},
+  abbr="Interspeech",
+  pdf="https://www.semanticscholar.org/paper/Polyglot-and-Speech-Corpus-Tools%3A-A-System-for-and-McAuliffe-Stengel-Eskin/becc2a1a45a01f81c5cbf2353d364e1a43c95896?p2df",
+  abstract="Speech datasets from many languages, styles, and sources exist in the world, representing significant potential for scientific studies of speech—particularly given structural similarities among all speech datasets. However, studies using multiple speech corpora remain difficult in practice, due to corpus size, complexity, and differing formats. We introduce open-source software for unified corpus analysis: integrating speech corpora and querying across them. Corpora are stored in a custom ‘polyglot persistence’scheme that combines three sub-databases mirroring different data types: a Neo4j graph database to represent temporal annotation graph structure, and SQL and InfluxDB databases to represent meta-and acoustic data. This scheme abstracts away from the idiosyncratic formats of different speech corpora, while mirroring the structure of different data types improves speed and scalability. A Python API and a GUI both allow for: enriching the database with positional, hierarchical, temporal, and signal measures (eg utterance boundaries, f0) that are useful for linguistic analysis; querying the database using a simple query language; and exporting query results to standard formats for further analysis. We describe the software, summarize two case studies using it to examine effects on pitch and duration across languages, and outline planned future development.",
+}
+
+
