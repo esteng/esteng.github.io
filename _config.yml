@@ -13,7 +13,7 @@ footer_text: >
 keywords: NLP, AI, Computational Linguistics  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: /assest/img/brain_favicon.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: /assest/img/icon.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://esteng.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
