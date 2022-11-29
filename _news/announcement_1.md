@@ -4,4 +4,4 @@ date: 2022-05-24 21:00:00-0400
 inline: true
 ---
 
-Two new papers accepted to EMNLP 2022. Preprints out on arxiv! [On subject and object control in LLMs](https://arxiv.org/abs/2205.12113) and [on a troubling quirk in NLU](https://arxiv.org/abs/2205.12228) 
+I am on the job market for faculty, postdoc, and industry positions! Please reach out if know of a role that would be a good fit for me: elias.stengel@gmail.com

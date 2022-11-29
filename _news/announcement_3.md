@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2021-08-30 21:00:00-0400
+date: 2022-05-24 21:00:00-0400
 inline: true
 ---
 
-I have completed an internship at Microsoft Semantic Machines, supervised by [Yu Su](https://ysu1989.github.io/#teaching)
+Two new papers accepted to EMNLP 2022. Preprints out on arxiv! [On subject and object control in LLMs](https://arxiv.org/abs/2205.12113) and [on a troubling quirk in NLU](https://arxiv.org/abs/2205.12228) 
