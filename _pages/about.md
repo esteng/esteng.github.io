@@ -24,3 +24,5 @@ While I've mostly explored these topics through a linguistic lens, I am interest
 Before starting my Ph.D., I received my B.A.&Sc. with First Class Honours in Cognitive Science from McGill University, focusing in computer science and linguistics.
 While at McGill, I worked as a research assistant at the Montreal Language Modeling Lab (MLML), now [MCQLL](https://mcqll.org) supervised by [Morgan Sonderegger](http://people.linguistics.mcgill.ca/~morgan/).
 I wrote my honours thesis (supervised by [Timothy O'Donnell](https://todonnell.github.io)) on a variational inference algorithm for a model of language acquisition.
+
+[Research statement](assets/pdf/research_statement.pdf)
