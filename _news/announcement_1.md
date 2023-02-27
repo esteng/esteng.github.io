@@ -4,4 +4,4 @@ date: 2022-11-29 21:00:00-0400
 inline: true
 ---
 
-I am on the job market for faculty, postdoc, and industry positions! Please reach out if know of a role that would be a good fit for me: elias.stengel@gmail.com
+Super-CLEVR, an exciting new benchmark for generalization in vision tasks led by [Zhuowan Li](https://lizw14.github.io) now accepted to CVPR! [Super-CLEVR: A Virtual Benchmark to Diagnose Domain Robustness in Visual Reasoning](https://arxiv.org/abs/2212.00259) 

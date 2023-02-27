@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-10-06 21:00:00-0400
+date: 2022-11-28 21:00:00-0400
 inline: true
 ---
 
-Two new papers accepted to EMNLP 2022. Preprints out on arxiv! [On subject and object control in LLMs](https://arxiv.org/abs/2205.12113) and [on a troubling quirk in NLU](https://arxiv.org/abs/2205.12228) 
+Two new preprints out! [On ambiguity in VQA](https://arxiv.org/abs/2211.07516) and [on calibration in semantic parsing](https://arxiv.org/abs/2211.07443)
