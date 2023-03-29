@@ -25,6 +25,10 @@
   url: https://iccv2021.thecvf.com
   color: "#00369f"
 
+"CVPR": 
+  url: https://cvpr2023.thecvf.com
+  color: "#00369f"
+
 "SCiL": 
   url: https://blogs.umass.edu/scil/
   color: "#52739E"
