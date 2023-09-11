@@ -14,8 +14,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. candidate at the [Center for Language and Speech Processing](https://www.clsp.jhu.edu) at Johns Hopkins University, supervised by [Benjamin Van Durme](https://www.cs.jhu.edu/~vandurme/). In August 2023, I will be starting as a Postdoctoral Research Associate with [Mohit Bansal](http://www.cs.unc.edu/~mbansal/) at the University of North Carolina, Chapel Hill.
-
+I am a Postdoctoral Research Associate at the University of North Carolina, Chapel Hill in the [MURGe-Lab](https://murgelab.cs.unc.edu) led by [Mohit Bansal](https://murgelab.cs.unc.edu). 
+I received my Ph.D. in 2023 from Johns Hopkins University, where I was supervised by [Benjamin Van Durme](https://www.cs.jhu.edu/~vandurme/) and was a part the [Center for Language and Speech Processing](https://www.clsp.jhu.edu). 
 In my work, supported by an NSF Graduate Research Fellowship, I aim to develop AI agents that can intelligently communicate and collaborate with people. 
 A central focus of this involves communication via language: one line of my work focuses on transforming text into representations of its meaning and exploring how models represent meaning.
 This has included work on semantic parsing, multimodal grounding, and human-robot interaction. 
