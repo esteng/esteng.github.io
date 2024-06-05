@@ -24,7 +24,7 @@ This has included work on semantic parsing, multimodal grounding, and human-robo
 Another line of work looks at implicit phenomena such as vagueness, underspecification, and ambiguity. 
 While I've mostly explored these topics through a linguistic lens, I am interested in their importance to intelligence more broadly.
 
-Some of the areas I've been working on recent are:
+Some of the areas I've been working on recently are:
 
 
 - **Confidence Estimation/Calibration**: 
