@@ -26,15 +26,16 @@ While I've mostly explored these topics through a linguistic lens, I am interest
 
 Some of the areas I've been working on recent are:
 
-- **Learning skills/abstractions for agents and coding**: 
-    - [on learning coding abstractions with LLMs (Stengel-Eskin et al., ICML 2024)](https://arxiv.org/abs/2401.16467)
-    - [on discovering skills for RL agents (Fu et al., ICML 2024)](https://arxiv.org/abs/2402.16354)
-    - [on distilling skills from teachers for LLM agents (Hashemzadeh et al., CoLLAs 2024)](https://arxiv.org/abs/2405.02749)
 
 - **Confidence Estimation/Calibration**: 
     - [on pragmatic reasoning for better QA calibration (Stengel-Eskin et al., 2024)](https://arxiv.org/abs/2405.21028)
     - [on calibration in semantic parsing (Stengel-Eskin and Van Durme, TACL 2023](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00598/117737)
     - [on balancing safety and usability using confidence (Stengel-Eskin and Van Durme, EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.159/)
+
+- **Learning skills/abstractions for agents and coding**: 
+    - [on learning coding abstractions with LLMs (Stengel-Eskin et al., ICML 2024)](https://arxiv.org/abs/2401.16467)
+    - [on discovering skills for RL agents (Fu et al., ICML 2024)](https://arxiv.org/abs/2402.16354)
+    - [on distilling skills from teachers for LLM agents (Hashemzadeh et al., CoLLAs 2024)](https://arxiv.org/abs/2405.02749)
 
 - **Ambiguity and Underspecification**: 
     - [on ambiguity in semantic parsing (Stengel-Eskin and Van Durme, ICLR 2024)](https://openreview.net/forum?id=qL9gogRepu) 
