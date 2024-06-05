@@ -29,7 +29,7 @@ Some of the areas I've been working on recent are:
 
 - **Confidence Estimation/Calibration**: 
     - [on pragmatic reasoning for better QA calibration (Stengel-Eskin et al., 2024)](https://arxiv.org/abs/2405.21028)
-    - [on calibration in semantic parsing (Stengel-Eskin and Van Durme, TACL 2023](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00598/117737)
+    - [on calibration in semantic parsing (Stengel-Eskin and Van Durme, TACL 2023)](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00598/117737)
     - [on balancing safety and usability using confidence (Stengel-Eskin and Van Durme, EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.159/)
 
 - **Learning skills/abstractions for agents and coding**: 
@@ -40,7 +40,7 @@ Some of the areas I've been working on recent are:
 - **Ambiguity and Underspecification**: 
     - [on ambiguity in semantic parsing (Stengel-Eskin and Van Durme, ICLR 2024)](https://openreview.net/forum?id=qL9gogRepu) 
     - [on improving VQA through pre-emptive self-clarification (Prasad et al., ICLR 2024)](https://openreview.net/forum?id=L4nOxziGf9)
-    - [on rephrasing and analyzing ambiguous questions in VQA (Stengel-Eskin et al. ACL 2023](https://aclanthology.org/2023.acl-long.569/) 
+    - [on rephrasing and analyzing ambiguous questions in VQA (Stengel-Eskin et al. ACL 2023)](https://aclanthology.org/2023.acl-long.569/) 
 
 - **Improving Multimodal Models and LLM Agents**:
     - [on a tree-based representation for LLM-based video reasoning (Wang et al. 2024)](https://arxiv.org/abs/2405.19209)
