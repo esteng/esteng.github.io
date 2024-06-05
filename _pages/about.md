@@ -27,12 +27,12 @@ While I've mostly explored these topics through a linguistic lens, I am interest
 Some of the areas I've been working on recently are:
 
 
-- **Confidence Estimation/Calibration**: 
+- **Confidence Estimation and Calibration**: 
     - [on pragmatic reasoning for better QA calibration (Stengel-Eskin et al., 2024)](https://arxiv.org/abs/2405.21028)
     - [on calibration in semantic parsing (Stengel-Eskin and Van Durme, TACL 2023)](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00598/117737)
     - [on balancing safety and usability using confidence (Stengel-Eskin and Van Durme, EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.159/)
 
-- **Learning skills/abstractions for agents and coding**: 
+- **Learning Skills and Abstractions for Agents and Coding**: 
     - [on learning coding abstractions with LLMs (Stengel-Eskin et al., ICML 2024)](https://arxiv.org/abs/2401.16467)
     - [on discovering skills for RL agents (Fu et al., ICML 2024)](https://arxiv.org/abs/2402.16354)
     - [on distilling skills from teachers for LLM agents (Hashemzadeh et al., CoLLAs 2024)](https://arxiv.org/abs/2405.02749)
@@ -47,7 +47,7 @@ Some of the areas I've been working on recently are:
     - [on improving visual prompting/object grounding without training (Wan et al. 2024)](https://arxiv.org/abs/2403.02325) 
     - [on a more effective/efficient self-consistency method for LLM agents (Wang et al., ACL 2024)](https://arxiv.org/abs/2402.13212)
 
-- **Multi-agent reasoning**: 
+- **Multi-Agent Reasoning**: 
     - [on structured distillion for learning from multiple LLM reasoning agents (Chen et al., ICML 2024)](https://arxiv.org/abs/2402.01620)
     - [on a new benchmark to assess game-theoretic abilities for LLM agents (Duan et al. 2024)](https://arxiv.org/abs/2402.12348)
 
