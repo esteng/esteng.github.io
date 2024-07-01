@@ -44,7 +44,7 @@ Some of the areas I've been working on recently are:
 
 - **Improving Multimodal Models and LLM Agents**:
     - [on a tree-based representation for LLM-based video reasoning (Wang et al. 2024)](https://arxiv.org/abs/2405.19209)
-    - [on improving visual prompting/object grounding without training (Wan et al. 2024)](https://arxiv.org/abs/2403.02325) 
+    - [on improving visual prompting/object grounding without training (Wan et al., ECCV 2024)](https://arxiv.org/abs/2403.02325) 
     - [on a more effective/efficient self-consistency method for LLM agents (Wang et al., ACL 2024)](https://arxiv.org/abs/2402.13212)
 
 - **Multi-Agent Reasoning**: 
