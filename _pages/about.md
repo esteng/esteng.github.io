@@ -43,6 +43,7 @@ Some of the areas I've been working on recently are:
     - [on rephrasing and analyzing ambiguous questions in VQA (Stengel-Eskin et al. ACL 2023)](https://aclanthology.org/2023.acl-long.569/) 
 
 - **Improving Multimodal Models and LLM Agents**:
+    - [on building and testing data generation agents for creating training data (Khan et al., 2024](https://dataenvgym.github.io) 
     - [on a tree-based representation for LLM-based video reasoning (Wang et al. 2024)](https://arxiv.org/abs/2405.19209)
     - [on improving visual prompting/object grounding without training (Wan et al., ECCV 2024)](https://arxiv.org/abs/2403.02325) 
     - [on a more effective/efficient self-consistency method for LLM agents (Wang et al., ACL 2024)](https://arxiv.org/abs/2402.13212)
