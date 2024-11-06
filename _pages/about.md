@@ -32,8 +32,8 @@ Concretely, some of the areas I've been publishing on recently are:
     - [on balancing safety and usability using confidence (Stengel-Eskin and Van Durme, EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.159/)
 
 - **Multi-Agent/Multi-Model Reasoning**: 
-    - [on training models to accept good persuasion and resist bad persuasion (Stengel-Eskin et al., 2024)](https://arxiv.org/abs/2410.14596) 
-    - [on structured distillion for learning from multiple LLM reasoning agents (Chen et al., ICML 2024)](https://arxiv.org/abs/2402.01620)
+    - [on training models to accept good and resist bad persuasion (Stengel-Eskin et al., 2024)](https://arxiv.org/abs/2410.14596) 
+    - [on structured distillation for learning from multiple LLM reasoning agents (Chen et al., ICML 2024)](https://arxiv.org/abs/2402.01620)
     - [on a new benchmark to assess game-theoretic abilities for LLM agents (Duan et al., NeurIPS 2024)](https://arxiv.org/abs/2402.12348)
     - [on multi-agent iterative coarse-to-fine refinement for reasoning tasks (Chen et al., 2024)](https://arxiv.org/abs/2409.12147) 
     - [on using bandits to select instance-level reward models for LLM alignment (Nguyen et al., 2024)](https://arxiv.org/abs/2410.01735) 
@@ -46,7 +46,7 @@ Concretely, some of the areas I've been publishing on recently are:
 
 - **Ambiguity and Underspecification**: 
     - [on ambiguity in semantic parsing (Stengel-Eskin and Van Durme, ICLR 2024)](https://openreview.net/forum?id=qL9gogRepu) 
-    - [on improving VQA through pre-emptive self-clarification (Prasad et al., ICLR 2024)](https://openreview.net/forum?id=L4nOxziGf9)
+    - [on improving VQA through preemptive self-clarification (Prasad et al., ICLR 2024)](https://openreview.net/forum?id=L4nOxziGf9)
     - [on rephrasing and analyzing ambiguous questions in VQA (Stengel-Eskin et al. ACL 2023)](https://aclanthology.org/2023.acl-long.569/) 
 
 - **Improving Multimodal Models and LLM Agents**:
