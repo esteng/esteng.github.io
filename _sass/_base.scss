@@ -486,6 +486,7 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
+      font-size: 0.8rem;
       margin-bottom: 1rem;
       .preview {
         width: 100%;
@@ -493,6 +494,7 @@ footer.sticky-bottom {
         max-width: 200px;
       }
       .abbr {
+        font-size: 1rem;
         height: 2rem;
         margin-bottom: 0.5rem;
         abbr {
