@@ -52,8 +52,8 @@ Concretely, some of the areas I've been publishing on recently are:
 
 
 - **Improving Multimodal Models and LLM Agents**:
-    - [on building and testing data generation agents for creating training data (Khan et al., ICLR 2024](https://dataenvgym.github.io) 
-    - [on a tree-based representation for LLM-based video reasoning (Wang et al. NAACL 2024)](https://arxiv.org/abs/2405.19209)
+    - [on building and testing data generation agents for creating training data (Khan et al., ICLR 2025 Spotlight)](https://dataenvgym.github.io) 
+    - [on a tree-based representation for LLM-based video reasoning (Wang et al. CVPR 2025)](https://arxiv.org/abs/2405.19209)
     - [on improving visual prompting/object grounding without training (Wan et al., ECCV 2024)](https://arxiv.org/abs/2403.02325) 
     - [on a more effective/efficient self-consistency method for LLM agents (Wang et al., ACL 2024)](https://arxiv.org/abs/2402.13212)
     - [on Western cultural bias in VLMs and the effect of pretraining language (Ananthram et al., ICLR 2024)](https://arxiv.org/abs/2406.11665) 
