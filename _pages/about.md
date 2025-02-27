@@ -38,7 +38,7 @@ Concretely, some of the areas I've been publishing on recently are:
     - [on rephrasing and analyzing ambiguous questions in VQA (Stengel-Eskin et al. ACL 2023)](https://aclanthology.org/2023.acl-long.569/) 
 
 - **Multi-Agent/Multi-Model Reasoning**: 
-    - [on multi-agent training to accept good and resist bad persuasion (Stengel-Eskin et al., NAACL 2024)](https://arxiv.org/abs/2410.14596) 
+    - [on multi-agent training to accept good and resist bad persuasion (Stengel-Eskin et al., NAACL 2025)](https://arxiv.org/abs/2410.14596) 
     - [on structured distillation to learn from multi-agent discussions (Chen et al., ICML 2024)](https://arxiv.org/abs/2402.01620)
     - [on a new benchmark to assess game-theoretic abilities for LLM agents (Duan et al., NeurIPS 2024)](https://arxiv.org/abs/2402.12348)
     - [on multi-agent iterative coarse-to-fine refinement for reasoning tasks (Chen et al., 2024)](https://arxiv.org/abs/2409.12147) 
@@ -48,7 +48,7 @@ Concretely, some of the areas I've been publishing on recently are:
     - [on learning coding abstractions with LLMs (Stengel-Eskin et al., ICML 2024)](https://arxiv.org/abs/2401.16467)
     - [on discovering skills for RL agents (Fu et al., ICML 2024)](https://arxiv.org/abs/2402.16354)
     - [on distilling skills from teachers for LLM agents (Hashemzadeh et al., CoLLAs 2024)](https://arxiv.org/abs/2405.02749)
-    - [on hybrid and controllable System 1 and System 2 planning (Saha et al., ICLR 2024)](https://arxiv.org/abs/2407.14414) 
+    - [on hybrid and controllable System 1 and System 2 planning (Saha et al., ICLR 2025)](https://arxiv.org/abs/2407.14414) 
 
 
 - **Improving Multimodal Models and LLM Agents**:
@@ -56,7 +56,7 @@ Concretely, some of the areas I've been publishing on recently are:
     - [on a tree-based representation for LLM-based video reasoning (Wang et al. CVPR 2025)](https://arxiv.org/abs/2405.19209)
     - [on improving visual prompting/object grounding without training (Wan et al., ECCV 2024)](https://arxiv.org/abs/2403.02325) 
     - [on a more effective/efficient self-consistency method for LLM agents (Wang et al., ACL 2024)](https://arxiv.org/abs/2402.13212)
-    - [on Western cultural bias in VLMs and the effect of pretraining language (Ananthram et al., ICLR 2024)](https://arxiv.org/abs/2406.11665) 
+    - [on Western cultural bias in VLMs and the effect of pretraining language (Ananthram et al., ICLR 2025)](https://arxiv.org/abs/2406.11665) 
     - [on visual commonsense in unimodal and multimodal models (Zhang et al, NAACL 2022)](https://aclanthology.org/2022.naacl-main.390/) 
 
 
