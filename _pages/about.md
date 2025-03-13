@@ -33,7 +33,7 @@ Concretely, some of the areas I've been publishing on recently are:
     - [on balancing safety and usability using confidence (Stengel-Eskin and Van Durme, EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.159/)
 
 - **Ambiguity and Underspecification**: 
-    - [on ambiguity in semantic parsing (Stengel-Eskin and Van Durme, ICLR 2024)](https://openreview.net/forum?id=qL9gogRepu) 
+    - [on ambiguity in semantic parsing (Stengel-Eskin and Van Durme, ICLR 2024)](https://openreview.net/forum?id=qLegogRepu) 
     - [on improving VQA through preemptive self-clarification (Prasad et al., ICLR 2024)](https://openreview.net/forum?id=L4nOxziGf9)
     - [on rephrasing and analyzing ambiguous questions in VQA (Stengel-Eskin et al. ACL 2023)](https://aclanthology.org/2023.acl-long.569/) 
 
@@ -43,12 +43,14 @@ Concretely, some of the areas I've been publishing on recently are:
     - [on a new benchmark to assess game-theoretic abilities for LLM agents (Duan et al., NeurIPS 2024)](https://arxiv.org/abs/2402.12348)
     - [on multi-agent iterative coarse-to-fine refinement for reasoning tasks (Chen et al., 2024)](https://arxiv.org/abs/2409.12147) 
     - [on using bandits to select instance-level reward models for LLM alignment (Nguyen et al., 2024)](https://arxiv.org/abs/2410.01735) 
+    - [on combining 16 LLMs on 1 GPU via symbolic MoE (Chen et al., 2025)](https://arxiv.org/abs/2503.05641) 
 
 - **Learning Skills and Abstractions for Agents/Coding/Planning**: 
     - [on learning coding abstractions with LLMs (Stengel-Eskin et al., ICML 2024)](https://arxiv.org/abs/2401.16467)
     - [on discovering skills for RL agents (Fu et al., ICML 2024)](https://arxiv.org/abs/2402.16354)
     - [on distilling skills from teachers for LLM agents (Hashemzadeh et al., CoLLAs 2024)](https://arxiv.org/abs/2405.02749)
     - [on hybrid and controllable System 1 and System 2 planning (Saha et al., ICLR 2025)](https://arxiv.org/abs/2407.14414) 
+    - [on learning to generate unit tests for LLM debugging (Prasad et al., 2025)](https://arxiv.org/abs/2502.01619) 
 
 
 - **Improving Multimodal Models and LLM Agents**:
