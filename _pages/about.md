@@ -25,7 +25,7 @@ My work addresses three key problems:
 My work covers calibration and uncertainty especially in connection with implicit phenomena such as vagueness, underspecification, and ambiguity. 
 While I've mostly explored these topics through a linguistic lens, I am interested in their importance to intelligence more broadly.
 
-Concretely, some of the areas I've been publishing on recently are:
+Concretely, some of the main areas I've been publishing on recently are:
 
 - **Confidence Estimation and Calibration**: 
     - [on multi-agent pragmatic reasoning for better calibration (Stengel-Eskin et al., NeurIPS 2024)](https://arxiv.org/abs/2405.21028)
@@ -51,6 +51,7 @@ Concretely, some of the areas I've been publishing on recently are:
     - [on distilling skills from teachers for LLM agents (Hashemzadeh et al., CoLLAs 2024)](https://arxiv.org/abs/2405.02749)
     - [on hybrid and controllable System 1 and System 2 planning (Saha et al., ICLR 2025)](https://arxiv.org/abs/2407.14414) 
     - [on learning to generate unit tests for LLM debugging (Prasad et al., 2025)](https://arxiv.org/abs/2502.01619) 
+    - [on inferring structured abstractions for reasoning (Khan et al., 2025)](https://zaidkhan.me/EFAGen/) 
 
 
 - **Improving Multimodal Models and LLM Agents**:
