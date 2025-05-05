@@ -14,6 +14,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
+**Major Update: I will be joining UT Austin as an Assistant Professor in the Department of Computer Science in Fall 2025! I will be recruiting Ph.D. students for Fall 2026 and also looking for interns throughout 2025-2026.**
+
 I am a Postdoctoral Research Associate at the University of North Carolina, Chapel Hill in the [MURGe-Lab](https://murgelab.cs.unc.edu) led by [Mohit Bansal](https://murgelab.cs.unc.edu). 
 I received my Ph.D. in 2023 from Johns Hopkins University, where I was supervised by [Benjamin Van Durme](https://www.cs.jhu.edu/~vandurme/) and supported by an NSF GRFP. 
 
@@ -61,6 +63,8 @@ Concretely, some of the main areas I've been publishing on recently are:
     - [on a more effective/efficient self-consistency method for LLM agents (Wang et al., ACL 2024)](https://arxiv.org/abs/2402.13212)
     - [on Western cultural bias in VLMs and the effect of pretraining language (Ananthram et al., ICLR 2025)](https://arxiv.org/abs/2406.11665) 
     - [on visual commonsense in unimodal and multimodal models (Zhang et al, NAACL 2022)](https://aclanthology.org/2022.naacl-main.390/) 
+    - [on reasoning about occluded patterns (Pothiraj et al., 2025)](https://arxiv.org/abs/2504.15485) 
+
 
 
 Before starting my Ph.D., I received my B.A.&Sc. with First Class Honours in Cognitive Science from McGill University, focusing in computer science and linguistics.
