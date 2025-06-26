@@ -14,7 +14,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-**Major Update: I will be joining UT Austin as an Assistant Professor in the Department of Computer Science in Fall 2025! I will be recruiting Ph.D. students for Fall 2026 and also looking for interns throughout 2025-2026.**
+**Major Update: I will be joining UT Austin as an Assistant Professor in the Department of Computer Science in Fall 2025! I will be recruiting Ph.D. students for Fall 2026 and also looking for interns throughout 2025-2026, please see this [page for more details](/contact/).**
 
 I am a Postdoctoral Research Associate at the University of North Carolina, Chapel Hill in the [MURGe-Lab](https://murgelab.cs.unc.edu) led by [Mohit Bansal](https://murgelab.cs.unc.edu). 
 I received my Ph.D. in 2023 from Johns Hopkins University, where I was supervised by [Benjamin Van Durme](https://www.cs.jhu.edu/~vandurme/) and supported by an NSF GRFP. 
