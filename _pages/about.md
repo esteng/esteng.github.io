@@ -14,12 +14,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-**Major Update: I will be joining UT Austin as an Assistant Professor in the Department of Computer Science in Fall 2025! I will be recruiting Ph.D. students for Fall 2026 and also looking for interns throughout 2025-2026, please see this [page for more details](/contact/).**
+**I will be recruiting Ph.D. students for Fall 2026 and also looking for interns throughout 2025-2026, please see this [page for more details](/contact/).**
 
-I am a Postdoctoral Research Associate at the University of North Carolina, Chapel Hill in the [MURGe-Lab](https://murgelab.cs.unc.edu) led by [Mohit Bansal](https://murgelab.cs.unc.edu). 
-I received my Ph.D. in 2023 from Johns Hopkins University, where I was supervised by [Benjamin Van Durme](https://www.cs.jhu.edu/~vandurme/) and supported by an NSF GRFP. 
-
-I aim to develop AI agents that can intelligently communicate and collaborate with people and each other.
+I am an Assistant Professor of Computer Science at UT Austin where I work on developing AI agents that can intelligently communicate and collaborate with people and each other.
 My work addresses three key problems:
 1. A central focus of my work is **multi-agent communication and collaboration**, which has led to work on multi-LLM multi-round discussions/debates, distilling multi-agent behavior, pragmatic/verbalized uncertainty, and persuasion. 
 2. Agents must be **grounded to the world through their inputs and actions**: another line of my work covers multimodal grounding and converting language to action through semantic parsing, text-to-code, and learning abstractions and skills. 
@@ -66,8 +63,5 @@ Concretely, some of the main areas I've been publishing on recently are:
     - [on reasoning about occluded patterns (Pothiraj et al., 2025)](https://arxiv.org/abs/2504.15485) 
 
 
-
-Before starting my Ph.D., I received my B.A.&Sc. with First Class Honours in Cognitive Science from McGill University, focusing in computer science and linguistics.
-While at McGill, I worked as a research assistant at the Montreal Language Modeling Lab (MLML), now [MCQLL](https://mcqll.org) supervised by [Morgan Sonderegger](http://people.linguistics.mcgill.ca/~morgan/).
-I wrote my honours thesis (supervised by [Timothy O'Donnell](https://todonnell.github.io)) on a variational inference algorithm for a model of language acquisition.
+Previously, I was a postdoc with [Mohit Bansal](https://www.cs.unc.edu/~mbansal/) at UNC Chapel Hill. I received my Ph.D. in 2023 from Johns Hopkins University, where I was supervised by [Benjamin Van Durme](https://www.cs.jhu.edu/~vandurme/) and supported by an NSF GRFP. Before starting my Ph.D., I received my B.A.&Sc. with First Class Honours in Cognitive Science from McGill University, focusing in computer science and linguistics. While at McGill, I worked as a research assistant at the Montreal Language Modeling Lab (MLML), now [MCQLL](https://mcqll.org) supervised by [Morgan Sonderegger](http://people.linguistics.mcgill.ca/~morgan/). I wrote my honours thesis (supervised by [Timothy O'Donnell](https://todonnell.github.io)) on a variational inference algorithm for a model of language acquisition.
 
