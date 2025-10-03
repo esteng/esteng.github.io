@@ -32,6 +32,7 @@ Concretely, some of the main areas I've been publishing on recently are:
     - [on balancing safety and usability using confidence (Stengel-Eskin and Van Durme, EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.159/)
 
 - **Ambiguity and Underspecification**: 
+    - [on exploitation of loopholes instatiated by ambiguity (Choi, Bansal, and Stengel-Eskin, EMNLP 2025)](https://arxiv.org/abs/2508.19546)
     - [on ambiguity in semantic parsing (Stengel-Eskin and Van Durme, ICLR 2024)](https://openreview.net/forum?id=qLegogRepu) 
     - [on improving VQA through preemptive self-clarification (Prasad et al., ICLR 2024)](https://openreview.net/forum?id=L4nOxziGf9)
     - [on rephrasing and analyzing ambiguous questions in VQA (Stengel-Eskin et al. ACL 2023)](https://aclanthology.org/2023.acl-long.569/) 
