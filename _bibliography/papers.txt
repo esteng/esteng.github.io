@@ -1,32 +1,5 @@
 
 
-@article{nguyen2024laser,
-  title={LASeR: Learning to Adaptively Select Reward Models with Multi-Armed Bandits},
-  author={Nguyen, Duy and Prasad, Archiki and Stengel-Eskin, Elias and Bansal, Mohit}, 
-  journal={NeurIPS}, 
-  year={2025},
-  pdf="https://arxiv.org/abs/2410.01735",
-  abbr="NeurIPS"
-}
-
-@article{choi2025language,
-  title={Language Models Identify Ambiguities and Exploit Loopholes},
-  author={Choi, Jio and Bansal, Mohit and Stengel-Eskin, Elias},
-  journal={EMNLP},
-  year={2025},
-  pdf={https://arxiv.org/abs/2508.19546},
-  abbr={EMNLP},
-}
-
-@article{chen2024magicore,
-  title={MAgICoRe: Multi-Agent, Iterative, Coarse-to-Fine Refinement for Reasoning},
-  author={Chen, Justin Chih-Yao and Prasad, Archiki and Saha, Swarnadeep and Stengel-Eskin, Elias and Bansal, Mohit},
-  journal={EMNLP},
-  year={2025},
-  pdf="https://arxiv.org/abs/2409.12147",
-  abbr="EMNLP"
-}
-
 @article{wang2025retrieval,
   title={Retrieval-Augmented Generation with Conflicting Evidence},
   author={Wang, Han and Prasad, Archiki and Stengel-Eskin, Elias and Bansal, Mohit},
@@ -94,23 +67,13 @@
   pdf={https://arxiv.org/abs/2506.01187}
 }
 
-
-@article{patil2025sum,
-  title={The Sum Leaks More Than Its Parts: Compositional Privacy Risks and Mitigations in Multi-Agent Collaboration},
-  author={Patil, Vaidehi and Stengel-Eskin, Elias and Bansal, Mohit},
-  journal={arXiv preprint arXiv:2509.14284},
-  year={2025}
-  abbr={arxiv},
-  pdf={https://arxiv.org/abs/2509.14284}
-}
-
-@article{xiao2025generalized,
-  title={Generalized Correctness Models: Learning Calibrated and Model-Agnostic Correctness Predictors from Historical Patterns},
-  author={Xiao, Hanqi and Patil, Vaidehi and Lee, Hyunji and Stengel-Eskin, Elias and Bansal, Mohit},
-  journal={arXiv preprint arXiv:2509.24988},
+@article{choi2025language,
+  title={Language Models Identify Ambiguities and Exploit Loopholes},
+  author={Choi, Jio and Bansal, Mohit and Stengel-Eskin, Elias},
+  journal={arXiv preprint arXiv:2508.19546},
   year={2025},
+  pdf={https://arxiv.org/abs/2508.19546},
   abbr={arxiv},
-  pdf={https://arxiv.org/abs/2509.24988}
 }
 
 @article{niu2025rotbench,
@@ -129,7 +92,6 @@
   year={2025},
   pdf={https://arxiv.org/abs/2507.18043},
   abbr={arxiv},
-
 }
 
 @article{lee2025context,
@@ -388,7 +350,23 @@
 }
 
 
+@article{nguyen2024laser,
+  title={LASeR: Learning to Adaptively Select Reward Models with Multi-Armed Bandits},
+  author={Nguyen, Duy and Prasad, Archiki and Stengel-Eskin, Elias and Bansal, Mohit}, 
+  journal={arXiv}, 
+  year={2024},
+  pdf="https://arxiv.org/abs/2410.01735",
+  abbr="arxiv"
+}
 
+@article{chen2024magicore,
+  title={MAgICoRe: Multi-Agent, Iterative, Coarse-to-Fine Refinement for Reasoning},
+  author={Chen, Justin Chih-Yao and Prasad, Archiki and Saha, Swarnadeep and Stengel-Eskin, Elias and Bansal, Mohit},
+  journal={arXiv},
+  year={2024},
+  pdf="https://arxiv.org/abs/2409.12147",
+  abbr="arxiv"
+}
 
 
 @article{hofweber2024rational,

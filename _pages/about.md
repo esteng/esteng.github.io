@@ -16,7 +16,7 @@ social: true  # includes social icons at the bottom of the page
 
 **I will be recruiting Ph.D. students for Fall 2026 and also looking for interns throughout 2025-2026, please see this [page for more details](/contact/).**
 
-I am an Assistant Professor of Computer Science at UT Austin where I work on developing AI agents that can intelligently communicate and collaborate with people and each other.
+I am an Assistant Professor of Computer Science at The University of Texas at Austin where I work on developing AI agents that can intelligently communicate and collaborate with people and each other.
 My work addresses three key problems:
 1. A central focus of my work is **multi-agent communication and collaboration**, which has led to work on multi-LLM multi-round discussions/debates, distilling multi-agent behavior, pragmatic/verbalized uncertainty, and persuasion. 
 2. Agents must be **grounded to the world through their inputs and actions**: another line of my work covers multimodal grounding and converting language to action through semantic parsing, text-to-code, and learning abstractions and skills. 
@@ -52,7 +52,6 @@ Concretely, some of the main areas I've been publishing on recently are:
     - [on hybrid and controllable System 1 and System 2 planning (Saha et al., ICLR 2025)](https://arxiv.org/abs/2407.14414) 
     - [on learning to generate unit tests for LLM debugging (Prasad et al., 2025)](https://arxiv.org/abs/2502.01619) 
     - [on inferring structured abstractions for reasoning (Khan et al., 2025)](https://zaidkhan.me/EFAGen/) 
-
 
 - **Improving Multimodal Models and LLM Agents**:
     - [on building and testing data generation agents for creating training data (Khan et al., ICLR 2025 Spotlight)](https://dataenvgym.github.io) 
