@@ -27,6 +27,8 @@ While I've mostly explored these topics through a linguistic lens, I am interest
 Concretely, some of the main areas I've been publishing on recently are:
 
 - **Confidence Estimation and Calibration**: 
+    - [on calibrating generation with self-generated distractors (Wang and Stengel-Eskin, 2025)](https://arxiv.org/abs/2509.25532)
+    - [on training models to predict correctness from historical data (Xiao et al., 2025)](https://arxiv.org/abs/2509.24988)
     - [on multi-agent pragmatic reasoning for better calibration (Stengel-Eskin et al., NeurIPS 2024)](https://arxiv.org/abs/2405.21028)
     - [on calibration in semantic parsing (Stengel-Eskin and Van Durme, TACL 2023)](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00598/117737)
     - [on balancing safety and usability using confidence (Stengel-Eskin and Van Durme, EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.159/)
@@ -41,20 +43,24 @@ Concretely, some of the main areas I've been publishing on recently are:
     - [on multi-agent training to accept good and resist bad persuasion (Stengel-Eskin et al., NAACL 2025)](https://arxiv.org/abs/2410.14596) 
     - [on structured distillation to learn from multi-agent discussions (Chen et al., ICML 2024)](https://arxiv.org/abs/2402.01620)
     - [on a new benchmark to assess game-theoretic abilities for LLM agents (Duan et al., NeurIPS 2024)](https://arxiv.org/abs/2402.12348)
-    - [on multi-agent iterative coarse-to-fine refinement for reasoning tasks (Chen et al., 2024)](https://arxiv.org/abs/2409.12147) 
-    - [on using bandits to select instance-level reward models for LLM alignment (Nguyen et al., 2024)](https://arxiv.org/abs/2410.01735) 
+    - [on multi-agent iterative coarse-to-fine refinement for reasoning tasks (Chen et al., EMNLP 2025)](https://arxiv.org/abs/2409.12147) 
+    - [on using bandits to select instance-level reward models for LLM alignment (Nguyen et al., NeurIPS 2025)](https://arxiv.org/abs/2410.01735) 
     - [on combining 16 LLMs on 1 GPU via symbolic MoE (Chen et al., 2025)](https://arxiv.org/abs/2503.05641) 
 
-- **Learning Skills and Abstractions for Agents/Coding/Planning**: 
+- **Skills and Abstractions for Agents/Coding/Planning**: 
+    - [on inferring symbolic world models from limited interaction (Khan et al., 2025)](https://arxiv.org/abs/2510.12088) 
+    - [on generation programs for traceable and attributable text generation (Wan et al., COLM 2025)](https://arxiv.org/abs/2506.14580)
     - [on learning coding abstractions with LLMs (Stengel-Eskin et al., ICML 2024)](https://arxiv.org/abs/2401.16467)
     - [on discovering skills for RL agents (Fu et al., ICML 2024)](https://arxiv.org/abs/2402.16354)
     - [on distilling skills from teachers for LLM agents (Hashemzadeh et al., CoLLAs 2024)](https://arxiv.org/abs/2405.02749)
     - [on hybrid and controllable System 1 and System 2 planning (Saha et al., ICLR 2025)](https://arxiv.org/abs/2407.14414) 
-    - [on learning to generate unit tests for LLM debugging (Prasad et al., 2025)](https://arxiv.org/abs/2502.01619) 
+    - [on learning to generate unit tests for LLM debugging (Prasad et al., COLM 2025)](https://arxiv.org/abs/2502.01619) 
     - [on inferring structured abstractions for reasoning (Khan et al., 2025)](https://zaidkhan.me/EFAGen/) 
 
 - **Improving Multimodal Models and LLM Agents**:
+    - [on building PRMs for guiding long-horizon info-seeking tasks (Lee et al., 2025)](https://arxiv.org/abs/2511.19314)
     - [on building and testing data generation agents for creating training data (Khan et al., ICLR 2025 Spotlight)](https://dataenvgym.github.io) 
+    - [on attribution-based steering for multimodal models (Nguyen et al., 2025)](https://arxiv.org/abs/2507.18043)
     - [on a tree-based representation for LLM-based video reasoning (Wang et al. CVPR 2025)](https://arxiv.org/abs/2405.19209)
     - [on improving visual prompting/object grounding without training (Wan et al., ECCV 2024)](https://arxiv.org/abs/2403.02325) 
     - [on a more effective/efficient self-consistency method for LLM agents (Wang et al., ACL 2024)](https://arxiv.org/abs/2402.13212)
