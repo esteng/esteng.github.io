@@ -5,9 +5,9 @@
 title: Elias Stengel-Eskin # the website title (if blank, full name will be used instead)
 first_name: Elias
 last_name: Stengel-Eskin
-email: esteng [at] cs [dot] unc [dot] edu
+email: esteng [at] cs [dot] utexas [dot] edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Postdoctoral Research Associate, UNC Chapel Hill
+  Assistant Professor, Department of Computer Science, The University of Texas at Austin
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: NLP, AI, Computational Linguistics  # add your own keywords or leave empty
@@ -69,7 +69,7 @@ twitter_username: EliasEskin # your Twitter handle
 scholar_userid: gr_ZVSQAAAAJ # your Google Scholar ID
 
 contact_note: >
-  Reach me by email: esteng [at] cs [dot] unc [dot] edu 
+  Reach me by email: esteng [at] cs [dot] utexas [dot] edu 
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
