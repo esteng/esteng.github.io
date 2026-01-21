@@ -66,7 +66,7 @@ Concretely, some of the main areas I've been publishing on recently are:
     - [on a more effective/efficient self-consistency method for LLM agents (Wang et al., ACL 2024)](https://arxiv.org/abs/2402.13212)
     - [on Western cultural bias in VLMs and the effect of pretraining language (Ananthram et al., ICLR 2025)](https://arxiv.org/abs/2406.11665) 
     - [on visual commonsense in unimodal and multimodal models (Zhang et al, NAACL 2022)](https://aclanthology.org/2022.naacl-main.390/) 
-    - [on reasoning about occluded patterns (Pothiraj et al., 2025)](https://arxiv.org/abs/2504.15485) 
+    - [on reasoning about occluded patterns (Pothiraj et al., ICCV 2025)](https://arxiv.org/abs/2504.15485) 
 
 
 Previously, I was a postdoc with [Mohit Bansal](https://www.cs.unc.edu/~mbansal/) at UNC Chapel Hill. I received my Ph.D. in 2023 from Johns Hopkins University, where I was supervised by [Benjamin Van Durme](https://www.cs.jhu.edu/~vandurme/) and supported by an NSF GRFP. Before starting my Ph.D., I received my B.A.&Sc. with First Class Honours in Cognitive Science from McGill University, focusing in computer science and linguistics. While at McGill, I worked as a research assistant at the Montreal Language Modeling Lab (MLML), now [MCQLL](https://mcqll.org) supervised by [Morgan Sonderegger](http://people.linguistics.mcgill.ca/~morgan/). I wrote my honours thesis (supervised by [Timothy O'Donnell](https://todonnell.github.io)) on a variational inference algorithm for a model of language acquisition.
