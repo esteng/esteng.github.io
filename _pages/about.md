@@ -27,7 +27,7 @@ While I've mostly explored these topics through a linguistic lens, I am interest
 Concretely, some of the main areas I've been publishing on recently are:
 
 - **Confidence Estimation and Calibration**: 
-    - [on calibrating generation with self-generated distractors (Wang and Stengel-Eskin, 2025)](https://arxiv.org/abs/2509.25532)
+    - [on calibrating generation with self-generated distractors (Wang and Stengel-Eskin, ICLR 2026)](https://arxiv.org/abs/2509.25532)
     - [on training models to predict correctness from historical data (Xiao et al., 2025)](https://arxiv.org/abs/2509.24988)
     - [on multi-agent pragmatic reasoning for better calibration (Stengel-Eskin et al., NeurIPS 2024)](https://arxiv.org/abs/2405.21028)
     - [on calibration in semantic parsing (Stengel-Eskin and Van Durme, TACL 2023)](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00598/117737)
@@ -48,7 +48,7 @@ Concretely, some of the main areas I've been publishing on recently are:
     - [on combining 16 LLMs on 1 GPU via symbolic MoE (Chen et al., 2025)](https://arxiv.org/abs/2503.05641) 
 
 - **Skills and Abstractions for Agents/Coding/Planning**: 
-    - [on inferring symbolic world models from limited interaction (Khan et al., 2025)](https://arxiv.org/abs/2510.12088) 
+    - [on inferring symbolic world models from limited interaction (Khan et al., ICLR 2026)](https://arxiv.org/abs/2510.12088) 
     - [on generation programs for traceable and attributable text generation (Wan et al., COLM 2025)](https://arxiv.org/abs/2506.14580)
     - [on learning coding abstractions with LLMs (Stengel-Eskin et al., ICML 2024)](https://arxiv.org/abs/2401.16467)
     - [on discovering skills for RL agents (Fu et al., ICML 2024)](https://arxiv.org/abs/2402.16354)
