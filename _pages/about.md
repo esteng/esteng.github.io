@@ -14,7 +14,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-**I will be recruiting Ph.D. students for Fall 2026 and also looking for interns throughout 2025-2026, please see this [page for more details](/contact/).**
+**If you are a student looking to get in touch, please see this [page for more details](/contact/).**
 
 I am an Assistant Professor of Computer Science at The University of Texas at Austin where I work on developing AI agents that can intelligently communicate and collaborate with people and each other.
 My work addresses three key problems:
