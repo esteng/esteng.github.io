@@ -1,0 +1,80 @@
+guest name,party,side,rsvp,meal
+Eleanor Whitfield,Whitfield Family,bride,yes,chicken
+James Whitfield,Whitfield Family,bride,yes,beef
+Margaret Whitfield,Whitfield Family,bride,yes,fish
+Thomas Whitfield,Whitfield Family,bride,yes,chicken
+Sophie Whitfield,Whitfield Family,bride,yes,veg
+Daniel Okafor,Okafor Family,groom,yes,beef
+Adaeze Okafor,Okafor Family,groom,yes,chicken
+Chidi Okafor,Okafor Family,groom,yes,fish
+Ngozi Okafor,Okafor Family,groom,yes,veg
+Emeka Okafor,Okafor Family,groom,yes,beef
+Olivia Brennan,College Friends,bride,yes,chicken
+Marcus Brennan,College Friends,bride,yes,beef
+Priya Raman,College Friends,bride,yes,veg
+Arjun Raman,College Friends,bride,yes,chicken
+Hannah Lindqvist,College Friends,bride,yes,fish
+Erik Lindqvist,College Friends,bride,yes,beef
+Sofia Moretti,College Friends,bride,yes,veg
+Luca Moretti,College Friends,bride,yes,chicken
+Grace Kim,Work Friends,bride,yes,fish
+David Kim,Work Friends,bride,yes,beef
+Rachel Feldman,Work Friends,bride,yes,chicken
+Aaron Feldman,Work Friends,bride,yes,veg
+Nina Petrova,Work Friends,bride,yes,fish
+Yusuf Demir,Work Friends,bride,yes,beef
+Leila Demir,Work Friends,bride,yes,chicken
+Connor Walsh,Groom College,groom,yes,beef
+Aoife Walsh,Groom College,groom,yes,fish
+Ryan Mbeki,Groom College,groom,yes,chicken
+Thandiwe Mbeki,Groom College,groom,yes,veg
+Kevin Nakamura,Groom College,groom,yes,beef
+Yuki Nakamura,Groom College,groom,yes,fish
+Ben Carlisle,Groom College,groom,yes,chicken
+Zoe Carlisle,Groom College,groom,yes,veg
+Frank Alvarez,Neighbors,groom,yes,beef
+Rosa Alvarez,Neighbors,groom,yes,chicken
+Miguel Alvarez,Neighbors,groom,yes,fish
+Carmen Alvarez,Neighbors,groom,yes,veg
+Henry Patel,Family Friends,bride,yes,beef
+Anjali Patel,Family Friends,bride,yes,chicken
+Rohan Patel,Family Friends,bride,yes,fish
+Deepa Patel,Family Friends,bride,yes,veg
+William Fraser,Family Friends,bride,yes,beef
+Catherine Fraser,Family Friends,bride,yes,chicken
+George Fraser,Family Friends,bride,yes,fish
+Isla Fraser,Family Friends,bride,yes,veg
+Noah Bergman,Groom Family,groom,yes,beef
+Astrid Bergman,Groom Family,groom,yes,chicken
+Lars Bergman,Groom Family,groom,yes,fish
+Freya Bergman,Groom Family,groom,yes,veg
+Peter Volkov,Groom Family,groom,yes,beef
+Irina Volkov,Groom Family,groom,yes,chicken
+Dmitri Volkov,Groom Family,groom,yes,fish
+Tatiana Volkov,Groom Family,groom,yes,veg
+Samuel Adebayo,Groom Family,groom,yes,beef
+Folake Adebayo,Groom Family,groom,yes,chicken
+Quinn Adebayo,Groom Family,groom,yes,fish
+Kara Johansson,Plus Ones,bride,yes,veg
+Liam O'Brien,Plus Ones,bride,yes,beef
+Maya Fernandez,Plus Ones,bride,yes,chicken
+Tomas Fernandez,Plus Ones,bride,yes,fish
+Isabelle Laurent,Bride Family,bride,yes,veg
+Antoine Laurent,Bride Family,bride,yes,beef
+Camille Laurent,Bride Family,bride,yes,chicken
+Julien Laurent,Bride Family,bride,yes,fish
+Beatrix Costa,Bride Family,bride,yes,veg
+Rafael Costa,Bride Family,bride,yes,beef
+Olivia Costa,Bride Family,bride,yes,chicken
+Mateus Costa,Bride Family,bride,yes,fish
+Charlotte Reyes,Misc,bride,no,chicken
+Diego Reyes,Misc,bride,no,beef
+Amara Nwosu,Misc,groom,yes,veg
+Kwame Nwosu,Misc,groom,yes,beef
+Simone Laurent,Misc,bride,yes,fish
+Gabriel Santos,Misc,groom,yes,chicken
+Lucia Santos,Misc,groom,yes,veg
+Oscar Lindgren,Misc,groom,yes,beef
+Elsa Lindgren,Misc,groom,yes,fish
+Vera Novak,Misc,bride,yes,chicken
+Tomasz Novak,Misc,bride,yes,beef

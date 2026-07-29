@@ -162,7 +162,11 @@ defaults:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ['robots.txt']
+  exclude:
+    - 'robots.txt'
+    - 'wedding/index.html'
+    - 'wedding/app.js'
+    - 'wedding/styles.css'
   uglifier_args:
     harmony: true
 

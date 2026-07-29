@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Seating Chart</title>
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+  <header id="toolbar">
+    <span class="brand">Seating Chart</span>
+
+    <div class="group">
+      <label class="btn" for="csvInput">Load Guest CSV</label>
+      <input type="file" id="csvInput" accept=".csv,text/csv" hidden />
+
+      <label class="btn" for="jsonInput">Load Assignment JSON</label>
+      <input type="file" id="jsonInput" accept=".json,application/json" hidden />
+
+      <button class="btn" id="exportBtn">Export JSON</button>
+      <button class="btn" id="autosaveBtn">Auto-save to File…</button>
+    </div>
+
+    <div class="group">
+      <button class="btn primary" id="addTableBtn">+ Add Table</button>
+      <button class="btn danger" id="resetBtn">Reset All</button>
+    </div>
+
+    <div class="group zoom-controls">
+      <button class="btn" id="zoomOut" title="Zoom out">−</button>
+      <span id="zoomLabel">100%</span>
+      <button class="btn" id="zoomIn" title="Zoom in">+</button>
+      <button class="btn" id="zoomFit" title="Fit whole room in view">Fit</button>
+    </div>
+
+    <div class="group room-size">
+      <span class="room-label">Room</span>
+      <button class="btn" id="roomTaller" title="Make the room taller">↕ Taller</button>
+      <button class="btn" id="roomShorter" title="Make the room shorter">↕ Shorter</button>
+      <button class="btn" id="roomWider" title="Make the room wider">↔ Wider</button>
+      <button class="btn" id="roomNarrower" title="Make the room narrower">↔ Narrower</button>
+    </div>
+
+    <div class="group stats">
+      <span id="saveStatus"></span>
+      <span id="seatedCount">0 seated</span>
+      <span id="unseatedCount">0 unseated</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="roomWrap">
+      <div id="roomStage">
+        <div id="room"></div>
+      </div>
+    </section>
+
+    <aside id="sidebar">
+      <div id="paletteWrap">
+        <div class="palette-title">Drag a color onto a person</div>
+        <div id="palette"></div>
+        <div class="custom-row">
+          <div class="swatch-drag" id="customSwatch" draggable="true" title="Drag onto a person"></div>
+          <input type="color" id="customColor" value="#e57373" title="Pick a custom color" />
+          <span class="tiny-hint">pick a custom color, then drag the square</span>
+        </div>
+      </div>
+
+      <h2>Unseated Guests</h2>
+      <input type="search" id="guestSearch" placeholder="Filter guests…" />
+      <div id="inventory" class="drop-zone"></div>
+      <p class="hint">Drag a guest onto a seat. Drag a seated guest back here to unseat.</p>
+    </aside>
+  </main>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>
