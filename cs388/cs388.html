@@ -1,0 +1,406 @@
+<html>
+<head>
+  <title>CS388</title>
+  <link rel="stylesheet" type="text/css" href="courses.css"/>
+</head>
+
+<body>
+
+<h1>CS388: Natural Language Processing (Fall 2026)</h1>
+
+<p>Instructor: Elias Stengel-Eskin, <a href="mailto:esteng@utexas.edu">esteng@utexas.edu</a>
+<br/>Lecture: Tuesday and Thursday 3:30pm - 5:00pm, JGB 2.202
+<br/>Instructor Office Hours: [TBD]
+<br/>TA: Rishabh Mediratta
+<br/>TA Office Hours: [TBD]
+<br/>Unique Number: [TBD]
+
+<h2>Description</h2>
+
+<p>This class is a graduate-level introduction to Natural Language Processing (NLP), the study of computing systems that
+can process, understand, or communicate in human language. The last several years have reshaped the field: a single class of
+models &mdash; large language models (LLMs) pre-trained on text and then adapted through supervised learning and reinforcement
+learning &mdash; now underpins most NLP applications. This course is about understanding how those systems work, why they work,
+where they fail, and what we still do not know about them.
+
+<p>The course builds the modeling toolkit from the ground up: text classification and feature extraction, n-gram language models,
+word embeddings, feedforward neural networks, and then the Transformer architecture and the encoder and decoder models built on it.
+We treat language modeling as the unifying thread &mdash; generation as V-way classification &mdash; and trace it through pre-training,
+mid-training, and post-training, including reinforcement learning from human feedback (RLHF) and from verifiable rewards (RLVR).
+The second half covers what these models are used for and what is known about their behavior: in-context learning, chain-of-thought
+reasoning, dataset artifacts and bias, multimodal grounding and vision-language models, agents, and applications spanning
+translation, code, efficiency, interpretability, and safety.
+
+<p>Throughout, the emphasis is on connecting course material to the current state of the art. You should leave this course able to
+read a current NLP paper critically, understand the design decisions behind a modern LLM, and carry out original research of your own.
+
+<p><b>Requirements</b>
+<ul>
+<li>391L - Machine Learning, 343 - Artificial Intelligence, or equivalent AI/ML course experience</li>
+<li>Familiarity with Python for homeworks and the final project</li>
+<li>Additional prior exposure to discrete math, probability, linear algebra, optimization, linguistics, and NLP
+useful but not required
+</ul>
+
+<h1><a href="./syllabus.html">Syllabus [Clickable link with important information about the course policies. The current page you are on is NOT the complete syllabus]</a></h1>
+
+<p><b>Assessment:</b> 4 quizzes (20%, lowest dropped), 4 homeworks (10%, lowest dropped), midterm (15%), final exam (30%),
+final project (25%). Quizzes and exams are in person and closed-book; quizzes are given in the first 15 minutes of class on the
+dates below. <b>Note that the quiz dates below are subject to change depending on course progress.</b> The final exam is given
+<b>in class on the final day of class (Dec 3)</b>. See the syllabus for full details, including the <b>AI use policy</b>, which is
+permissive on homeworks and carries specific obligations on the final project.
+
+<p><b>Assignments:</b> See syllabus for more details about these.
+
+<p><b>Homework 1: Classification and Neural Networks</b> [to be posted]
+
+<p><b>Homework 2: Language Modeling and Transformers</b> [to be posted]
+
+<p><b>Homework 3: Post-training and RL</b> [to be posted]
+
+<p><b>Homework 4: Applications</b> [to be posted]
+
+<p><b>Final Project</b> [to be posted]
+
+<p><b>Readings:</b> Textbook readings are assigned to complement the material discussed in lecture. You may find it useful
+to do these readings before lecture as preparation or after lecture to review, but you are not expected to know everything discussed
+in the textbook if it isn't covered in lecture.
+Paper readings are intended to supplement the course material if you are interested in diving deeper on particular topics.
+<b>Readings are not required for the quizzes or exams unless the material was also covered in lecture.</b>
+
+<p>The chief text in this course is <a href="https://web.stanford.edu/~jurafsky/slp3/">Jurafsky and Martin: Speech and Language Processing (3rd ed.)</a>,
+available as a free PDF online; its recent chapters cover Transformers and LLMs. This is supplemented by
+<a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Eisenstein: Natural Language Processing</a>
+for classification and structured prediction, and
+<a href="https://arxiv.org/pdf/1510.00726">Goldberg: A Primer on Neural Network Models for Natural Language Processing</a> for
+neural network fundamentals. Much of the second half of the course has no textbook treatment and is covered by papers.
+
+<p><b>Slides</b> will be linked from this table as the semester progresses.
+
+<br>
+<br>
+
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" id="AutoNumber5" width="800">
+  <tr>
+    <td width="70" height="18"><b>Date</b></td>
+    <td width="270" height="18"><b>Topics</b></td>
+    <td width="210" height="18"><b>Readings</b></td>
+    <td width="100" height="18"><b>Assignments</b></td>
+  </tr>
+  <tr>
+    <td width="70">Aug 25</td>
+    <td>Introduction; N-gram Language Models</td>
+    <td>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/2.pdf">JM 2</a><br/>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">JM 3 (N-gram LMs)</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td width="70">Aug 27</td>
+    <td>Machine Learning Basics; Binary Classification</td>
+    <td>
+      <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Eisenstein 2.0-2.5, 4.2-4.4.1</a><br/>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf">JM 4</a><br/>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/5.pdf">JM 5</a>
+    </td>
+    <td>HW1 out</td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Sep 1</td>
+    <td>Multi-class Classification; Feature Extraction</td>
+    <td>
+      <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Eisenstein 4.2</a><br/>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/5.pdf">JM 5.3-5.6</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Sep 3</td>
+    <td>Neural Networks: Feedforward, Backpropagation</td>
+    <td>
+      <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Eisenstein 3.0-3.3</a><br/>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/7.pdf">JM 7</a><br/>
+      <a href="https://arxiv.org/pdf/1510.00726">Goldberg 4</a><br/>
+      <a href="https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf">Bengio+03 NPLM</a><br/>
+      <a href="https://aclanthology.org/P15-1162.pdf">Iyyer+15 DANs</a>
+    </td>
+    <td>HW1 due</td>
+  </tr>
+  <tr>
+    <td width="70">Sep 8</td>
+    <td>Word Embeddings; Bias in Embeddings</td>
+    <td>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/6.pdf">JM 6</a><br/>
+      <a href="https://arxiv.org/pdf/1301.3781">Mikolov+13 word2vec</a><br/>
+      <a href="https://nlp.stanford.edu/pubs/glove.pdf">Pennington+14 GloVe</a><br/>
+      <a href="https://aclanthology.org/Q15-1016.pdf">LevyGoldberg+15 Improving Similarity</a><br/>
+      <a href="https://arxiv.org/pdf/1607.06520">Bolukbasi+16 Gender</a>
+    </td>
+    <td><b>Quiz 1</b></td>
+  </tr>
+  <tr>
+    <td width="70">Sep 10</td>
+    <td>Language Modeling: Smoothing, Backoff, Neural LMs</td>
+    <td>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">JM 3</a><br/>
+      <a href="https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf">Bengio+03 NPLM</a><br/>
+      <a href="https://arxiv.org/pdf/1508.04025">Luong+15 Attention</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Sep 15</td>
+    <td>Transformers 1: Self-Attention, Architecture</td>
+    <td>
+      <a href="https://arxiv.org/pdf/1706.03762">Vaswani+17 Transformers</a><br/>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/9.pdf">JM 9</a><br/>
+      <a href="https://jalammar.github.io/illustrated-transformer/">Alammar Illustrated Transformer</a><br/>
+      <a href="https://arxiv.org/pdf/2207.09238">PhuongHutter Formal Algorithms</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Sep 17</td>
+    <td>Transformers 2: Positional Encoding, Scaling</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2104.09864">Su+21 RoPE</a><br/>
+      <a href="https://arxiv.org/pdf/2001.08361">Kaplan+20 Scaling Laws</a><br/>
+      <a href="https://arxiv.org/pdf/2203.15556">Hoffmann+22 Chinchilla</a><br/>
+      <a href="https://arxiv.org/pdf/1910.07467">ZhangSennrich19 RMSNorm</a>
+    </td>
+    <td>HW2 out</td>
+  </tr>
+  <tr>
+    <td width="70">Sep 22</td>
+    <td>Encoders: BERT, Tokenization</td>
+    <td>
+      <a href="https://arxiv.org/pdf/1810.04805">Devlin+19 BERT</a><br/>
+      <a href="https://jalammar.github.io/illustrated-bert/">Alammar Illustrated BERT</a><br/>
+      <a href="https://arxiv.org/pdf/1907.11692">Liu+19 RoBERTa</a><br/>
+      <a href="https://arxiv.org/pdf/2003.10555">Clark+20 ELECTRA</a><br/>
+      <a href="https://aclanthology.org/P16-1162.pdf">Sennrich+16 BPE</a><br/>
+      <a href="https://arxiv.org/pdf/2004.03720">BostromDurrett20 Tokenizers</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td width="70">Sep 24</td>
+    <td>Decoders: GPT/T5, Decoding Methods</td>
+    <td>
+      <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">Radford+19 GPT-2</a><br/>
+      <a href="https://arxiv.org/pdf/2005.14165">Brown+20 GPT-3</a><br/>
+      <a href="https://arxiv.org/pdf/1910.10683">Raffel+19 T5</a><br/>
+      <a href="https://arxiv.org/pdf/1910.13461">Lewis+19 BART</a><br/>
+      <a href="https://arxiv.org/pdf/1904.09751">Holtzman+19 Nucleus Sampling</a>
+    </td>
+    <td>HW2 due</td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Sep 29</td>
+    <td>Evaluation, Datasets, and Dataset Artifacts</td>
+    <td>
+      <a href="https://arxiv.org/pdf/1905.00537">Wang+19 SuperGLUE</a><br/>
+      <a href="https://arxiv.org/pdf/1803.02324">Gururangan+18 Artifacts</a><br/>
+      <a href="https://arxiv.org/pdf/1902.01007">McCoy+19 HANS</a><br/>
+      <a href="https://arxiv.org/pdf/2004.02709">Gardner+20 Contrast Sets</a><br/>
+      <a href="https://arxiv.org/pdf/2009.10795">Swayamdipta+20 Cartography</a>
+    </td>
+    <td><b>Quiz 2</b></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Oct 1</td>
+    <td>In-Context Learning</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2005.14165">Brown+20 GPT-3</a><br/>
+      <a href="https://arxiv.org/pdf/2102.09690">Zhao+21 Calibrate Before Use</a><br/>
+      <a href="https://arxiv.org/pdf/2202.12837">Min+22 Rethinking Demonstrations</a><br/>
+      <a href="https://arxiv.org/pdf/2111.02080">Xie+21 ICL as Implicit Bayesian Inference</a><br/>
+      <a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">Olsson+22 Induction Heads</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td width="70">Oct 6</td>
+    <td>Chain-of-Thought Reasoning</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2201.11903">Wei+22 CoT</a><br/>
+      <a href="https://arxiv.org/pdf/2205.11916">Kojima+22 Step-by-step</a><br/>
+      <a href="https://arxiv.org/pdf/2203.11171">Wang+22 Self-Consistency</a><br/>
+      <a href="https://arxiv.org/pdf/2211.10435">Gao+22 PAL</a><br/>
+      <a href="https://arxiv.org/pdf/2305.04388">Turpin+23 Unfaithful CoT</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td width="70">Oct 8</td>
+    <td><b>MIDTERM EXAM</b> (in class)</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Oct 13</td>
+    <td>Building an LLM 1: Pre-training and Mid-training</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2203.15556">Hoffmann+22 Chinchilla</a><br/>
+      <a href="https://arxiv.org/pdf/2307.09288">Touvron+23 Llama 2</a><br/>
+      <a href="https://arxiv.org/pdf/2402.00838">Groeneveld+24 OLMo</a><br/>
+      <a href="https://arxiv.org/pdf/2402.00159">Soldaini+24 Dolma</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Oct 15</td>
+    <td>Reinforcement Learning for NLP</td>
+    <td>
+      <a href="http://incompleteideas.net/book/the-book-2nd.html">SuttonBarto 3, 13</a><br/>
+      <a href="https://arxiv.org/pdf/1707.06347">Schulman+17 PPO</a><br/>
+      <a href="https://arxiv.org/pdf/2210.01241">Ramamurthy+22 RL4LMs</a>
+    </td>
+    <td>HW3 out</td>
+  </tr>
+  <tr>
+    <td width="70">Oct 20</td>
+    <td>RLHF</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2009.01325">Stiennon+20 Learning to Summarize</a><br/>
+      <a href="https://arxiv.org/pdf/2203.02155">Ouyang+22 InstructGPT</a><br/>
+      <a href="https://arxiv.org/pdf/2212.08073">Bai+22 Constitutional AI</a><br/>
+      <a href="https://arxiv.org/pdf/2305.18290">Rafailov+23 DPO</a><br/>
+      <a href="https://arxiv.org/pdf/2310.03716">Singhal+23 Length</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td width="70">Oct 22</td>
+    <td>RLVR and Reasoning Models</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2501.12948">DeepSeek-AI+25 DeepSeek-R1</a><br/>
+      <a href="https://arxiv.org/pdf/2411.15124">Lambert+24 Tulu 3</a><br/>
+      <a href="https://arxiv.org/pdf/2402.03300">Shao+24 GRPO / DeepSeekMath</a><br/>
+      <a href="https://arxiv.org/pdf/2305.20050">Lightman+23 Process Supervision</a>
+    </td>
+    <td>HW3 due<br/>FP proposal due Oct 23</td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Oct 27</td>
+    <td>Multimodal Grounding 1: Intro to Vision, CLIP</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2010.11929">Dosovitskiy+20 ViT</a><br/>
+      <a href="https://arxiv.org/pdf/2103.00020">Radford+21 CLIP</a><br/>
+      <a href="https://arxiv.org/pdf/1512.03385">He+15 ResNet</a>
+    </td>
+    <td><b>Quiz 3</b></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Oct 29</td>
+    <td>Multimodal Grounding 2: VLMs and VLAs</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2204.14198">Alayrac+22 Flamingo</a><br/>
+      <a href="https://arxiv.org/pdf/2304.08485">Liu+23 LLaVA</a><br/>
+      <a href="https://arxiv.org/pdf/2303.03378">Driess+23 PaLM-E</a><br/>
+      <a href="https://arxiv.org/pdf/2307.15818">Brohan+23 RT-2</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td width="70">Nov 3</td>
+    <td>Agents</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2210.03629">Yao+22 ReAct</a><br/>
+      <a href="https://arxiv.org/pdf/2302.04761">Schick+23 Toolformer</a><br/>
+      <a href="https://arxiv.org/pdf/2305.10601">Yao+23 Tree of Thoughts</a><br/>
+      <a href="https://arxiv.org/pdf/2310.06770">Jimenez+23 SWE-bench</a><br/>
+      <a href="https://arxiv.org/pdf/2207.01206">Yao+22 WebShop</a>
+    </td>
+    <td>HW4 out</td>
+  </tr>
+  <tr>
+    <td width="70">Nov 5</td>
+    <td>Applications: Machine Translation and Multilinguality</td>
+    <td>
+      <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Eisenstein 18.1-18.2, 18.4</a><br/>
+      <a href="https://arxiv.org/pdf/2001.08210">Liu+20 mBART</a><br/>
+      <a href="https://arxiv.org/pdf/2207.04672">NLLB+22 No Language Left Behind</a><br/>
+      <a href="https://arxiv.org/pdf/1911.02116">Conneau+19 XLM-R</a><br/>
+      <a href="https://arxiv.org/pdf/2302.14520">Kocmi+23 LLMs for MT Eval</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Nov 10</td>
+    <td>Applications: Code (Semantic Parsing, Text-to-Code, Code Agents)</td>
+    <td>
+      <a href="https://homes.cs.washington.edu/~lsz/papers/zc-uai05.pdf">ZettlemoyerCollins05 Semantic Parsing</a><br/>
+      <a href="https://aclanthology.org/D13-1160.pdf">Berant+13 Freebase QA</a><br/>
+      <a href="https://arxiv.org/pdf/2107.03374">Chen+21 Codex</a><br/>
+      <a href="https://arxiv.org/pdf/2108.07732">Austin+21 Program Synthesis</a><br/>
+      <a href="https://arxiv.org/pdf/2310.06770">Jimenez+23 SWE-bench</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Nov 12</td>
+    <td>Applications: Efficiency</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2106.09685">Hu+21 LoRA</a><br/>
+      <a href="https://arxiv.org/pdf/2305.14314">Dettmers+23 QLoRA</a><br/>
+      <a href="https://arxiv.org/pdf/2205.14135">Dao+22 FlashAttention</a><br/>
+      <a href="https://arxiv.org/pdf/2211.17192">Leviathan+23 Speculative Decoding</a><br/>
+      <a href="https://arxiv.org/pdf/2309.06180">Kwon+23 vLLM / PagedAttention</a>
+    </td>
+    <td>HW4 due</td>
+  </tr>
+  <tr>
+    <td width="70">Nov 17</td>
+    <td>Applications: Interpretability</td>
+    <td>
+      <a href="https://arxiv.org/pdf/1606.03490">Lipton16 Mythos</a><br/>
+      <a href="https://arxiv.org/pdf/1602.04938">Ribeiro+16 LIME</a><br/>
+      <a href="https://arxiv.org/pdf/1703.01365">Sundararajan+17 Integrated Gradients</a><br/>
+      <a href="https://arxiv.org/pdf/2202.05262">Meng+22 ROME</a><br/>
+      <a href="https://transformer-circuits.pub/2023/monosemantic-features/index.html">Bricken+23 Monosemanticity</a>
+    </td>
+    <td><b>Quiz 4</b></td>
+  </tr>
+  <tr>
+    <td width="70">Nov 19</td>
+    <td>Applications: Safety</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2307.15043">Zou+23 Universal Attacks</a><br/>
+      <a href="https://arxiv.org/pdf/2308.03825">Shen+23 Jailbreaking</a><br/>
+      <a href="https://arxiv.org/pdf/2209.07858">Ganguli+22 Red Teaming</a><br/>
+      <a href="https://doi.org/10.1145/3442188.3445922">BenderGebru+21 Stochastic Parrots</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Nov 24</td>
+    <td><i>No class &mdash; Thanksgiving</i></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Nov 26</td>
+    <td><i>No class &mdash; Thanksgiving</i></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td width="70">Dec 1</td>
+    <td>Wrap-up and Review</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td width="70">Dec 3</td>
+    <td><b>FINAL EXAM</b> (in class, final day of class)</td>
+    <td></td>
+    <td>FP report due Dec 11</td>
+  </tr>
+
+</table>
+
+</body>
+
+</html>

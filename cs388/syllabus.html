@@ -1,0 +1,246 @@
+<html>
+<head>
+  <title>CS388 Syllabus</title>
+  <link rel="stylesheet" type="text/css" href="courses.css"/>
+</head>
+
+<body>
+
+<h1>Syllabus for CS388: Natural Language Processing</h1>
+
+<p>Instructor: Elias Stengel-Eskin, <a href="mailto:esteng@utexas.edu">esteng@utexas.edu</a>
+<br/>Lecture: Tuesday and Thursday 3:30pm - 5:00pm, JGB 2.202
+<br/>Instructor Office: GDC 3.810
+<br/>Instructor Office Hours: Tuesdays, 2:30-3:30pm
+<br/>TA: Ashwin Vinod, <a href="mailto:ashwinv@utexas.edu">ashwinv@utexas.edu</a>
+<br/>TA Office: TODO
+<br/>TA Office Hours: Monday, 2-3pm (zoom); Thursday 2-3pm (in-person).
+<br/>Unique Number: 55645
+<br/>Canvas: https://utexas.instructure.com/courses/1451633
+<br/>Course Website: <a href="./cs388.html">main course page</a>
+<br/>Term: Fall 2026
+
+<h2>Description</h2>
+
+
+<p>
+  This class is a graduate-level introduction to Natural Language Processing (NLP), the study of computing systems that can process, understand, or communicate in human language. The course covers fundamental approaches, particularly deep learning and language model pre-training, used across the field of NLP, as well as a comprehensive set of NLP tasks both historical and contemporary. Techniques studied include basic classification techniques, feedforward neural networks, attention mechanisms, pre-trained large language models (BERT-style encoders and GPT-style LLMs), as well as sequence models generally. A focus of this course is LLMs, how they work, how to build them, where they fail, and what we know/don't know about them. Problems include those in syntax, semantics, discourse, and beyond, and include various applications such as summarization, machine translation, information extraction, and dialogue systems. The course is intended to provide students with an understanding of state-of-the-art systems as well as an overview of the historical tasks and methods that these systems build on. 
+
+
+
+<p><b>Prerequisites</b>
+<ul>
+<li>391L - Machine Learning, 343 - Artificial Intelligence, or equivalent AI/ML course experience</li>
+<li>Familiarity with Python for programming assignments and the final project</li>
+<li>Additional prior exposure to probability, linear algebra, optimization, linguistics, and NLP useful but not required</li>
+</ul>
+
+<h2>Learning Outcomes</h2>
+
+<p>By the end of this course, you should be able to:
+
+<ul>
+<li><b>Understand the core NLP toolkit.</b> Formulate an NLP task as text classification or language modeling, extract features from text, and describe and apply statistical language models, and feedforward neural networks.</li>
+<li><b>Explain the Transformer.</b> Describe self-attention, positional encoding, and the architecture of encoder and decoder models, and explain how design decisions in a modern LLM follow from them.</li>
+<li><b>Trace the modern LLM pipeline.</b> Explain pre-training, mid-training, and post-training &mdash; including supervised fine-tuning, RLHF, and RLVR &mdash; and reason about what each stage contributes to model behavior.</li>
+<li><b>Reason about model behavior and its limits.</b> Analyze in-context learning, chain-of-thought reasoning, dataset artifacts and bias, and known failure modes, and evaluate claims about what a model has or has not learned.</li>
+<li><b>Survey applications.</b> Describe how NLP methods are applied to machine translation and multilinguality, code, multimodal grounding, and agents.</li>
+<li><b>Read the literature critically.</b> Read a current NLP paper, identify its contribution and its methodological weaknesses, and situate it relative to course material.</li>
+</ul>
+
+
+<h2>Lectures</h2>
+
+<p>Lectures are 3:30-5:00pm Tuesday and Thursday, in person in JGB 2.202. A complete schedule of lectures, readings, and assignment deadlines is on the <a href="./cs388.html">main course page</a>.
+
+<p><b>Course Materials.</b> There is no required textbook to purchase for this course, and no course materials carry a cost. Readings from book chapters and papers are assigned on the <a href="./cs388.html">main course page</a>. Recommended texts, all freely available online, are:
+
+<ul>
+<li>Dan Jurafsky and James H. Martin, <i><a href="https://web.stanford.edu/~jurafsky/slp3/">Speech and Language Processing</a></i>, 3rd edition draft (free online). The chief text for this course; its recent chapters cover Transformers and LLMs.</li>
+<li>Jacob Eisenstein, <i><a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Natural Language Processing</a></i> (MIT Press, 2019; author's draft free online). Used for classification and structured prediction.</li>
+<li>Yoav Goldberg, <i><a href="https://arxiv.org/pdf/1510.00726">A Primer on Neural Network Models for Natural Language Processing</a></i> (JAIR, 2016; free online). Used for neural network fundamentals.</li>
+</ul>
+
+<p>Much of the second half of the course has no textbook treatment and is covered by papers, all of which are linked from the course page. <b>Readings are not required for the quizzes or exams unless the material was also covered in lecture.</b>
+
+
+<p><b>Recordings of each lecture will be made available after the class. However, the class WILL NOT be streamed on Zoom.</b> This compromise is designed to encourage attendance and in-class participation while making it feasible for students to make up missed classes or watch later if they cannot attend. Class recordings are reserved only for students in this class for educational purposes and are protected under FERPA. The recordings should not be shared outside the class in any form. Violation of this restriction by a student could lead to Student Misconduct proceedings.
+
+<p><b>Student Recording of Class Instruction: </b> HOP 2-9970 prohibits students from recording class instruction (audio or video) unless a student obtains the instructor's permission or Disability &amp; Access has approved audio recording as an accommodation. Because recordings of every lecture are posted after class, there is generally no need to make your own.
+
+<p><b>Sharing of Course Materials is Prohibited: </b> No materials used in this class, including but not limited to recordings, homeworks, quizzes, exams, and solutions, may be shared online or with anyone outside of the class without my explicit, written permission. I will share the lecture slides on the course website. Unauthorized sharing of materials promotes cheating, is an academic integrity violation, and may result in a Student Misconduct case. 
+
+<p><b>Attendance:</b> Attendance is not itself graded, but note that <b>quizzes are administered in person at the start of class on the dates listed on the <a href="./cs388.html">main course page</a></b>, and there are no make-up quizzes barring accommodations through <a href="https://disability.utexas.edu/temporary-disabilities/">D&amp;A</a>. The lowest quiz score is dropped.
+
+<p><b>Office Hours:</b> Office hours will be held in a mix of in-person and on Zoom, per the discretion of the course staff. 
+
+<h2>Assignments and Grading</h2>
+
+<p>Grading breakdowns are as follows:
+
+<ul>
+<li>Quizzes: 20% &mdash; 4 quizzes, <b>lowest score dropped</b></li>
+<li>Homeworks: 10% &mdash; 4 homeworks, <b>lowest score dropped</b></li>
+<li>Midterm exam: 15%</li>
+<li>Final exam: 30% &mdash; <b>given in class on the final day of class </b></li>
+<li>Final project: 25%</li>
+</ul>
+
+
+<p><b>Key dates for assessments:</b>
+
+<ul>
+<p> Midterm exam (15%, Thursday, October 8, in class).
+<li><b>Final exam (30%):</b> Thursday, December 3, in class during the regular class period &mdash; the final day of class. <b>Note that the final exam is given in class and this course does not use a separately assigned final exam period during finals week.</b></li>
+<li><b>Final project (25%):</b> proposal due Friday, October 23; final report due Friday, December 11.</li>
+</ul>
+
+
+<h3>Homeworks</h3>
+
+<p>There are 4 homeworks, each released roughly a week before it is due, and each due shortly before the corresponding quiz. Together they are worth only 10% of your grade, and the lowest is dropped.
+
+<p><b>The purpose of the homeworks is to prepare you for the quizzes, the midterm, and the final.</b> They should be considered practice, with a correspondingly low grade value. The quizzes are drawn from the same material and will look similar in form to the homework problems, so the most useful way to approach a homework is as a practice quiz and an opportunity to test your understanding. 
+Solutions will be discussed in office hours, after the due date.
+
+<h3>Quizzes</h3>
+
+<p>There are 4 quizzes, given <b>in person at the beginning of class</b> on the dates listed on the <a href="./cs388.html">main course page</a>. Each quiz is 15 minutes long. Plan to arrive on time; the quiz occupies the first 20 minutes of the class period including distribution and collection. 
+<b>Note that these dates are subject to change depending on course progress</b>; any change will be announced in class and reflected on the main course page as well as via Canvas. 
+
+<p>The lowest quiz score is dropped. <b>There are no make-up quizzes</b>, barring accommodations through <a href="https://disability.utexas.edu/temporary-disabilities/">Disability &amp; Access (D&amp;A)</a>.
+
+
+<h3>Midterm and Final Exams</h3>
+
+<p>The midterm is held in class on <b>Thursday, October 8</b> and covers material seen before then. 
+  <b>The final exam will be given in class on the final day of class, Thursday, December 3</b>, during the regular class period. It is cumulative, with emphasis on material after the midterm. 
+
+<p>Both exams are closed-book and in person. Further details on format and permitted materials will be posted before each exam.
+
+<h3>Final Project</h3>
+
+<p> This project should constitute novel work beyond directly implementing concepts from lecture and will result in a report. <b>You may work on the final project either individually or in groups of two</b>; however, groups of two are preferred from the standpoint of enabling more substantial projects. You are allowed to integrate the project with ongoing research or projects from other classes (assuming the other instructor also approves).
+
+<p><b>Proposal: </b> By <b>Friday, October 23</b>, you will submit a brief proposal (around 1 page) explaining your idea, which the course staff will provide feedback on.
+
+<p><b>Report deadline: </b> The final report is due <b>Friday, December 11</b>, which is during finals week and a week after the in-class final exam. 
+
+<p><b>Writeup: </b> Your final project report should be a maximum of 4 pages. Groups of two should have reports closer to 4 pages. The scope should be similar to that of an ACL short paper: you should present a novel idea, discuss related work, describe your implementation or what you did, give results, and provide discussion or error analysis. Any conference format with reasonably small (1") margins is fine, including the ACL or NeurIPS style files. 
+
+
+<h2>Late Work and Extensions</h2>
+
+<p><b>There are no late homework submissions in this course</b> as your lowest homework score is dropped.
+
+<p><b>There are no make-up quizzes</b>, barring accommodations through <a href="https://disability.utexas.edu/temporary-disabilities/">D&amp;A</a> &mdash; including accommodations for a temporary disability or injury, or conference travel. 
+
+<p><b>Conference Travel:</b> If you need to miss class because you are presenting at a conference, you will have the opportunity to make up missed quizzes and exams. Notice must be given at least 21 days prior to the classes which will be missed (earlier is better). For conferences that fall within the first 2 weeks of the semester, notice should be given on the first day of the semester. Notice should be personally delivered to the instructor and signed and dated by the instructor, or emailed, in which case a student submitting email notification must receive email confirmation from the instructor. 
+
+<p><b>Religious Holy Days: </b> A student who is absent from an examination or cannot meet an assignment deadline due to the observance of a religious holy day may take the exam on an alternate day or submit the assignment up to 24 hours late without penalty, if proper notice of the planned absence has been given. Notice must be given at least 14 days prior to the classes which will be missed. For religious holy days that fall within the first 2 weeks of the semester, notice should be given on the first day of the semester. Notice should be personally delivered to the instructor and signed and dated by the instructor, or emailed, in which case a student submitting email notification must receive email confirmation from the instructor.
+
+<p><b>Illness, Emergencies, and Missed Exams: </b> Accommodations for late work and make-up assessments will be made in cases of illness, medical emergency, family emergency, or other significant circumstances &mdash; including make-up arrangements for a missed midterm or final. In all cases, inform the instructor as soon as is practical, and wherever possible <b>before</b> the deadline or exam in question.
+
+<h2>Final Grades</h2>
+
+<p>Your final grade is computed based on the total points earned across all assignments. <b>Plus/minus grades will be used in this course.</b> The final grade is mapped to a letter as follows, with grades on the boundary receiving the higher grade:
+<br><br>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" id="AutoNumber5">
+  <tr>
+    <td><b>A</b></td>
+    <td><b>100 - 93.3</b></td>
+  </tr>
+  <tr>
+    <td><b>A-</b></td>
+    <td><b>93.3 - 90.0</b></td>
+  </tr>
+  <tr>
+    <td><b>B+</b></td>
+    <td><b>90.0 - 86.6</b></td>
+  </tr>
+  <tr>
+    <td><b>B</b></td>
+    <td><b>86.6 - 83.3</b></td>
+  </tr>
+  <tr>
+    <td><b>B-</b></td>
+    <td><b>83.3 - 80.0</b></td>
+  </tr>
+  <tr>
+    <td><b>C+</b></td>
+    <td><b>80.0 - 76.6</b></td>
+  </tr>
+  <tr>
+    <td><b>C</b></td>
+    <td><b>76.6 - 73.3</b></td>
+  </tr>
+  <tr>
+    <td><b>C-</b></td>
+    <td><b>73.3 - 70.0</b></td>
+  </tr>
+  <tr>
+    <td><b>D</b></td>
+    <td><b>70 - 65</b></td>
+  </tr>
+  <tr>
+    <td><b>F</b></td>
+    <td><b>below 65</b></td>
+  </tr>
+
+</table>
+
+<h2>Academic Honesty and AI Use</h2>
+
+<p>Please read the department's <a href="https://www.cs.utexas.edu/academics/conduct">academic honesty</a> policies.
+
+<p><b>Collaboration.</b> Students are encouraged to discuss lecture material and homework problems with each other. Quizzes and exams are individual, closed-book, and administered in person. Cheating on quizzes and exams will result in a grade of 0 on the quiz or exam, and may be referred to the Dean of Students Office. The final project may be completed in groups of two.
+
+<h3>Policy on AI Assistants</h3>
+
+<p><b>University Statement &mdash; Generative AI: Partially Permitted.</b> In accordance with the University's Institutional Rules on Student Services and Activities, Chapter 11, students accept the responsibility to always uphold academic integrity and an honor code reflective of a scholarly community devoted to academic and personal success. All members of the University community are fully accountable and responsible for any output they produce as part of academic work.
+
+<p>Generative AI use shall be permitted on a partial basis for academic work in this course, provided that students 1) use AI responsibly, 2) practice critical discernment and conduct meaningful human review of any output generated by AI, and 3) properly disclose use according to the disclosure policies in this syllabus.
+
+<p>Concretely, in this course: AI use is <b>unrestricted and requires no disclosure on the homeworks</b>; it is <b>permitted with disclosure on the final project and report</b>; and it is <b>prohibited on quizzes, the midterm, and the final exam</b>, which are closed-book and administered in person on paper. The use of any digital devices, including smart glasses, is prohibited during quizzes and exams. The specifics of each are below.
+
+
+<p>The capabilities and limitations of language models are the subject matter of this course. The policy is intended to be permissive but realistic and encourage students to use models as they might in future professional and academic settings. 
+
+<p><b>Homeworks: no restrictions.</b> Use whatever you want &mdash; language models, coding assistants, external repositories, other students, anything. You do not need to disclose it. I encourage you to use LLMs as teaching assistants, to interactively explain concepts to you, or to generate new practice problems for you to test your skills on. The homeworks' purpose is to prepare you for the quizzes and exams, which are closed-book and in person; treat them as a test of your understanding. 
+
+<p><b>Final project and report: permissive, with responsibility.</b> You may use AI assistants for the final project and the writeup as you see fit, including for code and for prose, subject to the following constraints: 
+
+<ul>
+<li><b>You must be able to defend everything you submit.</b> If you cannot explain a design decision, a result, a method, or a claim in your report, that is a problem regardless of how the text or code was produced. Course staff may ask you to explain your report. Similarly, mistakes introduced by an AI assistant are penalized exactly as they would be if you had made them yourself. </li>
+<li><b>Unsupported claims and poor scientific writing will lose points.</b> As in any venue, claims must be supported by evidence you actually collected, and text that fails to meet the standards of scientific writing or is hard to understand will be subject to deductions.</li>
+<li><b>You must disclose your AI usage</b> in an Acknowledgments section of your report, describing what you used and for which parts of the project and writeup.</li>
+</ul>
+
+<p><b>Hallucinated references.</b> One of the goals of the final project is to prepare you for academic publishing. Conferences and journals increasingly treat fabricated citations as grounds for immediate desk rejection and, in some cases, bans on future submissions. 
+Accordingly, the requirements in this course will be similarly stringent: <b> each hallucinated reference in your report incurs a 10% absolute deduction from the total grade for that assignment</b>, counted up to 10 references. A hallucinated reference means any citation to a work that does not exist, or a citation whose stated authors, venue, or year do not match the real work. 
+
+
+<p>Students who violate these policies may receive point deductions or a failing grade on the assignment in question or for the course overall, depending on the instructors' judgment and the severity of the infraction.
+
+<h2>Compute Resources</h2>
+
+<p>The homeworks are designed to be doable on personal computers or by hand. 
+
+
+<h2>Miscellaneous</h2>
+
+<p><b>Disability &amp; Access (D&amp;A): </b> The University is committed to creating an accessible and inclusive learning environment for students with disabilities consistent with University policy and federal and state law. Please let me know if you experience any barriers to learning so I can work with you to ensure you have equal opportunity to participate fully in this course. If you are a student with a disability, or think you may have a disability, and need accommodations, please contact D&amp;A. Contact and more details are available on <a href="https://disability.utexas.edu/">D&amp;A's website</a>, by phone at 512-471-6259, or by email at <a href="mailto:access@austin.utexas.edu">access@austin.utexas.edu</a>. If you are already registered with D&amp;A, please share your accommodation letter with me as early as possible in the semester so we can discuss your approved accommodations and needs in this course.
+
+<p><b>Diversity: </b> It is our intent that students from all diverse backgrounds and perspectives be well served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that students bring to this class be viewed as a resource, strength and benefit. It is our intent to present materials and activities that are respectful of diversity: gender, sexuality, disability, age, socioeconomic status, ethnicity, race, and culture. Your suggestions are encouraged and appreciated. Please let the course staff know of ways to improve the effectiveness of the course for you personally or for other students.
+
+<p>Furthermore, given the critical impact that AI is having on society, we will discuss the broader societal impacts of AI, ML, NLP, and language technology. I ask that students approach these topics in a way that fosters a dialog around these important topics. 
+
+<h2>University Policies and Student Resources</h2>
+
+<p><b>University Policies and Resources for Students: </b> Please review the <a href="https://utexas.instructure.com/enroll/TP964H">University Policies and Resources for Students</a> Canvas page. It collects information that is important as you engage with this course and the university, including policies on academic integrity, Title IX and mandatory reporting, and a list of student support resources. You are responsible for the policies it describes.
+
+<p><b>Academic Integrity Expectations: </b> Students who violate University rules on academic misconduct are subject to the student conduct process. A student found responsible for academic misconduct may be assigned both an academic penalty in this course and a disciplinary penalty from the Office of Student Conduct and Academic Integrity. A student who is found responsible for academic misconduct may receive a grade of F in the course. To learn more, review the <a href="https://deanofstudents.utexas.edu/conduct/">Dean of Students' page on student conduct</a>.
+
+</body>
+
+</html>
