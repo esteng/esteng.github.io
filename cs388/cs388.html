@@ -10,10 +10,10 @@
 
 <p>Instructor: Elias Stengel-Eskin, <a href="mailto:esteng@utexas.edu">esteng@utexas.edu</a>
 <br/>Lecture: Tuesday and Thursday 3:30pm - 5:00pm, JGB 2.202
-<br/>Instructor Office Hours: [TBD]
-<br/>TA: Rishabh Mediratta
-<br/>TA Office Hours: [TBD]
-<br/>Unique Number: [TBD]
+<br/>Instructor Office Hours: Tuesdays, 2:30-2:30pm in GDC 3.810 
+<br/>TA: Ashwin Vinod
+<br/>TA Office Hours: Monday, 2-3pm (zoom); Thursday 2-3pm (in-person).
+<br/>Unique Number: 55645
 
 <h2>Description</h2>
 
@@ -89,10 +89,9 @@ neural network fundamentals. Much of the second half of the course has no textbo
   </tr>
   <tr>
     <td width="70">Aug 25</td>
-    <td>Introduction; N-gram Language Models</td>
+    <td>Introduction: NLP Tasks, Ambiguity, and a Brief History of Modern NLP</td>
     <td>
-      <a href="https://web.stanford.edu/~jurafsky/slp3/2.pdf">JM 2</a><br/>
-      <a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">JM 3 (N-gram LMs)</a>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/2.pdf">JM 2</a>
     </td>
     <td></td>
   </tr>
@@ -102,16 +101,30 @@ neural network fundamentals. Much of the second half of the course has no textbo
     <td>
       <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Eisenstein 2.0-2.5, 4.2-4.4.1</a><br/>
       <a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf">JM 4</a><br/>
-      <a href="https://web.stanford.edu/~jurafsky/slp3/5.pdf">JM 5</a>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/5.pdf">JM 5</a><br/>
+      <a href="https://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf">Duchi+11 AdaGrad</a>
     </td>
     <td>HW1 out</td>
   </tr>
   <tr bgcolor="#F2F2F2">
     <td width="70">Sep 1</td>
-    <td>Multi-class Classification; Feature Extraction</td>
+    <td>Multi-class Classification; Feature Extraction; N-gram Language Models, Smoothing and Backoff; Neural Net History</td>
     <td>
       <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Eisenstein 4.2</a><br/>
-      <a href="https://web.stanford.edu/~jurafsky/slp3/5.pdf">JM 5.3-5.6</a>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/5.pdf">JM 5.3-5.6</a><br/>
+      <a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">JM 3 (N-gram LMs)</a><br/>
+      <i>Neural net history (optional &mdash; background only, not required):</i><br/>
+      <a href="https://www.bioinf.jku.at/publications/older/2604.pdf">HochreiterSchmidhuber97 LSTMs</a><br/>
+      <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf">LeCun+98 Convnets</a><br/>
+      <a href="https://aclanthology.org/N03-1014/">Henderson03 Neural Parsing</a><br/>
+      <a href="https://www.jmlr.org/papers/volume12/collobert11a/collobert11a.pdf">Collobert+11 NLP (Almost) from Scratch</a><br/>
+      <a href="https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html">Krizhevsky+12 AlexNet</a><br/>
+      <a href="https://aclanthology.org/D13-1170/">Socher+13 Recursive Models / Sentiment Treebank</a><br/>
+      <a href="https://aclanthology.org/D14-1082/">ChenManning14 Dependency Parsing</a><br/>
+      <a href="https://aclanthology.org/D14-1181/">Kim14 CNNs for Sentence Classification</a><br/>
+      <a href="https://aclanthology.org/P14-1062/">Kalchbrenner+14 CNNs for Modelling Sentences</a><br/>
+      <a href="https://arxiv.org/abs/1409.3215">Sutskever+14 Seq2seq</a><br/>
+      <a href="https://arxiv.org/abs/1409.0473">Bahdanau+14 Attention for NMT</a>
     </td>
     <td></td>
   </tr>
@@ -123,7 +136,11 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://web.stanford.edu/~jurafsky/slp3/7.pdf">JM 7</a><br/>
       <a href="https://arxiv.org/pdf/1510.00726">Goldberg 4</a><br/>
       <a href="https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf">Bengio+03 NPLM</a><br/>
-      <a href="https://aclanthology.org/P15-1162.pdf">Iyyer+15 DANs</a>
+      MinskyPapert69 Perceptrons (XOR)<br/>
+      <a href="https://arxiv.org/abs/1412.6980">KingmaBa15 Adam</a><br/>
+      <a href="https://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf">Srivastava+14 Dropout</a><br/>
+      <a href="https://arxiv.org/abs/1502.03167">IoffeSzegedy15 Batch Normalization</a><br/>
+      <a href="http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/">Olah, Neural Networks, Manifolds, and Topology</a>
     </td>
     <td>HW1 due</td>
   </tr>
@@ -141,11 +158,16 @@ neural network fundamentals. Much of the second half of the course has no textbo
   </tr>
   <tr>
     <td width="70">Sep 10</td>
-    <td>Language Modeling: Smoothing, Backoff, Neural LMs</td>
+    <td>Neural Language Models, RNNs, and Attention; Positional Encodings</td>
     <td>
-      <a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">JM 3</a><br/>
       <a href="https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf">Bengio+03 NPLM</a><br/>
-      <a href="https://arxiv.org/pdf/1508.04025">Luong+15 Attention</a>
+      <a href="https://doi.org/10.1207/s15516709cog1402_1">Elman90 Finding Structure in Time</a><br/>
+      <a href="https://arxiv.org/pdf/1508.04025">Luong+15 Attention</a><br/>
+      <a href="https://arxiv.org/abs/1409.0473">Bahdanau+14 Attention for NMT</a><br/>
+      <a href="https://jalammar.github.io/illustrated-transformer/">Alammar Illustrated Transformer</a><br/>
+      <a href="https://arxiv.org/abs/2104.09864">Su+21 RoPE</a><br/>
+      <a href="https://arxiv.org/abs/2305.19466">Kazemnejad+23 NoPE / Positional Encoding and Length Generalization</a><br/>
+      <a href="https://sebastianraschka.com/llm-architecture-gallery/nope/">Raschka, No Positional Embeddings (NoPE)</a>
     </td>
     <td></td>
   </tr>
