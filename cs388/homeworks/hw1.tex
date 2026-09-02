@@ -1,0 +1,194 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{xcolor}
+
+\usepackage[hidelinks]{hyperref}
+
+\titlespacing*{\section}{0pt}{1.2em}{0.5em}
+\titlespacing*{\subsection}{0pt}{0.8em}{0.4em}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small CS 388: Natural Language Processing}
+\rhead{\small Homework 1}
+\cfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[enumerate]{itemsep=2pt, topsep=3pt}
+\setlist[itemize]{itemsep=2pt, topsep=3pt}
+
+\newcommand{\bs}{\ensuremath{\langle \textsc{s} \rangle}}
+\newcommand{\es}{\ensuremath{\langle \textsc{/s} \rangle}}
+\newcommand{\Count}[1]{\ensuremath{C(#1)}}
+\newcommand{\wrd}[1]{\texttt{#1}}
+
+\definecolor{solblue}{RGB}{0,60,180}
+\newcommand{\sol}[1]{\par\medskip{\color{solblue}\noindent\textbf{Solution.} #1}\par\medskip}
+\newcommand{\B}[1]{{\color{solblue}#1}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Homework 1: $n$-gram Language Models}\\[2pt]
+  {\normalsize CS 388: Natural Language Processing \quad\textbullet\quad Fall 2026}\\[2pt]
+\end{center}
+\vspace{0.5em}
+\hrule
+\vspace{1em}
+
+\noindent
+\textbf{Instructions.} This assignment can be done entirely by hand -- no coding required; however, please transcribe your answers/work into the provided \LaTeX file and submit the PDF, rather than a handwritten response.
+\textbf{Please use the {\tt{\textbackslash B\{\}}} command to wrap your solutions, making them blue (this will help us when grading).}
+Show your work. Report probabilities as exact fractions (e.g.\ $\tfrac{3}{14}$)
+rather than decimals, and simplify where convenient. Submit a single PDF to Gradescope.
+
+\section{Setup and Notation}
+
+Throughout, we use the following corpus of $10$ sentences as our training data. Assume the text has already
+been tokenized and lowercased, so each whitespace-separated string is one token.
+
+\begin{center}
+\begin{tabular}{rl@{\hskip 3em}rl}
+\toprule
+\multicolumn{4}{c}{\textbf{Training corpus} $\mathcal{D}$}\\
+\midrule
+1. & \wrd{the cat chased the dog}   & 6.  & \wrd{a dog saw the cat}\\
+2. & \wrd{the dog chased the cat}   & 7.  & \wrd{the mouse saw the cat}\\
+3. & \wrd{the cat sat on the mat}   & 8.  & \wrd{the mouse slept}\\
+4. & \wrd{the dog sat on the mat}   & 9.  & \wrd{the cat slept}\\
+5. & \wrd{a cat saw the dog}        & 10. & \wrd{a dog barked}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent
+\textbf{Padding.} Every sentence is padded with sentence-boundary symbols. For the \emph{bigram} model, pad each
+sentence with one \bs{} on the left and one \es{} on the right; for the \emph{trigram} model, pad with two \bs{}
+on the left and one \es{} on the right. So sentence 8 is treated as
+\[
+\bs\ \bs\ \wrd{the}\ \wrd{mouse}\ \wrd{slept}\ \es .
+\]
+The symbol \es{} is predicted like any other token (this is what makes the model a proper distribution over
+sentences), but \bs{} is never predicted -- it only ever appears in a conditioning context.
+
+\medskip\noindent
+\textbf{Vocabulary.} Let $V$ denote the vocabulary of \emph{possible next tokens}: the $12$ word types that occur in
+$\mathcal{D}$, plus \es{}, and \emph{not} \bs{}. Hence $|V| = 13$. Use this value wherever $|V|$ appears.
+
+
+
+\medskip\noindent
+\textbf{Convention.} We consider any probability of the form $\frac{n}{0}$ to be undefined.
+
+
+\section{Counting (30 points)}
+In class we saw the maximum likelihood estimate (MLE) for n-gram models, based on counting occurrences. 
+Your first task is to build the count tables you will need for this estimator. Include the padding symbols in your counts.
+
+\begin{enumerate}[label=(\alph*)]
+
+  \item \textbf{(25 pts)} Report the full bigram and trigram count tables. Tuples with count zero may be omitted.
+  
+ Example (bigram)
+
+ \begin{table}[H]
+     \centering
+     \begin{tabular}{c|c}
+     \toprule
+     Bigram & Count \\
+     \midrule
+     \wrd{the}\, \wrd{cat} & 6\\
+      ... & ... \\
+      \bottomrule
+     \end{tabular}
+ \end{table}
+
+  \item \textbf{(5 pts)} Why do we need the padding tokens \bs{} and \es{}? What happens if we do not
+  include them?
+
+\end{enumerate}
+
+\section{Sentence Probabilities (40 points)}
+
+Consider the following three test sentences.
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+$S_1$ & \wrd{the dog chased the dog}\\
+$S_2$ & \wrd{the cat chased the mouse}\\
+$S_3$ & \wrd{the mouse chased the dog}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+For each part below, write out the full product of conditional probabilities, and their corresponding values, as well as the final product. 
+
+\begin{enumerate}[label=(\alph*)]
+  \item \textbf{(12 pts)} Compute $P_{\text{bi}}(S_1)$ and $P_{\text{tri}}(S_1)$.
+
+  \item \textbf{(14 pts)} Compute $P_{\text{bi}}(S_2)$ and $P_{\text{tri}}(S_2)$.
+
+  \item \textbf{(14 pts)} Compute $P_{\text{bi}}(S_3)$ and $P_{\text{tri}}(S_3)$.
+
+\end{enumerate}
+
+\section{Laplace Smoothing and Backoff (30 points)}
+
+In class we saw both Laplace smoothing and Backoff. As a reminder:
+
+\medskip\noindent
+\textbf{Add-$k$ (Laplace) smoothing, $k=1$.} Add one pseudo-count to every possible continuation:
+\[
+P^{+1}_{\text{bi}}(w_i \mid w_{i-1}) = \frac{\Count{w_{i-1} w_i} + 1}{\Count{w_{i-1}} + V},
+\qquad
+P^{+1}_{\text{tri}}(w_i \mid w_{i-2} w_{i-1}) = \frac{\Count{w_{i-2} w_{i-1} w_i} + 1}{\Count{w_{i-2} w_{i-1}} + V}.
+\]
+
+\medskip\noindent
+\textbf{Backoff.} Adding $1$ to the numerator does not help address problems stemming from contexts we have never observed. This is especially problematic as we increase $n$: for a trigram model, there will be many contexts we have never seen. 
+In this case, we can back-off an $n$-gram to an $n-1$-gram, if we have not seen the particular $n$-gram in question. We can repeat this until we get to unigrams.
+
+For this assignment, to compute backoff , first use the Laplace-smoothed trigram estimate whenever the trigram conditioning context has been observed. If the bigram context $w_{i-2}w_{i-1}$ has never been observed, i.e.\ $\Count{w_{i-2}w_{i-1}} = 0$,
+we back off to the Laplace-smoothed bigram estimate. \textbf{Smoothing is therefore
+applied in all cases}:
+\[
+P_{\text{bo}}(w_i \mid w_{i-2} w_{i-1}) =
+\begin{cases}
+\dfrac{\Count{w_{i-2} w_{i-1} w_i} + 1}{\Count{w_{i-2} w_{i-1}} + V}, & \text{if } \Count{w_{i-2} w_{i-1}} > 0, \\[12pt]
+\dfrac{\Count{w_{i-1} w_i} + 1}{\Count{w_{i-1}} + V},                 & \text{if } \Count{w_{i-2} w_{i-1}} = 0.
+\end{cases}
+\]
+
+
+\begin{enumerate}[label=(\alph*)]
+  \item \textbf{(11 pts)} Recompute $P^{+1}_{\text{bi}}(S_2)$ and $P_{\text{bo}}(S_2)$, again showing every
+  factor.
+
+  \item \textbf{(11 pts)} Recompute $P^{+1}_{\text{bi}}(S_3)$ and $P_{\text{bo}}(S_3)$.
+
+
+  \item \textbf{(8 pts)} Recompute $P^{+1}_{\text{bi}}(S_1)$ and compare it to $P_{\text{bi}}(S_1)$ from Part 2. What difference do you observe, and what is the explanation for the direction of that difference? 
+
+\end{enumerate}
+
+\vspace{1em}
+\hrule
+\vspace{0.5em}
+\noindent
+\small
+\textbf{What to turn in.} A single PDF containing your count tables (Part 1), the full factor-by-factor
+derivations for all six probability computations in Part 2 and all five in Part 3, and your written answers to
+the discussion questions. 
+
+\end{document}
