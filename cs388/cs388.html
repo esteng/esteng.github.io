@@ -151,7 +151,7 @@ neural network fundamentals. Much of the second half of the course has no textbo
     <td>HW1 due (SEPT 7)</td>
   </tr>
   <tr>
-    <td width="70">Sep 10</td>
+          <td width="70"><a href="slides/lec6-lm-transformers.pdf"> Sep 10</a> </td>
     <td>Neural Language Models, RNNs, and Attention; Positional Encodings</td>
     <td>
       <a href="https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf">Bengio+03 NPLM</a><br/>
@@ -167,19 +167,12 @@ neural network fundamentals. Much of the second half of the course has no textbo
   </tr>
   <tr bgcolor="#F2F2F2">
           <td width="70"><a href="slides/lec6-lm-transformers.pdf"> Sep 15</a> </td>
-    <td>Transformers 1: Self-Attention, Architecture</td>
+    <td>Transformers 1: Architecture, Positional Encoding, Scaling, MoEs</td>
     <td>
       <a href="https://arxiv.org/pdf/1706.03762">Vaswani+17 Transformers</a><br/>
       <a href="https://web.stanford.edu/~jurafsky/slp3/9.pdf">JM 9</a><br/>
       <a href="https://jalammar.github.io/illustrated-transformer/">Alammar Illustrated Transformer</a><br/>
       <a href="https://arxiv.org/pdf/2207.09238">PhuongHutter Formal Algorithms</a>
-    </td>
-    <td></td>
-  </tr>
-  <tr bgcolor="#F2F2F2">
-    <td width="70">Sep 17</td>
-    <td>Transformers 2: Positional Encoding, Scaling</td>
-    <td>
       <a href="https://arxiv.org/pdf/2104.09864">Su+21 RoPE</a><br/>
       <a href="https://arxiv.org/pdf/2001.08361">Kaplan+20 Scaling Laws</a><br/>
       <a href="https://arxiv.org/pdf/2203.15556">Hoffmann+22 Chinchilla</a><br/>
@@ -187,10 +180,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://aclanthology.org/2019.iwslt-1.17/">NguyenSalazar19 Transformers without Tears</a><br/>
       <a href="https://arxiv.org/abs/2101.03961">Fedus+21 Switch Transformers</a>
     </td>
-    <td>HW2 out</td>
+    <td></td>
   </tr>
-  <tr>
-    <td width="70">Sep 22</td>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Sep 17</td>
     <td>Encoders: BERT, Tokenization</td>
     <td>
       <a href="https://arxiv.org/pdf/1810.04805">Devlin+19 BERT</a><br/>
@@ -200,10 +193,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://aclanthology.org/P16-1162.pdf">Sennrich+16 BPE</a><br/>
       <a href="https://arxiv.org/pdf/2004.03720">BostromDurrett20 Tokenizers</a>
     </td>
-    <td></td>
+    <td>HW2 out</td>
   </tr>
   <tr>
-    <td width="70">Sep 24</td>
+    <td width="70">Sep 22</td>
     <td>Decoders: GPT/T5, Decoding Methods</td>
     <td>
       <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">Radford+19 GPT-2</a><br/>
@@ -212,10 +205,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://arxiv.org/pdf/1910.13461">Lewis+19 BART</a><br/>
       <a href="https://arxiv.org/pdf/1904.09751">Holtzman+19 Nucleus Sampling</a>
     </td>
-    <td>HW2 due</td>
+    <td></td>
   </tr>
-  <tr bgcolor="#F2F2F2">
-    <td width="70">Sep 29</td>
+  <tr>
+    <td width="70">Sep 24</td>
     <td>Evaluation, Datasets, and Dataset Artifacts</td>
     <td>
       <a href="https://arxiv.org/pdf/1905.00537">Wang+19 SuperGLUE</a><br/>
@@ -227,10 +220,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://arxiv.org/pdf/2311.12022">Rein+23 GPQA</a><br/>
       <a href="https://aclanthology.org/2024.findings-emnlp.30.pdf">Li+24 Data Contamination Report</a>
     </td>
-    <td><b>Quiz 2</b></td>
+    <td>HW2 due</td>
   </tr>
   <tr bgcolor="#F2F2F2">
-    <td width="70">Oct 1</td>
+    <td width="70">Sep 29</td>
     <td>In-Context Learning</td>
     <td>
       <a href="https://arxiv.org/pdf/2005.14165">Brown+20 GPT-3</a><br/>
@@ -240,10 +233,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">Olsson+22 Induction Heads</a><br/>
       <a href="https://arxiv.org/pdf/2507.19457">Agrawal+25 GEPA</a>
     </td>
-    <td></td>
+    <td><b>Quiz 2</b></td>
   </tr>
-  <tr>
-    <td width="70">Oct 6</td>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Oct 1</td>
     <td>Chain-of-Thought Reasoning</td>
     <td>
       <a href="https://arxiv.org/pdf/2201.11903">Wei+22 CoT</a><br/>
@@ -255,6 +248,18 @@ neural network fundamentals. Much of the second half of the course has no textbo
     <td></td>
   </tr>
   <tr>
+    <td width="70">Oct 6</td>
+    <td>Building an LLM 1: Pre-training, Mid-training, and Instruction-Tuning</td>
+    <td>
+      <a href="https://arxiv.org/pdf/2203.15556">Hoffmann+22 Chinchilla</a><br/>
+      <a href="https://arxiv.org/pdf/2307.09288">Touvron+23 Llama 2</a><br/>
+      <a href="https://arxiv.org/pdf/2402.00838">Groeneveld+24 OLMo</a><br/>
+      <a href="https://arxiv.org/pdf/2402.00159">Soldaini+24 Dolma</a><br/>
+      <a href="https://arxiv.org/abs/2212.10560">Wang+22 Self-Instruct</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
     <td width="70">Oct 8</td>
     <td><b>MIDTERM EXAM</b> (in class)</td>
     <td></td>
@@ -262,27 +267,16 @@ neural network fundamentals. Much of the second half of the course has no textbo
   </tr>
   <tr bgcolor="#F2F2F2">
     <td width="70">Oct 13</td>
-    <td>Building an LLM 1: Pre-training and Mid-training</td>
-    <td>
-      <a href="https://arxiv.org/pdf/2203.15556">Hoffmann+22 Chinchilla</a><br/>
-      <a href="https://arxiv.org/pdf/2307.09288">Touvron+23 Llama 2</a><br/>
-      <a href="https://arxiv.org/pdf/2402.00838">Groeneveld+24 OLMo</a><br/>
-      <a href="https://arxiv.org/pdf/2402.00159">Soldaini+24 Dolma</a>
-    </td>
-    <td></td>
-  </tr>
-  <tr bgcolor="#F2F2F2">
-    <td width="70">Oct 15</td>
     <td>Reinforcement Learning for NLP</td>
     <td>
       <a href="http://incompleteideas.net/book/the-book-2nd.html">SuttonBarto 3, 13</a><br/>
       <a href="https://arxiv.org/pdf/1707.06347">Schulman+17 PPO</a><br/>
       <a href="https://arxiv.org/pdf/2210.01241">Ramamurthy+22 RL4LMs</a>
     </td>
-    <td>HW3 out</td>
+    <td></td>
   </tr>
-  <tr>
-    <td width="70">Oct 20</td>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Oct 15</td>
     <td>RLHF</td>
     <td>
       <a href="https://arxiv.org/pdf/2009.01325">Stiennon+20 Learning to Summarize</a><br/>
@@ -290,10 +284,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://arxiv.org/pdf/2212.08073">Bai+22 Constitutional AI</a><br/>
       <a href="https://arxiv.org/pdf/2305.18290">Rafailov+23 DPO</a>
     </td>
-    <td></td>
+    <td>HW3 out</td>
   </tr>
   <tr>
-    <td width="70">Oct 22</td>
+    <td width="70">Oct 20</td>
     <td>RLVR and Reasoning Models</td>
     <td>
       <a href="https://arxiv.org/pdf/2501.12948">DeepSeek-AI+25 DeepSeek-R1</a><br/>
@@ -301,20 +295,20 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://arxiv.org/pdf/2402.03300">Shao+24 GRPO / DeepSeekMath</a><br/>
       <a href="https://arxiv.org/pdf/2305.20050">Lightman+23 Process Supervision</a>
     </td>
-    <td>HW3 due<br/>FP proposal due Oct 23</td>
+    <td></td>
   </tr>
-  <tr bgcolor="#F2F2F2">
-    <td width="70">Oct 27</td>
+  <tr>
+    <td width="70">Oct 22</td>
     <td>Multimodal Grounding 1: Intro to Vision, CLIP</td>
     <td>
       <a href="https://arxiv.org/pdf/2010.11929">Dosovitskiy+20 ViT</a><br/>
       <a href="https://arxiv.org/pdf/2103.00020">Radford+21 CLIP</a><br/>
       <a href="https://arxiv.org/pdf/1512.03385">He+15 ResNet</a>
     </td>
-    <td><b>Quiz 3</b></td>
+    <td>HW3 due<br/>FP proposal due Oct 23</td>
   </tr>
   <tr bgcolor="#F2F2F2">
-    <td width="70">Oct 29</td>
+    <td width="70">Oct 27</td>
     <td>Multimodal Grounding 2: VLMs and VLAs</td>
     <td>
       <a href="https://arxiv.org/pdf/2204.14198">Alayrac+22 Flamingo</a><br/>
@@ -322,10 +316,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://arxiv.org/pdf/2303.03378">Driess+23 PaLM-E</a><br/>
       <a href="https://arxiv.org/pdf/2307.15818">Brohan+23 RT-2</a>
     </td>
-    <td></td>
+    <td><b>Quiz 3</b></td>
   </tr>
-  <tr>
-    <td width="70">Nov 3</td>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Oct 29</td>
     <td>Agents</td>
     <td>
       <a href="https://arxiv.org/pdf/2210.03629">Yao+22 ReAct</a><br/>
@@ -334,10 +328,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://arxiv.org/pdf/2310.06770">Jimenez+23 SWE-bench</a><br/>
       <a href="https://arxiv.org/pdf/2207.01206">Yao+22 WebShop</a>
     </td>
-    <td>HW4 out</td>
+    <td></td>
   </tr>
   <tr>
-    <td width="70">Nov 5</td>
+    <td width="70">Nov 3</td>
     <td>Applications: Machine Translation and Multilinguality</td>
     <td>
       <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Eisenstein 18.1-18.2, 18.4</a><br/>
@@ -346,10 +340,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://arxiv.org/pdf/1911.02116">Conneau+19 XLM-R</a><br/>
       <a href="https://arxiv.org/pdf/2302.14520">Kocmi+23 LLMs for MT Eval</a>
     </td>
-    <td></td>
+    <td>HW4 out</td>
   </tr>
-  <tr bgcolor="#F2F2F2">
-    <td width="70">Nov 10</td>
+  <tr>
+    <td width="70">Nov 5</td>
     <td>Applications: Code (Semantic Parsing, Text-to-Code, Code Agents)</td>
     <td>
       <a href="https://homes.cs.washington.edu/~lsz/papers/zc-uai05.pdf">ZettlemoyerCollins05 Semantic Parsing</a><br/>
@@ -361,7 +355,7 @@ neural network fundamentals. Much of the second half of the course has no textbo
     <td></td>
   </tr>
   <tr bgcolor="#F2F2F2">
-    <td width="70">Nov 12</td>
+    <td width="70">Nov 10</td>
     <td>Applications: Efficiency</td>
     <td>
       <a href="https://arxiv.org/pdf/2106.09685">Hu+21 LoRA</a><br/>
@@ -371,10 +365,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://arxiv.org/pdf/2309.06180">Kwon+23 vLLM / PagedAttention</a><br/>
       <a href="https://arxiv.org/abs/2006.16236">Katharopoulos+20 Linear Attention</a>
     </td>
-    <td>HW4 due</td>
+    <td></td>
   </tr>
-  <tr>
-    <td width="70">Nov 17</td>
+  <tr bgcolor="#F2F2F2">
+    <td width="70">Nov 12</td>
     <td>Applications: Interpretability</td>
     <td>
       <a href="https://arxiv.org/pdf/1606.03490">Lipton16 Mythos</a><br/>
@@ -383,10 +377,10 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://arxiv.org/pdf/2202.05262">Meng+22 ROME</a><br/>
       <a href="https://transformer-circuits.pub/2023/monosemantic-features/index.html">Bricken+23 Monosemanticity</a>
     </td>
-    <td><b>Quiz 4</b></td>
+    <td>HW4 due</td>
   </tr>
   <tr>
-    <td width="70">Nov 19</td>
+    <td width="70">Nov 17</td>
     <td>Applications: Safety</td>
     <td>
       <a href="https://arxiv.org/pdf/2307.15043">Zou+23 Universal Attacks</a><br/>
@@ -394,6 +388,12 @@ neural network fundamentals. Much of the second half of the course has no textbo
       <a href="https://arxiv.org/pdf/2209.07858">Ganguli+22 Red Teaming</a><br/>
       <a href="https://doi.org/10.1145/3442188.3445922">BenderGebru+21 Stochastic Parrots</a>
     </td>
+    <td><b>Quiz 4</b></td>
+  </tr>
+  <tr>
+    <td width="70">Nov 19</td>
+    <td><i>Guest lecture: Jiaxin Pei</i></td>
+    <td></td>
     <td></td>
   </tr>
   <tr bgcolor="#F2F2F2">
