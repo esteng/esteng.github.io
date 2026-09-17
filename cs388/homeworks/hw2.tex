@@ -1,0 +1,256 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{xcolor}
+
+\usepackage[hidelinks]{hyperref}
+
+\titlespacing*{\section}{0pt}{1.2em}{0.5em}
+\titlespacing*{\subsection}{0pt}{0.8em}{0.4em}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small CS 388: Natural Language Processing}
+\rhead{\small Homework 2}
+\cfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[enumerate]{itemsep=2pt, topsep=3pt}
+\setlist[itemize]{itemsep=2pt, topsep=3pt}
+
+\newcommand{\wrd}[1]{\texttt{#1}}
+\newcommand{\emb}[1]{\ensuremath{e(#1)}}
+\newcommand{\sm}{\ensuremath{\mathrm{softmax}}}
+\newcommand{\Wq}{\ensuremath{W_Q}}
+\newcommand{\Wk}{\ensuremath{W_K}}
+\newcommand{\Wv}{\ensuremath{W_V}}
+\newcommand{\pred}{\ensuremath{\hat{y}}}
+
+\definecolor{solblue}{RGB}{0,60,180}
+\newcommand{\sol}[1]{\par\medskip{\color{solblue}\noindent\textbf{Solution.} #1}\par\medskip}
+\newcommand{\B}[1]{{\color{solblue}#1}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Homework 2: Self-Attention and Transformers}\\[2pt]
+  {\normalsize CS 388: Natural Language Processing \quad\textbullet\quad Fall 2026}\\[2pt]
+\end{center}
+\vspace{0.5em}
+\hrule
+\vspace{1em}
+
+\noindent
+\textbf{Instructions.} This assignment can be done entirely by hand -- no coding required (Question 4 asks you to read a short PyTorch file and describe a fix, but you never have to run anything); however, please transcribe your answers/work into the provided \LaTeX file and submit the PDF, rather than a handwritten response.
+\textbf{Please use the {\tt{\textbackslash B\{\}}} command to wrap your solutions, making them blue (this will help us when grading).}
+Show your work. When you are asked to construct a matrix, write out every entry, and give each entry as a
+number. Submit a single PDF to Gradescope.
+
+\section*{Setup and Notation}
+
+Our alphabet is $\Sigma = \{\wrd{A}, \wrd{B}, \wrd{C}\}$, embedded as one-hot vectors in $\mathbb{R}^3$:
+\[
+\emb{\wrd{A}} = [1,0,0], \qquad \emb{\wrd{B}} = [0,1,0], \qquad \emb{\wrd{C}} = [0,0,1].
+\]
+All vectors are row vectors. A sequence is a string $x = x_1 x_2 \cdots x_n$ with each $x_i \in \Sigma$; we write
+$X \in \mathbb{R}^{n \times 3}$ for the matrix whose $i$-th row is $\emb{x_i}$. Throughout this assignment
+every sequence has length at most $L = 5$.
+
+\medskip\noindent
+\textbf{Model.}
+We will use a single layer of scaled dot-product self-attention, with parameter matrices
+$\Wq$, $\Wk$, and $\Wv$, each in $\mathbb{R}^{3\times 3}$. For each position $i$ we form a query, a key,
+and a value,
+\[
+q_i = \emb{x_i}\Wq, \qquad k_i = \emb{x_i}\Wk, \qquad v_i = \emb{x_i}\Wv ,
+\]
+and the attention output at position $i$ is $\sm\!\left(q_i K^\top\right) V$. Real implementations divide the
+scores by $\sqrt{d}$ to stop them from growing with the embedding dimension; here $d$ is tiny and we are
+choosing the weights by hand, so we drop that constant --- it would only rescale $\Wq$.
+
+We only ever care about the output at the \emph{final} position, which is the position that has read the whole
+string. So write $q = q_n = \emb{x_n}\Wq$, let
+\[
+s_i = q\, k_i^{\top}, \qquad
+\alpha_i = \frac{\exp(s_i)}{\sum_{j=1}^{n}\exp(s_j)}, \qquad
+o \;=\; \sum_{i=1}^{n} \alpha_i v_i \;\in\; \mathbb{R}^3 ,
+\]
+so $s_i$ is the score of position $i$, $\alpha$ is the attention distribution, and $o$ is the output vector.
+Note that position $n$ attends to itself: the sum runs over all of $1,\dots,n$, including $i = n$.
+
+\medskip\noindent
+\textbf{Inference.} We read the three coordinates of $o$ off as scores for the three symbols, and the model's
+prediction is
+\[
+\pred(x) \;=\; \operatorname*{arg\,max}_{\ell \in \{\wrd{A},\wrd{B},\wrd{C}\}} \; o_\ell .
+\]
+Initially, we will not have any output projection or MLP (until Question 2, where we add an output
+projection). A tie for the argmax counts as a wrong answer.
+A rule is \emph{captured} by a choice of parameters if $\pred(x)$ is correct for
+\emph{every} sequence $x$ of length $n \le L$ to which the rule applies.
+
+\medskip\noindent
+\textbf{Simplification.} In Questions 1 and 2 we will fix $\Wk = \Wv = I_3$, so that $k_i = v_i = \emb{x_i}$,
+leaving $\Wq$ as the only parameter for you to design. Under this choice, if $x_n$ is the $a$-th symbol of the alphabet and $x_i$ is the
+$b$-th, then
+\[
+s_i \;=\; \emb{x_n}\,\Wq\,\emb{x_i}^{\top} \;=\; (\Wq)_{ab} ,
+\]
+i.e.\ $\Wq$ is nothing more than a $3\times 3$ lookup table of scores: the entry \emph{is} the score, indexed by (final symbol, attended
+symbol). Feel free to use this fact without re-deriving it.
+
+\medskip\noindent
+\textbf{Reading off the output.} Because $\Wv = I_3$, the values are the embeddings themselves, so
+$o = \sum_i \alpha_i \emb{x_i}$, and the $\ell$-th coordinate of $o$ is just the total attention mass placed on
+the positions holding $\ell$:
+\[
+o_\ell \;=\; \sum_{i \,:\, x_i = \ell} \alpha_i .
+\]
+In particular the coordinates of $o$ are nonnegative and sum to $1$, so $o$ is a probability distribution over
+$\Sigma$. You may use both of these facts without proof; you will need them in every question.
+
+\section{Question 1 (25 points)}
+
+Consider sequences over $\{\wrd{A}, \wrd{B}\}$ only (no \wrd{C} appears), and the following pair of decision
+rules:
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+R1 & if the sequence is all \wrd{A}'s, predict \wrd{A}\\
+R2 & if the sequence contains at least one \wrd{B}, predict \wrd{B}\\
+\bottomrule
+\end{tabular}
+\end{center}
+Together these cover every sequence over $\{\wrd{A},\wrd{B}\}$. Note that R2 has no count threshold: a single
+\wrd{B} among a thousand \wrd{A}'s still means \wrd{B}.
+
+\begin{enumerate}[label=(\alph*)]
+
+  \item \textbf{(15 pts)} Write down a matrix $\Wq$ that captures R1 and R2, giving all nine entries.
+
+  \item \textbf{(10 pts)} Verify your answer on the three sequences \wrd{AAA}, \wrd{AAB}, and \wrd{ABA} by
+  computing $s_i$, $\alpha_i$, and $o$ for each.
+
+
+
+\end{enumerate}
+
+\section{Question 2 (40 points)}
+
+Now let all three symbols appear, and consider the following rule set, which extends the previous one:
+\begin{center}
+\begin{tabular}{lccl}
+\toprule
+& contains \wrd{B}? & contains \wrd{C}? & prediction\\
+\midrule
+R1 & no  & no  & \wrd{A}\\
+R2 & yes & no  & \wrd{B}\\
+R3 & no  & yes & \wrd{A}\\
+R4 & yes & yes & \wrd{C}\\
+\bottomrule
+\end{tabular}
+\end{center}
+In other words, we predict \wrd{B} if a sequence contains a \wrd{B} and no \wrd{C}; we predict \wrd{C} if and
+only if it contains both a \wrd{B} and a \wrd{C}; and otherwise we predict \wrd{A}.
+The rules still cover every sequence, and we still fix $\Wk = \Wv = I_3$.
+
+\begin{enumerate}[label=(\alph*)]
+
+  \item \textbf{(12 pts)} Show that no single $\Wq$ captures R1--R4. \emph{Hint:} both \wrd{CA} and \wrd{BCA}
+  end in the same symbol, so they use the same row of $\Wq$, and they contain the same number of \wrd{A}'s and
+  the same number of \wrd{C}'s. You should be able to write out two incompatible inequalities that these rules require. 
+
+
+  \item \textbf{(6 pts)} Explain in two or three sentences \emph{why} this happens, in terms of how the scores
+  $s_i$ are computed. Your explanation should make clear what property of the rule set a single head cannot
+  represent, and should not depend on the particular counterexample from (a).
+
+  \item \textbf{(16 pts)} Still assuming $\Wk = \Wv = I_3$, show that multi-head attention with two heads ---
+  that is, two separate query matrices --- can capture the rules. Heads $1$ and $2$ should produce outputs $o^{(1)}, o^{(2)} \in
+  \mathbb{R}^3$. These are concatenated into $[o^{(1)}; o^{(2)}] \in \mathbb{R}^6$ and passed through a linear output layer
+  \[
+  z \;=\; [o^{(1)}; o^{(2)}]\, W_O, \qquad W_O \in \mathbb{R}^{6\times 3}\;,
+  \]
+  with the prediction now $\pred(x) = \arg\max_\ell z_\ell$. Design $\Wq^{(1)}$, $\Wq^{(2)}$, and $W_O$ so that some
+  coordinate of $o^{(1)}$ behaves as an (approximate) indicator of ``$x$ contains \wrd{B}'' and some coordinate
+  of $o^{(2)}$ as an indicator of ``$x$ contains \wrd{C}''. Give the matrices and identify the two coordinates.
+  Remember that your construction has to be correct for every sequence of length at most $L = 5$, not just for
+  short ones.
+
+  \item \textbf{(6 pts)} Why can the rules above be captured by a model with no non-linearity? 
+  
+
+\end{enumerate}
+
+\section{Question 3 (20 points)}
+
+For this part, restrict the alphabet to $\{\wrd{A}, \wrd{C}\}$ and consider a single rule:
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+R5 & if the first symbol is \wrd{C}, predict \wrd{C}; otherwise predict \wrd{A}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[label=(\alph*)]
+
+  \item \textbf{(5 pts)} Can single-head or multi-head attention, as we have defined it so far, capture this
+  rule? Why or why not? (No proof needed here, 1--2 sentences of explanation is fine.)
+
+  \item \textbf{(15 pts)} Fix the model by hand with an integer positional encoding. Embed position $i$ by
+  appending its index, so that token $i$ is represented by the $4$-dimensional vector
+  \[
+  \tilde{e}_i \;=\; [\,\emb{x_i},\; i\,] \;\in\; \mathbb{R}^4 ,
+  \]
+  take $\Wq, \Wk, \Wv \in \mathbb{R}^{4\times 4}$, and let the prediction be the argmax over the
+  first three coordinates of $o$ as before. Give $\Wq, \Wk, \Wv$ explicitly (all sixteen entries of each)
+  such that R5 is captured for all sequences of length at most $L = 5$.
+
+
+
+
+\end{enumerate}
+
+\section{Question 4 (15 points)}
+
+The file \texttt{mhsa.py} accompanying this assignment implements a single layer of multi-head self-attention in
+PyTorch. It is meant to do exactly what you did by hand in Question 2: run each head independently, recombine
+the per-head outputs, and project the result back to the model dimension with $W_O$. The file contains
+\textbf{exactly one} mistake --- the shapes, the scaling, the softmax, and the four projections are all
+correct. You do not need to run anything.
+
+\begin{enumerate}[label=(\alph*)]
+
+  \item \textbf{(5 pts)} Find the mistake. Quote the offending line, and say in one sentence what it does
+  instead of what it was supposed to do.
+
+  \item \textbf{(5 pts)} What happens if the mistake is not fixed? Describe what you would see if you ran the
+  file as given, and also what the layer would actually be computing if someone patched over that symptom
+  rather than fixing the real problem. Connect the second half of your answer to what you showed in
+  Question 2(a).
+
+  \item \textbf{(5 pts)} Give a one-line fix: the single line of code that should replace the offending line.
+
+\end{enumerate}
+
+\vspace{1em}
+\hrule
+\vspace{0.5em}
+\noindent
+\small
+\textbf{What to turn in.} A single PDF containing every matrix you were asked to construct, written out
+entry by entry; the worked verifications requested in Question 1(b); the impossibility argument in
+Question 2(a); and your written answers to the discussion questions. Do not submit code -- write the one-line
+fix from Question 4(c) directly into your PDF.
+
+\end{document}
