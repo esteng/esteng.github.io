@@ -1,0 +1,57 @@
+GenerationPrograms (Wan et al., COLM 2025)
+GenerationPrograms improves attribution in LLM-generated text by decomposing generation into two explicit stages: first producing an executable program that specifies what operations to perform (paraphrasing, compression, fusion of sources), then executing that program to produce the final response. This separation makes attribution a natural byproduct of the generation process rather than a retroactive or simultaneous step. The approach significantly improves attribution quality across question-answering and summarization tasks, and supports localized refinement by modifying individual program modules independently.
+
+---
+
+LAQuer (Hirsch et al., ACL 2025)
+LAQuer (Localized Attribution Queries) introduces a task that allows users to identify specific spans of generated text and retrieve their corresponding source material, enabling more fine-grained verification than sentence-level attribution. The paper benchmarks LLM prompting, internal representation-based approaches, and extensions of existing attribution methods on Multi-document Summarization and Long-form QA. LAQuer methods substantially reduce the length of attributed text while maintaining precision, and the paper establishes an evaluation framework to advance future localized attribution research.
+
+---
+
+VisFIS (Stengel-Eskin et al., 2022)
+VisFIS proposes a method for supervising visual feature importance in VQA models by optimizing for four properties: predictions should work with only the most important features, show uncertainty without them, remain invariant to unimportant feature changes, and align with human annotations. The approach improves both accuracy and explanation quality on VQA benchmarks. A key finding is that explanations are more accurate when they are both plausible and faithful, and that Right-for-the-Right-Reason metrics do not reliably predict out-of-distribution performance when controlling for in-distribution accuracy.
+
+---
+
+CRG (Wan et al., ECCV 2024)
+Contrastive Region Guidance (CRG) is a training-free method that improves vision-language models' ability to attend to specific image regions by contrasting model outputs produced with and without visual prompts such as bounding boxes. This contrastive signal amplifies the model's use of region-specific guidance without requiring any fine-tuning, yielding up to 11.1% accuracy gains on region-based benchmarks and improvements on spatial reasoning and compositional generalization tasks. Because it requires no additional training, CRG is broadly applicable to open-source VLMs.
+
+---
+
+SymbolicMoE (Chen*, Yun*, Stengel-Eskin* et al., 2025)
+SymbolicMoE is a gradient-free, text-based Mixture-of-Experts framework that dynamically routes each input instance to the most relevant expert LLM based on the specific skills required, rather than selecting experts at the task level. A batch-processing strategy groups instances by assigned expert, enabling 16 models to run efficiently on a single GPU. An aggregator synthesizes reasoning from multiple experts into a final response, achieving an average absolute gain of 8.15% over the best multi-agent baseline across MMLU-Pro, GPQA, and AIME.
+
+---
+
+RGD / CASCAL (Niu et al., 2026)
+Routing with Generated Data (RGD) trains LLM routers without any human-labeled data by generating synthetic queries and answers from generator LLMs and learning to route inputs to the most capable expert. The authors find that query-answer routers degrade faster than query-only routers as generator quality decreases, and introduce CASCAL, a query-only router that uses consensus voting to estimate model correctness and hierarchical clustering to identify specialized strengths. CASCAL outperforms traditional query-answer routers by approximately 4.6 percentage points on lower-quality synthetic data, evaluated across four benchmarks and 12 models.
+
+---
+
+System-1.x (Saha et al., ICLR 2025)
+System-1.x proposes a hybrid planning framework for language models that intelligently balances fast, direct System-1 planning with slower, deliberative System-2 search-based planning using a learned controller. The controller decomposes problems and classifies sub-goals as easy or hard, routing them to the appropriate planner, and a hybridization factor lets users control how much search effort to apply. The framework supports neuro-symbolic variants and outperforms both isolated System-1 and System-2 approaches as well as symbolic planners like A* on Maze Navigation and Blocksworld tasks.
+
+---
+
+ThinkRight / TRAAC (Singh et al., 2025)
+ThinkRight addresses the problem of inappropriate reasoning effort in LLMs, where models either underthink (short, incorrect reasoning chains) or overthink (generating redundant steps after reaching a correct answer). TRAAC, an online RL post-training method, uses the model's self-attention over long reasoning trajectories to identify important steps and prune redundant ones, combining difficulty estimation with attention-based compression. The method achieves an average absolute accuracy gain of 8.4% with a 36.8% relative reduction in reasoning length across multiple benchmarks, and generalizes well to out-of-distribution tasks.
+
+---
+
+DART (Sivakumaran et al., EACL 2026)
+DART is a multi-agent framework that identifies disagreements among multiple visual agents and uses those disagreements to determine which specialized tools (e.g., OCR, object detection, spatial reasoning) to recruit for resolving conflicts in multimodal reasoning. An aggregator agent then synthesizes agent outputs and tool results to produce a final answer, leading to richer discussion and more diverse tool use than existing methods. DART outperforms multi-agent debate and single-agent tool-calling baselines, with gains of 3.4% and 2.4% on A-OKVQA and MMMU respectively.
+
+---
+
+UTGen (Prasad*, Stengel-Eskin* et al., COLM 2025)
+UTGen trains LLMs to generate unit tests that reveal bugs in code by tackling the core challenge of producing test inputs that expose errors while correctly predicting expected outputs without access to ground-truth solutions. UTDebug extends UTGen with test-time computation and validation mechanisms to prevent overfitting to specific buggy behaviors. UTGen outperforms baselines by 7.59% on a combined metric of bug-revealing inputs and correct outputs, and combined with UTDebug improves debugging accuracy by over 3% on HumanEvalFix and 12% on MBPP+, also boosting GPT-4o's debugging performance by 13.8%.
+
+---
+
+Gistify (Lee et al., ICLR 2026)
+Gistify introduces an evaluation task for coding LLMs requiring the generation of a single, minimal, self-contained file that reproduces a specific functionality of a large codebase given only a command entry point. The task demands understanding of codebase structure, execution flow tracing, and producing substantial code patches containing only the essential code for execution. Experiments show that leading models struggle significantly with this task, especially on examples with long execution traces, revealing key limitations in current LLMs' ability to reason about complex, real-world codebases.
+
+---
+
+OneLife (Khan et al., ICLR 2026)
+OneLife presents a framework for learning symbolic world models in stochastic environments from minimal, unguided exploration, modeling environment dynamics as conditionally-activated programmatic laws with precondition-effect structures. The approach is evaluated with metrics for state ranking (distinguishing plausible from implausible future states) and state fidelity (generating realistic future states) and operates without any human guidance. Tested on Crafter-OO, OneLife outperforms baselines on 16 of 23 scenarios and demonstrates planning capabilities through simulated rollouts learned from very limited interaction.

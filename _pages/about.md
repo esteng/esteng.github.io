@@ -24,52 +24,90 @@ My work addresses three key problems:
 My work covers calibration and uncertainty especially in connection with implicit phenomena such as vagueness, underspecification, and ambiguity. 
 While I've mostly explored these topics through a linguistic lens, I am interested in their importance to intelligence more broadly.
 
-Concretely, some of the main areas I've been publishing on recently are:
+Concretely, some of the main areas I've been publishing on recently are (click to expand):
 
-- **Confidence Estimation and Calibration**: 
-    - [on calibrating generation with self-generated distractors (Wang and Stengel-Eskin, ICLR 2026)](https://arxiv.org/abs/2509.25532)
-    - [on training models to predict correctness from historical data (Xiao et al., ICML 2026)](https://arxiv.org/abs/2509.24988)
-    - [on multi-agent pragmatic reasoning for better calibration (Stengel-Eskin et al., NeurIPS 2024)](https://arxiv.org/abs/2405.21028)
-    - [on calibration in semantic parsing (Stengel-Eskin and Van Durme, TACL 2023)](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00598/117737)
-    - [on balancing safety and usability using confidence (Stengel-Eskin and Van Durme, EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.159/)
+<details class="research-area" markdown="1">
+<summary><strong>Uncertainty, Confidence Estimation, and Calibration</strong></summary>
 
-- **Ambiguity and Underspecification**: 
-    - [on exploitation of loopholes instatiated by ambiguity (Choi, Bansal, and Stengel-Eskin, EMNLP 2025)](https://arxiv.org/abs/2508.19546)
-    - [on ambiguity in semantic parsing (Stengel-Eskin and Van Durme, ICLR 2024)](https://openreview.net/forum?id=qLegogRepu) 
-    - [on improving VQA through preemptive self-clarification (Prasad et al., ICLR 2024)](https://openreview.net/forum?id=L4nOxziGf9)
-    - [on rephrasing and analyzing ambiguous questions in VQA (Stengel-Eskin et al. ACL 2023)](https://aclanthology.org/2023.acl-long.569/) 
+- [on calibrating generation with self-generated distractors (Wang and Stengel-Eskin, ICLR 2026)](https://arxiv.org/abs/2509.25532)
+- [on training models to predict correctness from historical data (Xiao et al., ICML 2026)](https://arxiv.org/abs/2509.24988)
+- [on decoupling beliefs from actions via verbalized state uncertainty (Singh et al., 2026)](https://arxiv.org/abs/2605.11436)
+- [on selective prediction for LLM surrogates of GPU kernel runtime (Khan et al., 2026)](https://arxiv.org/abs/2605.31464)
+- [on multi-agent pragmatic reasoning for better calibration (Stengel-Eskin et al., NeurIPS 2024)](https://arxiv.org/abs/2405.21028)
+- [on calibration in semantic parsing (Stengel-Eskin and Van Durme, TACL 2023)](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00598/117737)
+- [on balancing safety and usability using confidence (Stengel-Eskin and Van Durme, EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.159/)
 
-- **Multi-Agent/Multi-Model Reasoning**: 
-    - [on multi-agent training to accept good and resist bad persuasion (Stengel-Eskin et al., NAACL 2025)](https://arxiv.org/abs/2410.14596) 
-    - [on structured distillation to learn from multi-agent discussions (Chen et al., ICML 2024)](https://arxiv.org/abs/2402.01620)
-    - [on a new benchmark to assess game-theoretic abilities for LLM agents (Duan et al., NeurIPS 2024)](https://arxiv.org/abs/2402.12348)
-    - [on multi-agent iterative coarse-to-fine refinement for reasoning tasks (Chen et al., EMNLP 2025)](https://arxiv.org/abs/2409.12147) 
-    - [on using bandits to select instance-level reward models for LLM alignment (Nguyen et al., NeurIPS 2025)](https://arxiv.org/abs/2410.01735) 
-    - [on combining 16 LLMs on 1 GPU via symbolic MoE (Chen et al., 2025)](https://arxiv.org/abs/2503.05641)
-    - [on multi-listener training for faithful chain-of-thought reasoning (Sivakumaran et al., 2026)](https://arxiv.org/abs/2602.16154)
-    - [on annotation-free LLM skill estimation for expert routing (Niu et al., ACL 2026)](https://arxiv.org/abs/2601.09692)
+</details>
 
-- **Skills and Abstractions for Agents/Coding/Planning**: 
-    - [on inferring symbolic world models from limited interaction (Khan et al., ICLR 2026)](https://arxiv.org/abs/2510.12088) 
-    - [on generation programs for traceable and attributable text generation (Wan et al., COLM 2025)](https://arxiv.org/abs/2506.14580)
-    - [on learning coding abstractions with LLMs (Stengel-Eskin et al., ICML 2024)](https://arxiv.org/abs/2401.16467)
-    - [on discovering skills for RL agents (Fu et al., ICML 2024)](https://arxiv.org/abs/2402.16354)
-    - [on distilling skills from teachers for LLM agents (Hashemzadeh et al., CoLLAs 2024)](https://arxiv.org/abs/2405.02749)
-    - [on hybrid and controllable System 1 and System 2 planning (Saha et al., ICLR 2025)](https://arxiv.org/abs/2407.14414) 
-    - [on learning to generate unit tests for LLM debugging (Prasad et al., COLM 2025)](https://arxiv.org/abs/2502.01619) 
-    - [on inferring structured abstractions for reasoning (Khan et al., 2025)](https://zaidkhan.me/EFAGen/) 
+<details class="research-area" markdown="1">
+<summary><strong>Ambiguity and Underspecification</strong></summary>
 
-- **Improving Multimodal Models and LLM Agents**:
-    - [on building PRMs for guiding long-horizon info-seeking tasks (Lee et al., ACL 2026)](https://arxiv.org/abs/2511.19314)
-    - [on building and testing data generation agents for creating training data (Khan et al., ICLR 2025 Spotlight)](https://dataenvgym.github.io) 
-    - [on attribution-based steering for multimodal models (Nguyen et al., ACL 2026)](https://arxiv.org/abs/2507.18043)
-    - [on a tree-based representation for LLM-based video reasoning (Wang et al. CVPR 2025)](https://arxiv.org/abs/2405.19209)
-    - [on improving visual prompting/object grounding without training (Wan et al., ECCV 2024)](https://arxiv.org/abs/2403.02325) 
-    - [on a more effective/efficient self-consistency method for LLM agents (Wang et al., ACL 2024)](https://arxiv.org/abs/2402.13212)
-    - [on Western cultural bias in VLMs and the effect of pretraining language (Ananthram et al., ICLR 2025)](https://arxiv.org/abs/2406.11665) 
-    - [on visual commonsense in unimodal and multimodal models (Zhang et al, NAACL 2022)](https://aclanthology.org/2022.naacl-main.390/) 
-    - [on reasoning about occluded patterns (Pothiraj et al., ICCV 2025)](https://arxiv.org/abs/2504.15485)
-    - [on fact-level attribution and grounding for multimodal reasoning (Wan et al., ICML 2026)](https://arxiv.org/abs/2602.11509)
+- [on exploitation of loopholes instatiated by ambiguity (Choi, Bansal, and Stengel-Eskin, EMNLP 2025)](https://arxiv.org/abs/2508.19546)
+- [on ambiguity in semantic parsing (Stengel-Eskin and Van Durme, ICLR 2024)](https://openreview.net/forum?id=qLegogRepu)
+- [on improving VQA through preemptive self-clarification (Prasad et al., ICLR 2024)](https://openreview.net/forum?id=L4nOxziGf9)
+- [on rephrasing and analyzing ambiguous questions in VQA (Stengel-Eskin et al. ACL 2023)](https://aclanthology.org/2023.acl-long.569/)
+
+</details>
+
+<details class="research-area" markdown="1">
+<summary><strong>Multi-Agent Communication, Collaboration, and Communicative Skills</strong></summary>
+
+- [on emergent language in complex multi-agent LLM interactions (Stengel-Eskin et al., 2026)](https://arxiv.org/abs/2609.01491)
+- [on self-reinforcing counterfactual reasoning for pragmatic language understanding (Park et al., EMNLP 2026 Findings)](https://arxiv.org/abs/2606.18624)
+- [on multi-listener training for faithful chain-of-thought reasoning (Sivakumaran et al., EMNLP 2026 Findings)](https://arxiv.org/abs/2602.16154)
+- [on multi-agent training to accept good and resist bad persuasion (Stengel-Eskin et al., NAACL 2025)](https://arxiv.org/abs/2410.14596)
+- [on learning a double-agent defender for belief steering via theory of mind (Xiao et al., COLM 2026)](https://arxiv.org/abs/2604.11666)
+
+</details>
+
+<details class="research-area" markdown="1">
+<summary><strong>Multi-Agent/Multi-Model Reasoning</strong></summary>
+
+- [on structured distillation to learn from multi-agent discussions (Chen et al., ICML 2024)](https://arxiv.org/abs/2402.01620)
+- [on a new benchmark to assess game-theoretic abilities for LLM agents (Duan et al., NeurIPS 2024)](https://arxiv.org/abs/2402.12348)
+- [on multi-agent iterative coarse-to-fine refinement for reasoning tasks (Chen et al., EMNLP 2025)](https://arxiv.org/abs/2409.12147)
+- [on using bandits to select instance-level reward models for LLM alignment (Nguyen et al., NeurIPS 2025)](https://arxiv.org/abs/2410.01735)
+- [on combining 16 LLMs on 1 GPU via skill-based MoE (Chen et al., ICML 2026)](https://arxiv.org/abs/2503.05641)
+- [on annotation-free LLM skill estimation for expert routing (Niu et al., ACL 2026)](https://arxiv.org/abs/2601.09692)
+- [on scalably teaching LLMs to balance quality, creativity, and diversity (Sahu et al., 2026)](https://arxiv.org/abs/2608.07460)
+
+</details>
+
+<details class="research-area" markdown="1">
+<summary><strong>Skills, Abstractions, and World Models for Agents/Coding/Planning</strong></summary>
+
+- [on inferring symbolic world models from limited interaction (Khan et al., ICLR 2026)](https://arxiv.org/abs/2510.12088)
+- [on generation programs for traceable and attributable text generation (Wan et al., COLM 2025)](https://arxiv.org/abs/2506.14580)
+- [on learning coding abstractions with LLMs (Stengel-Eskin et al., ICML 2024)](https://arxiv.org/abs/2401.16467)
+- [on discovering skills for RL agents (Fu et al., ICML 2024)](https://arxiv.org/abs/2402.16354)
+- [on distilling skills from teachers for LLM agents (Hashemzadeh et al., CoLLAs 2024)](https://arxiv.org/abs/2405.02749)
+- [on hybrid and controllable System 1 and System 2 planning (Saha et al., ICLR 2025)](https://arxiv.org/abs/2407.14414)
+- [on learning to generate unit tests for LLM debugging (Prasad et al., COLM 2025)](https://arxiv.org/abs/2502.01619)
+- [on inferring structured abstractions for reasoning (Khan et al., 2025)](https://zaidkhan.me/EFAGen/)
+
+</details>
+
+<details class="research-area" markdown="1">
+<summary><strong>Improving Multimodal Models/Agents</strong></summary>
+
+- [on attribution-based steering for multimodal models (Nguyen et al., ACL 2026)](https://arxiv.org/abs/2507.18043)
+- [on a tree-based representation for LLM-based video reasoning (Wang et al. CVPR 2025)](https://arxiv.org/abs/2405.19209)
+- [on improving visual prompting/object grounding without training (Wan et al., ECCV 2024)](https://arxiv.org/abs/2403.02325)
+- [on Western cultural bias in VLMs and the effect of pretraining language (Ananthram et al., ICLR 2025)](https://arxiv.org/abs/2406.11665)
+- [on visual commonsense in unimodal and multimodal models (Zhang et al, NAACL 2022)](https://aclanthology.org/2022.naacl-main.390/)
+- [on reasoning about occluded patterns (Pothiraj et al., ICCV 2025)](https://arxiv.org/abs/2504.15485)
+- [on fact-level attribution and grounding for multimodal reasoning (Wan et al., ICML 2026)](https://arxiv.org/abs/2602.11509)
+
+</details>
+
+<details class="research-area" markdown="1">
+<summary><strong>Improving Agents</strong></summary>
+
+- [on building PRMs for guiding long-horizon info-seeking tasks (Lee et al., ACL 2026)](https://arxiv.org/abs/2511.19314)
+- [on building and testing data generation agents for creating training data (Khan et al., ICLR 2025 Spotlight)](https://dataenvgym.github.io)
+- [on a more effective/efficient self-consistency method for LLM agents (Wang et al., ACL 2024)](https://arxiv.org/abs/2402.13212)
+
+</details>
 
 
 Previously, I was a postdoc with [Mohit Bansal](https://www.cs.unc.edu/~mbansal/) at UNC Chapel Hill. I received my Ph.D. in 2023 from Johns Hopkins University, where I was supervised by [Benjamin Van Durme](https://www.cs.jhu.edu/~vandurme/) and supported by an NSF GRFP. Before starting my Ph.D., I received my B.A.&Sc. with First Class Honours in Cognitive Science from McGill University, focusing in computer science and linguistics. While at McGill, I worked as a research assistant at the Montreal Language Modeling Lab (MLML), now [MCQLL](https://mcqll.org) supervised by [Morgan Sonderegger](http://people.linguistics.mcgill.ca/~morgan/). I wrote my honours thesis (supervised by [Timothy O'Donnell](https://todonnell.github.io)) on a variational inference algorithm for a model of language acquisition.
