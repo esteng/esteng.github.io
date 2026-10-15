@@ -1,0 +1,224 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{array}
+
+\usepackage[hidelinks]{hyperref}
+
+\titlespacing*{\section}{0pt}{1.2em}{0.5em}
+\titlespacing*{\subsection}{0pt}{0.8em}{0.4em}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small CS 388: Natural Language Processing}
+\rhead{\small Homework 3}
+\cfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[enumerate]{itemsep=2pt, topsep=3pt}
+\setlist[itemize]{itemsep=2pt, topsep=3pt}
+
+\newcommand{\wrd}[1]{\texttt{#1}}
+\newcommand{\eow}{\texttt{\_}}
+\newcommand{\sm}{\ensuremath{\mathrm{softmax}}}
+
+\definecolor{solblue}{RGB}{0,60,180}
+\newcommand{\sol}[1]{\par\medskip{\color{solblue}\noindent\textbf{Solution.} #1}\par\medskip}
+\newcommand{\B}[1]{{\color{solblue}#1}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Homework 3: Tokenization, Long Context, and Pretraining Data}\\[2pt]
+  {\normalsize CS 388: Natural Language Processing \quad\textbullet\quad Fall 2026}\\[2pt]
+\end{center}
+\vspace{0.5em}
+\hrule
+\vspace{1em}
+
+\noindent
+\textbf{Instructions.} Please transcribe your answers/work into the provided \LaTeX file and submit
+the PDF.
+\textbf{Please use the {\tt{\textbackslash B\{\}}} command to wrap your solutions, making them blue (this will help us when grading).}
+
+\section{Question 1: Byte-Pair Encoding (35 points)}
+
+In class we saw byte-pair encoding (BPE), which builds a subword vocabulary by repeatedly merging the most frequent
+pair of adjacent symbols. In this question you will run BPE by hand on the small corpus below, which is given as a
+list of word types with their counts.
+
+\begin{center}
+\begin{tabular}{lr@{\hskip 3em}lr}
+\toprule
+\multicolumn{4}{c}{\textbf{Training corpus} $\mathcal{D}$}\\
+\midrule
+\wrd{talking} & 8 & \wrd{walks}  & 4\\
+\wrd{talked}  & 5 & \wrd{king}   & 2\\
+\wrd{walk}    & 6 & \wrd{thing}  & 3\\
+\wrd{walking} & 3 &              &  \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent
+\textbf{Setup.} Every word is first split into characters, and a special end-of-word symbol \eow{} is appended,
+so \wrd{walk} starts out as \wrd{w a l k \eow}. The initial vocabulary is the set of all characters that occur in
+$\mathcal{D}$, plus \eow{}. Merges do not cross word boundaries.
+
+\medskip\noindent
+\textbf{Learning.} At each step, count every pair of adjacent symbols across the corpus (weighting each word by its
+count), merge the most frequent pair everywhere it occurs, and add the merged symbol to the vocabulary.
+
+\medskip\noindent
+\textbf{Tie-breaking.} If several pairs are tied for most frequent, merge the pair that comes first in alphabetical
+order, comparing first symbols and then second symbols, and treating \eow{} as coming \emph{after} every letter.
+For example, \wrd{(d, s)} comes before \wrd{(e, a)}, and \wrd{(e, d)} comes before \wrd{(e, \eow)}.
+
+\medskip\noindent
+\textbf{Tokenizing.} To tokenize a new word, split it into characters plus \eow{}, then apply the learned merges
+\emph{in the order they were learned}, each one everywhere it applies.
+
+\begin{enumerate}[label=(\alph*)]
+
+  \item \textbf{(20 pts)} Write down the initial vocabulary and its size. Then run $9$ merges. For each merge,
+  report the pair that was merged and its count. Finally, report the size of the vocabulary after all 9 merges and
+  the segmentation of each of the 7 training words.
+
+  Example (merges)
+
+  \begin{table}[H]
+      \centering
+      \begin{tabular}{c|c|c}
+      \toprule
+      Step & Merged pair & Count \\
+      \midrule
+      1 & \wrd{(?, ?)} & ? \\
+      ... & ... & ... \\
+      \bottomrule
+      \end{tabular}
+  \end{table}
+
+  \item \textbf{(10 pts)} Using your merges from (a), tokenize each of the following words. Show the
+  final segmentation of each.
+  \begin{center}
+  \begin{tabular}{llllll}
+  \wrd{walked} & \wrd{talks} & \wrd{kings} & \wrd{stalking} & \wrd{thinking} & \wrd{sled}
+  \end{tabular}
+  \end{center}
+
+  \item \textbf{(5 pts)} Which of the words in (b) are tokenized ``well'' (i.e.\ the tokens line up with meaningful
+  units of the word) and which are tokenized poorly? For each poorly-tokenized word, explain in one sentence what
+  about the training corpus or the BPE procedure caused it.
+
+
+\end{enumerate}
+
+\section{Question 2: Long-Context Models (40 points)}
+
+\begin{enumerate}[label=(\alph*)]
+
+  \item \textbf{(15 pts)} \textbf{Length generalization.} Suppose we pre-train a decoder-only Transformer only on
+  sequences of length exactly $1024$, and then, at test time, give it sequences of length $2048$. For each of the
+  two positional encoding schemes below, describe what the model ``sees'' at positions $1025$ through $2048$, and whether you expect its predictions there to remain good. 
+  Explain your reasoning
+  in a few sentences for each question.
+  \begin{enumerate}[label=(\roman*)]
+    \item Sinusoidal (cosine) absolute positional embeddings, as in the original Transformer, where a fixed vector
+    $p_i$ whose entries are $\sin(i\,\omega_k)$ and $\cos(i\,\omega_k)$ for a range of frequencies $\omega_k$ is
+    added to the token embedding at position $i$.
+    \item Rotary positional embeddings (RoPE), where the query at position $m$ and the key at position $n$ are
+    each rotated by angles proportional to their positions, so that the attention score $q_m^\top k_n$ depends on
+    the positions only through the offset $m - n$.
+  \end{enumerate}
+
+  \item \textbf{(15 pts)} \textbf{Attention over long contexts.} Consider a single attention head at query position
+  $n$, attending over all positions $1, \dots, n$ with scores $s_1, \dots, s_n$ and weights
+  $\alpha_i = \exp(s_i) / \sum_{j=1}^{n} \exp(s_j)$. Suppose exactly one position $i^\star$ (the ``needle in the haystack'') holds the
+  information the query needs. For example, imagine we are looking for a particular name in a long document. The name is the ``needle'' and the document is the ``haystack''.  
+  Call the other $n-1$ positions \emph{distractors}. 
+  Write $s = s_{i^\star}$ for the needle's score, and suppose the head has learned to rank the needle first by a
+  margin of \emph{at least} $\Delta > 0$: every distractor $j$ scores $s_j \le s - \Delta$. Some distractors may score
+  much lower than $s - \Delta$; we only need to assume that none of them comes within $\Delta$ of the needle.
+
+  \medskip
+  Under this assumption we can lower-bound the needle's attention weight. Dividing the numerator and denominator
+  by $e^{s}$,
+  \[
+  \alpha_{i^\star}
+  \;=\; \frac{e^{s}}{e^{s} + \sum_{j \neq i^\star} e^{s_j}}
+  \;=\; \frac{1}{1 + \sum_{j \neq i^\star} e^{s_j - s}} .
+  \]
+  Since $s_j - s \le -\Delta$ for every distractor, each term satisfies $e^{s_j - s} \le e^{-\Delta}$, so the
+  denominator is at most $1 + (n-1)e^{-\Delta}$, and therefore
+  \[
+  \alpha_{i^\star} \;\ge\; \frac{1}{1 + (n-1)e^{-\Delta}} \;=\; \frac{e^{\Delta}}{e^{\Delta} + n - 1} .
+  \]
+  The bound holds with equality only when every distractor scores exactly $s - \Delta$.
+  \begin{enumerate}[label=(\roman*)]
+    \item With $\Delta = 5$, compute the lower bound on $\alpha_{i^\star}$ for $n = 128$, $n = 1024$, and
+    $n = 8192$ (to 3 decimal places). What happens to this guarantee as $n \to \infty$? If $\alpha_{i^\star}$ itself
+    shrank in the same way, what would that mean for the output of the head, $o = \sum_i \alpha_i v_i$?
+    \item A lower bound that goes to $0$ does not by itself show that $\alpha_{i^\star}$ goes to $0$: in principle
+    the distractors could score far below $s - \Delta$ and keep the needle's weight high. Explain why this does not
+    rescue us in a trained Transformer, so that $\alpha_{i^\star}$ really does get washed out as $n$ grows. Your
+    answer should refer to the form of the softmax, and should address two points: (1) why the distractors cannot
+    all be pushed arbitrarily far below the needle, and (2) why a trained model cannot simply fix the problem by
+    making $\Delta$ very large.
+    (\emph{Hint for both:} the queries and keys are computed from layer-normalized hidden states with fixed
+    weights, so every score lies in some bounded range $[-B, B]$. Use this to give an \emph{upper} bound on
+    $\alpha_{i^\star}$.)
+  \end{enumerate}
+
+  \item \textbf{(10 pts)} Propose one modification to the attention computation that would mitigate the problem
+  from (b). Describe it precisely (an equation is welcome), and explain how it changes your answer to (b)(i).
+
+\end{enumerate}
+
+\section{Question 3: Pretraining Data (25 points)}
+
+C4 (the ``Colossal Clean Crawled Corpus'') is a common pretraining dataset derived from Common Crawl, available at
+\url{https://huggingface.co/datasets/allenai/c4}. Besides the filtered \wrd{en} split, it includes an
+\wrd{en.noclean} split containing the raw English web text \emph{before} C4's cleaning filters were applied. Each
+datapoint has a \wrd{text} field, a \wrd{timestamp} field, and a \wrd{url} field giving the web page it was scraped
+from.
+
+\medskip\noindent
+Look through the \wrd{en.noclean} split (downloading a single shard file from the \wrd{en.noclean/} directory is
+more than enough) and find \textbf{3} datapoints you would want to exclude from a pretraining corpus. Your three
+examples should illustrate three \emph{different} reasons for exclusion. Fill in the table below. Snippets should be
+copied from the \wrd{text} field and be at most $400$ characters; if a snippet contains offensive language, you may
+replace those words with \wrd{***}.
+
+\begin{table}[H]
+    \centering
+    \small
+    \begin{tabular}{p{6.6cm}|p{4.2cm}|p{4.2cm}}
+    \toprule
+    Snippet (400 chars max) & URL to datapoint & Reason for excluding \\
+    \midrule
+     & & \\[3em]
+    \midrule
+     & & \\[3em]
+    \midrule
+     & & \\[3em]
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\vspace{1em}
+\hrule
+\vspace{0.5em}
+\noindent
+\small
+
+\end{document}
