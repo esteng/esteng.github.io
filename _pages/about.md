@@ -112,3 +112,5 @@ Concretely, some of the main areas I've been publishing on recently are (click t
 
 Previously, I was a postdoc with [Mohit Bansal](https://www.cs.unc.edu/~mbansal/) at UNC Chapel Hill. I received my Ph.D. in 2023 from Johns Hopkins University, where I was supervised by [Benjamin Van Durme](https://www.cs.jhu.edu/~vandurme/) and supported by an NSF GRFP. Before starting my Ph.D., I received my B.A.&Sc. with First Class Honours in Cognitive Science from McGill University, focusing in computer science and linguistics. While at McGill, I worked as a research assistant at the Montreal Language Modeling Lab (MLML), now [MCQLL](https://mcqll.org) supervised by [Morgan Sonderegger](http://people.linguistics.mcgill.ca/~morgan/). I wrote my honours thesis (supervised by [Timothy O'Donnell](https://todonnell.github.io)) on a variational inference algorithm for a model of language acquisition.
 
+For folks on the job market: in case it's useful, here's my [research statement](assets/pdf/rs.pdf) from when I was on the market.
+
