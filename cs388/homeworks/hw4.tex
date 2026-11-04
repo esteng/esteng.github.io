@@ -1,0 +1,234 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{listings}
+
+\usepackage[hidelinks]{hyperref}
+
+\titlespacing*{\section}{0pt}{1.2em}{0.5em}
+\titlespacing*{\subsection}{0pt}{0.8em}{0.4em}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small CS 388: Natural Language Processing}
+\rhead{\small Homework 4}
+\cfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[enumerate]{itemsep=2pt, topsep=3pt}
+\setlist[itemize]{itemsep=2pt, topsep=3pt}
+
+\newcommand{\wrd}[1]{\texttt{#1}}
+
+\definecolor{solblue}{RGB}{0,60,180}
+\newcommand{\sol}[1]{\par\medskip{\color{solblue}\noindent\textbf{Solution.} #1}\par\medskip}
+\newcommand{\B}[1]{{\color{solblue}#1}}
+
+% --- code listing style ---
+\lstdefinestyle{py}{
+  language=Python,
+  basicstyle=\ttfamily\footnotesize,
+  commentstyle=\itshape,
+  keywordstyle=\bfseries,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=8pt,
+  frame=single,
+  framesep=5pt,
+  xleftmargin=18pt,
+  showstringspaces=false,
+  columns=fullflexible,
+  keepspaces=true,
+}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Homework 4: Reasoning, Vision-Language Models, and Agents}\\[2pt]
+  {\normalsize CS 388: Natural Language Processing \quad\textbullet\quad Fall 2026}\\[2pt]
+\end{center}
+\vspace{0.5em}
+\hrule
+\vspace{1em}
+
+\noindent
+\textbf{Instructions.} Please transcribe your answers/work into the provided \LaTeX file and submit
+the PDF.
+\textbf{Please use the {\tt{\textbackslash B\{\}}} command to wrap your solutions, making them blue (this will help us when grading).}
+
+\section{Question 1: RLVR and GRPO (35 points)}
+
+Below is one training step of a simplified version of GRPO for teaching a model to solve math word problems with
+reasoning. For simplicity, it leaves out the ratio clipping and the KL penalty to a reference model; you do not need
+to add them. The verifier is supposed to give reward $1$ if the \emph{final answer} of a completion is correct and
+$0$ otherwise.
+
+\medskip\noindent
+There are \textbf{two} logical mistakes in this code: places where the algorithm deviates from GRPO as we saw it
+in class. The code runs without errors. The errors are
+logical errors, as opposed to coding errors: you can assume, for example, that the helper functions
+({\tt{generate}}, {\tt{extract\_answer}}, {\tt{log\_prob}}) do what their comments say, and that \texttt{mean} and
+\texttt{std} compute the mean and standard deviation of a list.
+
+\begin{lstlisting}[style=py]
+def grpo_step(policy, optimizer, batch, G=8):
+    # batch: list of (question, answer) pairs, e.g. ("5 pens cost $10. What do 3 cost?", "6")
+    optimizer.zero_grad()
+    total_loss = 0.0
+
+    for question, answer in batch:
+        # sample a group of G completions (reasoning followed by a final answer)
+        completions = [policy.generate(question, temperature=1.0) for _ in range(G)]
+        # extract_answer(c) returns the final answer at the end of completion c
+
+        # verifier
+        rewards = [float(answer in c) for c in completions]
+
+        # group-relative advantages
+        m, s = mean(rewards), std(rewards)
+        advs = [(r - m) / (s + 1e-8) for r in rewards]
+
+        for c, adv in zip(completions, advs):
+            # log_prob(y, given=x): sum of the log-probs of the tokens of y given x
+            logp = policy.log_prob(answer, given=question)
+            total_loss = total_loss - adv * logp
+
+    (total_loss / (len(batch) * G)).backward()
+    optimizer.step()
+\end{lstlisting}
+
+\begin{enumerate}[label=(\alph*)]
+
+  \item \textbf{(5 pts)} Find the first mistake. Give the line number(s) and a fix (pseudocode is fine).
+
+  \item \textbf{(7 pts)} Explain the effect of this mistake. What would happen if we failed to fix it (ignoring
+  the other error)? Describe concretely what kind of completions the model would learn to produce.
+
+  \item \textbf{(5 pts)} Find the second mistake. Give the line number(s) and a fix.
+
+  \item \textbf{(7 pts)} Explain the effect of this mistake. What would happen if we failed to fix it (ignoring
+  the other error)? \emph{Hint:} look at what the loss for a single question adds up to.
+
+  \item \textbf{(6 pts)} Now assume both mistakes are fixed. For a question where all $G = 8$ completions are
+  wrong, what are the advantages, and how much does this question contribute to the gradient? What about a
+  question where all $8$ completions are correct?
+
+  \item \textbf{(5 pts)} You start GRPO training from a base model that solves essentially $0\%$ of the training
+  questions (none of its sampled completions are ever correct). Based on (e), what happens during training?
+  Suggest one way to fix this.
+
+\end{enumerate}
+
+\section{Question 2: Vision-Language Models (30 points)}
+
+\begin{enumerate}[label=(\alph*)]
+
+  \item \textbf{(12 pts)} \textbf{Designing a VLM application.} A city runs a 311 app where residents can submit a
+  photo of a road problem. The city wants to automatically (1) decide whether the photo actually shows a pothole,
+  (2) rate its severity as \emph{minor}, \emph{moderate}, or \emph{severe}, and (3) write a one-sentence description
+  for the repair crew (e.g.\ \emph{``Large pothole in the right lane, next to a storm drain''}). Describe how you
+  would address this with a VLM. Your answer should cover (3 pts each):
+  \begin{enumerate}[label=(\roman*)]
+    \item what the model's input and output look like, including the prompt and the output format;
+    \item whether you would use the VLM zero-shot (prompting only) or fine-tune it, and what data you would need;
+    \item how you would evaluate the system before deploying it;
+    \item one realistic failure mode, and how you would mitigate it.
+  \end{enumerate}
+
+  \item \textbf{(18 pts)} \textbf{Reviewing an architecture.} You are running an engineering team building a VLM
+  for pharmacies. A pharmacist places pills on a counting tray and takes a photo from above with a fixed camera;
+  the model must answer \emph{``How many pills are on the tray?''} The photos are $2048 \times 2048$ pixels, each
+  pill is roughly $40 \times 40$ pixels in the photo, and a tray holds up to $200$ pills, often touching each other.
+
+  \medskip
+  Engineer B proposes the following model:
+  \begin{center}
+  \small
+  \begin{tabular}{>{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{9.6cm}}
+  \toprule
+  Component & Setting\\
+  \midrule
+  Image preprocessing & Resize each photo to $448 \times 448$ pixels\\
+  Vision encoder & ViT with patch size $64 \times 64$; $24$ layers, hidden size $1024$, $16$ attention heads;
+  pretrained with a CLIP-style objective on $400$M image--caption pairs\\
+  Projector & 2-layer MLP mapping each patch embedding to one LLM input token\\
+  Language model & $7$B-parameter decoder-only LLM ($32$ layers, hidden size $4096$), context length $4096$\\
+  Fine-tuning data & $50$k tray photos with the correct count, formatted as question--answer pairs\\
+  Optimization & AdamW, learning rate $2 \times 10^{-5}$, batch size $256$, $3$ epochs\\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+
+  \begin{enumerate}[label=(\roman*)]
+    \item \textbf{(6 pts)} How many visual tokens does the LLM receive for each photo? How many pixels of the
+    \emph{original} photo does one patch cover (along each side), and roughly how many pills could fall inside a
+    single patch? Show your work.
+    \item \textbf{(6 pts)} Do you let Engineer B train this model? Why or why not?
+    \item \textbf{(6 pts)} If not, what would you change? Be specific (give numbers), and describe what your change
+    costs: how many visual tokens does your design produce, and does it fit in the LLM's context?
+  \end{enumerate}
+
+\end{enumerate}
+
+\section{Question 3: Agents (35 points)}
+
+A user asks an LLM agent:
+\begin{quote}
+\emph{``Schedule a one-hour meeting next week with Alice, Bob, and Carol.''}
+\end{quote}
+The agent can read the user's calendar and the calendars of Alice and Bob, which are shared with the user. Carol's
+calendar is private. The agent can also look up Carol's \emph{free/busy status} for a given time, send emails to
+any of the attendees and read their replies, and send a calendar invitation. The episode ends when the agent sends
+an invitation or gives up. The agent receives a reward of $+1$ if it sends an invitation for a time when all four
+people can attend, $-1$ if it sends an invitation for a time when someone cannot attend (the meeting will have to
+be rescheduled), and $0$ if it sends no invitation.
+
+\begin{enumerate}[label=(\alph*)]
+
+  \item \textbf{(10 pts)} Write this task as a POMDP. Describe each component (states $S$, actions $A$,
+  observations $O$, transitions $T(s' \mid s, a)$, and reward $R$) in a sentence or two, specific to this task.
+
+  \item \textbf{(6 pts)} Name two parts of the state that the agent cannot observe directly. For each, name an
+  action that gives the agent information about it, and say whether that information is complete or only partial.
+
+  \item \textbf{(9 pts)} The agent finds that Tuesday at 2 pm is free for the user, Alice, and Bob. Based on what it
+  knows, it estimates that Carol is free at that time with probability $p = 0.7$. The agent can either:
+  \begin{itemize}
+    \item \textbf{Invite now.} It sends the invitation for Tuesday at 2 pm.
+    \item \textbf{Email Carol first.} Emailing costs a reward of $c$. Assume Carol answers truthfully. While the
+    agent waits for her reply, there is a $0.2$ probability that the slot is taken on someone else's calendar. If
+    Carol is free and the slot is still open, the agent sends the invitation; otherwise it gives up.
+  \end{itemize}
+  \begin{enumerate}[label=(\roman*)]
+    \item With $c = 0.1$, compute the expected reward of each option. Which should the agent choose?
+    \item What is the largest cost $c$ for which emailing Carol first is still the better choice? (This is the
+    \emph{value of information} of Carol's reply.)
+  \end{enumerate}
+
+  \item \textbf{(10 pts)} Instead of emailing, the agent first looks up Carol's free/busy status for Tuesday at
+  2 pm, which is free of cost. The lookup is imperfect: it only knows about events that Carol has put in her
+  calendar. If Carol is actually free, the lookup always shows \emph{free}. If she is actually busy, it shows
+  \emph{busy} with probability $0.6$ and \emph{free} with probability $0.4$ (she has not entered the event).
+  \begin{enumerate}[label=(\roman*)]
+    \item The lookup shows \emph{free}. Starting from the prior $p = 0.7$, compute the agent's updated belief that
+    Carol is free.
+    \item With this updated belief (and still $c = 0.1$), should the agent invite now or email Carol first? Show the
+    expected rewards.
+    \item What should the agent believe, and do, if the lookup shows \emph{busy} instead?
+  \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
